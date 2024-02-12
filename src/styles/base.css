@@ -1,0 +1,312 @@
+
+/* font family import */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+
+*,::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    /* backgrounds for light mode */
+    --background-l-first:rgba(255,255,255,1); 
+    --background-l-sec:rgba(243,247,249,1);
+    --background-l-form:rgba(247,247,247);
+    --nav-foot-bg:rgba(18,18,18,1);
+
+    /* backgrounds for dark mode */
+    --background-d-first:rgba(13,13,13,1); 
+    --background-d-sec:rgba(22,22,22,1);
+    --background-d-form:rgba(22,22,22,1);
+
+    --prim-color: rgba(234,180,0,1);
+
+    /* secondary color for light mode */
+    --sec-l-color:rgba(23,107,135,1);
+
+    /* secondary color for light mode */
+    --sec-d-color:rgba(235,235,235,1);
+
+    /* card background color */
+    /*light mode card*/
+    --card-l-bg:rgba(255,255,255,1);
+
+    /*dark mode card*/
+    --card-d-bg:rgba(24,24,24,1);
+
+    /* texts color */
+    /* black text */
+    --text-b: rgba(0,0,0,1);
+    --text-b-h: rgba(0,0,0,0.83);
+    --text-b-m: rgba(0,0,0,0.6);
+    --text-b-l: rgba(0,0,0,0.3);
+
+    /* white text */
+    --text-w: rgba(255,255,255,1);
+    --text-w-h: rgba(255,255,255,0.83);
+    --text-w-m: rgba(255,255,255,0.6);
+    --text-w-l: rgba(255,255,255,0.3);
+}
+
+/*light mode config*/
+@media (prefers-color-scheme:light){
+    :root{
+
+        /* background color */
+        --first-bg:var(--background-l-first);
+        --sec-bg:var(--background-l-sec);
+        --form-bg:var(--background-l-form);
+        --nav-footer-bg:var(--nav-foot-bg);
+
+        /* secondary color for light mode */
+        --sec-color:var(--sec-l-color);
+
+        /*card bg*/
+        --card-bg:var(--card-l-bg);
+
+        /* text for light theme */
+        --text: var(--text-b);
+        --text-h: var(--text-b-h);
+        --text-m: var(--text-b-m);
+        --text-l: var(--text-b-l);
+    }
+    body{
+        background-color: var(--first-bg);
+        color: var(--text-h);
+    }
+}
+
+/*dark mode config*/
+@media (prefers-color-scheme:dark){
+    :root{
+
+        /* background color */
+        --first-bg:var(--background-d-first);
+        --sec-bg:var(--background-d-sec);
+        --form-bg:var(--background-d-form);
+        --nav-footer-bg:var(--nav-foot-bg);
+
+        /* secondary color for light mode */
+        --sec-color:var(--sec-d-color);
+
+        /*card bg*/
+        --card-bg:var(--card-d-bg);
+
+        /* text for light theme */
+        --text: var(--text-w);
+        --text-h: var(--text-w-h);
+        --text-m: var(--text-w-m);
+        --text-l: var(--text-w-l);
+    }
+    body{
+        background-color: var(--first-bg);
+        color:var(--text-h);
+    }
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family:'Lato', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,p,small,div,span,textarea,input{
+    font-family:'Lato', sans-serif;
+}
+
+h1{
+    font-size: 5.375rem;
+}
+h2{
+    font-size: 4.479rem;
+}
+h3{
+    font-size: 3.732rem;
+}
+h4{
+    font-size: 3.11rem;
+}
+h5{
+    font-size: 2.592rem;
+}
+h6{
+    font-size: 2.16rem;
+}
+p, button, input, li, a, textarea, textarea::placeholder{
+    font-size: 1.8rem;
+}
+small{
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width:1024px) {
+    
+    h1{
+        font-size: 4.778rem;
+    }
+    h2{
+        font-size: 3.981rem;
+    }
+    h3{
+        font-size: 3.318rem;
+    }
+    h4{
+        font-size: 2.765rem;
+    }
+    h5{
+        font-size: 2.304rem;
+    }
+    h6{
+        font-size: 1.92rem;
+    }
+    p, button, input, li, a, textarea, textarea::placeholder{
+        font-size: 1.6rem;
+    }
+    small{
+        font-size: 1.333rem;
+    }
+}
+
+
+@media screen and (max-width:640px) {
+    
+    h1{
+        font-size: 3.244rem;
+    }
+    h2{
+        font-size: 2.883rem;
+    }
+    h3{
+        font-size: 2.563rem;
+    }
+    h4{
+        font-size: 2.278rem;
+    }
+    h5{
+        font-size: 2.025rem;
+    }
+    h6{
+        font-size: 1.8rem;
+    }
+    p, button, input, li, a, textarea, textarea::placeholder{
+        font-size: 1.6rem;
+    }
+    small{
+        font-size: 1.264rem;
+    }
+}
+/* button config */
+
+.cta-btn{
+    background-image: linear-gradient(to right, rgba(211,162,0,1), rgba(255,215,42,1));
+    font-weight: 500;
+    color: var(--text);
+    border:none;
+    text-transform: uppercase;
+    border-radius: 0.4rem;
+    padding: 0.8rem 1.6rem;
+}
+
+.cta-btn:disabled{
+    background-image: linear-gradient(to right, rgba(211,162,0,0.3), rgba(255,215,42,0.3));
+    color: var(--text-l);
+}
+
+.outlined-btn{
+    font-weight: 500;
+    color: var(--prim-color);
+    border:0.2rem solid var(--prim-color);
+    background-color: unset;
+    border-radius: 0.4rem;
+    padding: 0.6rem 1.6rem;
+    text-transform: uppercase;
+}
+
+.text-btn{
+    font-weight: 500;
+    color: var(--prim-color);
+    border: none;
+    border-bottom: 0.2rem  solid var(--prim-color) ;
+    background-color: unset;
+    padding: 0.8rem 0.2rem;
+    padding-bottom: 0.6rem;
+    text-transform: uppercase;
+}
+
+/* input field appearance style */
+input[type = 'text'],
+input[type = 'email'],
+input[type = 'password'],
+input[type = 'number'], textarea{
+    display: block;
+    background-color: unset;
+    padding: 0.8rem;
+    padding-bottom: 0.4rem;
+    margin-bottom: 0.2rem;
+    border: none;
+    border-bottom: 0.2rem  solid var(--text-l) ;
+    background-color: unset;
+    color: var(--text-h);
+    transition: all 0.25s;
+    position:relative;
+}
+
+input[type = 'text']::placeholder,
+input[type = 'email']::placeholder,
+input[type = 'password']::placeholder,
+input[type = 'number']::placeholder,
+textarea::placeholder{
+    text-transform: capitalize;
+    color: var(--text-m);
+    transition: all 0.25s;
+}
+
+
+input[type = 'text']:focus,
+input[type = 'email']:focus,
+input[type = 'password']:focus,
+input[type = 'number']:focus,
+textarea:focus{
+    background-color: unset;
+    border-bottom: 0.2rem  solid var(--text-m) ;
+    background-color: unset;
+    outline: none;
+    transition: all 0.25s;
+    font-family:initial;
+}
+
+input[type = 'text']:focus::placeholder,
+input[type = 'email']:focus::placeholder,
+input[type = 'password']:focus::placeholder,
+input[type = 'number']:focus::placeholder,
+textarea:focus::placeholder{
+    color: var(--text-l);
+    font-family:'Lato', sans-serif;
+    transition: all 0.25s;
+}
+
+
+/* headers and bodytext styling */
+/* use for headers that are of secondary color NB:secondary color is blue or ash depending on the prefered color scheme */
+.important-header{
+    color:var(--sec-color);
+    text-transform: capitalize;
+}
+
+/* use for regular color headers  */
+.main-header, .sub-header{
+    color:var(--text-h);
+    text-transform: capitalize;
+}
+
+/* body texts are paragraph texts */
+.body-text{
+    color:var(--text-m);
+}
