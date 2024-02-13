@@ -1,0 +1,42 @@
+@import './home-whyus.css';
+
+.section-title{
+    margin-bottom: 52px;
+}
+.whyus-sec{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:24px;
+}
+
+.servi-sec{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap:24px;
+}
+
+.card-main-wrapper:nth-child(-1){
+    grid-column: 2/span 2;
+}
+
+.form-sec{
+    background-color: var(--sec-bg);
+}
+
+@media screen and (min-width:2200px) {
+    .whyus-sec{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width:1401px) and (max-width:2199px) {
+    .whyus-sec{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width:1040px) and (max-width:1200px) {
+    .whyus-sec{
+        grid-template-columns: 1fr 1fr ;
+    }
+}

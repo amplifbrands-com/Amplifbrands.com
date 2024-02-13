@@ -1,0 +1,16 @@
+form{
+    display: flex;
+    gap:24px;
+    flex-direction: column;
+}
+
+.user-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:24px;
+}
+
+form button{
+    max-width: fit-content;
+    margin: 0 auto;
+}
