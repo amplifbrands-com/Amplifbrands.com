@@ -1,5 +1,9 @@
 @import './home-whyus.css';
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 .section-title{
     margin-bottom: 52px;
 }
@@ -27,6 +31,9 @@
     .whyus-sec{
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
+    .servi-sec{
+        grid-template-columns:repeat(3, 1fr);
+    }
 }
 
 @media screen and (min-width:1401px) and (max-width:2199px) {
@@ -35,8 +42,15 @@
     }
 }
 
-@media screen and (min-width:1040px) and (max-width:1200px) {
+@media screen and (min-width:820px) and (max-width:1200px) {
     .whyus-sec{
         grid-template-columns: 1fr 1fr ;
+    }
+    
+}
+
+@media screen and (max-width:819px) {
+    .whyus-sec, .servi-sec{
+        grid-template-columns: 1fr ;
     }
 }

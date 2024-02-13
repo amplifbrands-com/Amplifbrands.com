@@ -11,6 +11,7 @@
     align-items: start;
     margin-left: 24px;
     position: relative;
+    box-shadow: var(--card-shadow);
 }
 
 .icon{
@@ -31,3 +32,17 @@
     max-width: 100%;
 }
 
+@media screen and (max-width:640px){
+    .card-wrapper{
+        padding: 16px;
+        padding-top: 48px;
+        padding-left: 24px;
+        margin-left: 0;
+        margin-top: 24px;
+    }
+    .icon{
+        top: -24px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

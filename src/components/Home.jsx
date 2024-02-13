@@ -18,14 +18,14 @@ const Home = () => {
       <h3 className="main-header">
         our mission
       </h3>
-      <p className="sub-header col-9 mx-auto">Our mission at Amplif is to empower startup entrepreneurs with tailored marketing solutions crafted by our experts, addressing their unique pain points, driving exponential growth, and unleashing their full potential.</p>
+      <p className="sub-header col-12 col-sm-8 mx-auto">Our mission at Amplif is to empower startup entrepreneurs with tailored marketing solutions crafted by our experts, addressing their unique pain points, driving exponential growth, and unleashing their full potential.</p>
     </section>
     <section className=" row mx-auto">
-      <div className="section-title text-center row col-12">
+      <div className="section-title text-center row col-12 mx-auto">
         <h3 className="main-header col-12">
           why choose us?
         </h3>
-        <h6 className="sub-header col-8 mx-auto">Navigating the Digital Frontier</h6>
+        <h6 className="sub-header col-12 col-sm-8 mx-auto">Navigating the Digital Frontier</h6>
       </div>
       <div className="whyus-sec col-12">
         {
@@ -36,11 +36,11 @@ const Home = () => {
       </div>
     </section>
     <section className=" row mx-auto">
-      <div className="section-title row text-center col-12">
+      <div className="section-title row text-center col-12 mx-auto">
         <h3 className="main-header col-12">
         Our Services
         </h3>
-        <h6 className="sub-header col-8 mx-auto">Transformative Digital Solutions Tailored for Your Success</h6>
+        <h6 className="sub-header col-12 col-sm-8 mx-auto">Transformative Digital Solutions Tailored for Your Success</h6>
       </div>
 
       <div className="servi-sec col-12">
@@ -52,11 +52,11 @@ const Home = () => {
       </div>
     </section>
     <section className=" row mx-auto">
-      <div className="section-title text-center col-12 row">
+      <div className="section-title text-center col-12 row mx-auto">
         <h3 className="main-header col-12">
           Hello!
         </h3>
-        <h6 className="sub-header col-8 mx-auto">If you have a requirement to discuss or want to learn more about how we work, feel free to reach out.</h6>
+        <h6 className="sub-header col-12 col-sm-8 mx-auto">If you have a requirement to discuss or want to learn more about how we work, feel free to reach out.</h6>
       </div>
       <Form />
     </section>
