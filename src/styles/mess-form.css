@@ -14,3 +14,10 @@ form button{
     max-width: fit-content;
     margin: 0 auto;
 }
+
+@media screen and (max-width:640px) {
+    .user-info{
+        grid-template-columns: 1fr;
+        gap:24px;
+    }
+}

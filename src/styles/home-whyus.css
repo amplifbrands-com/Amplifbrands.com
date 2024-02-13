@@ -11,9 +11,9 @@
     gap:16px;
     background-color:var(--card-bg);
     border-radius: 16px;
-    margin-top: 18px;
     position: relative;
     padding: 24px;
+    box-shadow: var(--card-shadow);
 }
 
 .card-main-wrapper::before{
@@ -49,3 +49,8 @@
     justify-content: left;
 }
 
+@media screen and (max-width:640px) {
+    .card-main-wrapper{
+        padding: 16px;
+    }
+}

@@ -26,6 +26,10 @@ font-family: 'Montserrat', sans-serif; */
 
     --prim-color: rgba(234,180,0,1);
 
+    /*shadow*/
+    --card-shadow: 1px 4px 15px 0 rgba(0,0,0,0.05), 1px 1px 4px 0 rgba(0,0,0,0.15);
+
+
     /* secondary color for light mode */
     --sec-l-color:rgba(23,107,135,1);
 
@@ -154,6 +158,11 @@ section, header{
     padding: 52px 12vw;
 }
 
+/*use for section title wrapper*/
+.section-title{
+    margin-bottom: 52px;
+}
+
 @media screen and (max-width:1334px) {
     
     h1{
@@ -179,6 +188,14 @@ section, header{
     }
     small{
         font-size: 1.333rem !important;
+    }
+    section, header{
+        padding: 52px 10vw;
+    }
+
+    /*use for section headers*/
+    .section-title{
+        margin-bottom: 52px;
     }
 }
 
@@ -208,6 +225,13 @@ section, header{
     }
     small{
         font-size: 1.264rem !important;
+    }
+    section, header{
+        padding: 32px 5vw;
+    }
+
+    .section-title{
+        margin-bottom: 32px;
     }
 }
 /* button config */
@@ -336,3 +360,4 @@ textarea:focus::placeholder{
 .body-text{
     color:var(--text-m);
 }
+
