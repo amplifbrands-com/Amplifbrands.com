@@ -76,8 +76,8 @@ font-family: 'Montserrat', sans-serif; */
         --text-l: var(--text-b-l);
     }
     body{
-        background-color: var(--first-bg);
-        color: var(--text-h);
+        background-color: var(--first-bg) !important;
+        color: var(--text-h) !important;
     }
 }
 
@@ -104,73 +104,81 @@ font-family: 'Montserrat', sans-serif; */
         --text-l: var(--text-w-l);
     }
     body{
-        background-color: var(--first-bg);
-        color:var(--text-h);
+        background-color: var(--first-bg) !important;
+        color:var(--text-h) !important;
     }
 }
 
 html{
-    font-size: 10px;
+    font-size: 10px !important;
 }
 
 body{
     font-family:'Lato', sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6,p,small,div,span,textarea,input{
+h1, h2, h3, h4, h5, h6, p, small, div, span, textarea, input{
     font-family:'Lato', sans-serif;
+}
+select, select:focus, option{
+    font-family:'Lato', sans-serif !important;
 }
 
 h1{
-    font-size: 5.375rem;
+    font-size: 5.375rem !important;
 }
 h2{
-    font-size: 4.479rem;
+    font-size: 4.479rem !important;
 }
 h3{
-    font-size: 3.732rem;
+    font-size: 3.732rem !important;
 }
 h4{
-    font-size: 3.11rem;
+    font-size: 3.11rem !important;
 }
 h5{
-    font-size: 2.592rem;
+    font-size: 2.592rem !important;
 }
 h6{
-    font-size: 2.16rem;
+    font-size: 2.16rem !important;
 }
-p, button, input, li, a, textarea, textarea::placeholder{
-    font-size: 1.8rem;
+p, button, input, li, a, textarea, textarea::placeholder, option, select , select:focus{
+    font-size: 1.8rem !important;
 }
 small{
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
 }
 
-@media screen and (max-width:1024px) {
+/* please use sections for sectioning */
+section, header{
+    padding: 52px 12vw;
+}
+
+@media screen and (max-width:1334px) {
     
     h1{
-        font-size: 4.778rem;
+        font-size: 4.778rem !important;
     }
     h2{
-        font-size: 3.981rem;
+        font-size: 3.981rem !important;
     }
     h3{
-        font-size: 3.318rem;
+        font-size: 3.318rem !important;
     }
     h4{
-        font-size: 2.765rem;
+        font-size: 2.765rem !important;
     }
     h5{
-        font-size: 2.304rem;
+        font-size: 2.304rem !important;
     }
     h6{
-        font-size: 1.92rem;
+        font-size: 1.92rem !important;
     }
-    p, button, input, li, a, textarea, textarea::placeholder{
-        font-size: 1.6rem;
+    p, button, input, li, a, textarea, textarea::placeholder, option, select, select:focus{
+        font-size: 1.6rem !important;
     }
     small{
-        font-size: 1.333rem;
+        font-size: 1.333rem !important;
     }
 }
 
@@ -178,28 +186,28 @@ small{
 @media screen and (max-width:640px) {
     
     h1{
-        font-size: 3.244rem;
+        font-size: 3.244rem !important;
     }
     h2{
-        font-size: 2.883rem;
+        font-size: 2.883rem !important;
     }
     h3{
-        font-size: 2.563rem;
+        font-size: 2.563rem !important;
     }
     h4{
-        font-size: 2.278rem;
+        font-size: 2.278rem !important;
     }
     h5{
-        font-size: 2.025rem;
+        font-size: 2.025rem !important;
     }
     h6{
-        font-size: 1.8rem;
+        font-size: 1.8rem !important;
     }
-    p, button, input, li, a, textarea, textarea::placeholder{
-        font-size: 1.6rem;
+    p, button, input, li, a, textarea, textarea::placeholder, option, select, select:focus{
+        font-size: 1.6rem !important;
     }
     small{
-        font-size: 1.264rem;
+        font-size: 1.264rem !important;
     }
 }
 /* button config */
@@ -207,16 +215,16 @@ small{
 .cta-btn{
     background-image: linear-gradient(to right, rgba(211,162,0,1), rgba(255,215,42,1));
     font-weight: 500;
-    color: var(--text);
+    color: var(--text-b);
     border:none;
     text-transform: uppercase;
     border-radius: 0.4rem;
-    padding: 0.8rem 1.6rem;
+    padding: 0.65rem 1.6rem;
 }
 
 .cta-btn:disabled{
     background-image: linear-gradient(to right, rgba(211,162,0,0.3), rgba(255,215,42,0.3));
-    color: var(--text-l);
+    color: var(--text-b-m);
 }
 
 .outlined-btn{
@@ -236,13 +244,14 @@ small{
     border-bottom: 0.2rem  solid var(--prim-color) ;
     background-color: unset;
     padding: 0.8rem 0.2rem;
-    padding-bottom: 0.6rem;
+    padding-bottom: 0.2rem;
     text-transform: uppercase;
 }
 
 /* input field appearance style */
 input[type = 'text'],
 input[type = 'email'],
+select,
 input[type = 'password'],
 input[type = 'number'], textarea{
     display: block;
@@ -257,9 +266,14 @@ input[type = 'number'], textarea{
     transition: all 0.25s;
     position:relative;
 }
+select{
+    color: var(--text-m);
+    padding-left: 0.4rem;
+}
 
 input[type = 'text']::placeholder,
 input[type = 'email']::placeholder,
+option,
 input[type = 'password']::placeholder,
 input[type = 'number']::placeholder,
 textarea::placeholder{
@@ -271,6 +285,7 @@ textarea::placeholder{
 
 input[type = 'text']:focus,
 input[type = 'email']:focus,
+select:focus,
 input[type = 'password']:focus,
 input[type = 'number']:focus,
 textarea:focus{
@@ -280,6 +295,11 @@ textarea:focus{
     outline: none;
     transition: all 0.25s;
     font-family:initial;
+}
+
+
+option{
+    background-color: var(--first-bg);
 }
 
 input[type = 'text']:focus::placeholder,
@@ -304,6 +324,12 @@ textarea:focus::placeholder{
 .main-header, .sub-header{
     color:var(--text-h);
     text-transform: capitalize;
+    margin-bottom: 8;
+}
+.sub-header{
+    color:var(--text-m);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 
 /* body texts are paragraph texts */

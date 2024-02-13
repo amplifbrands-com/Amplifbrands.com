@@ -1,0 +1,33 @@
+@import './base.css';
+.card-wrapper{
+    padding: 24px;
+    padding-left: 48px;
+    background-color: var(--card-bg);
+    border-radius: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    margin-left: 24px;
+    position: relative;
+}
+
+.icon{
+    width: 48px;
+    height: 48px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: var(--sec-color);
+    position: absolute;
+    left: -24px;
+}
+
+.icon img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
