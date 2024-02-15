@@ -4,10 +4,10 @@ function ServiCard({icon, title, content}){
     return(
         <div className="card-wrapper">
             <div>
-                <h6 className="main-header">
+                <h6 className="main-header ">
                     {title}
                 </h6>
-                <small className="body-text">{content}</small>
+                <p className="body-text">{content}</p>
             </div>
             <button type="button" className="text-btn">read more...</button>
             <div className="icon">
