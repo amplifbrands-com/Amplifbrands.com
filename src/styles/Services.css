@@ -1,11 +1,50 @@
 @import './base.css';
 
   
+
+  .service--hero{
+    height:80vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-color: rgba(0,0,0,1);
+  }
+
+  .hero--content{
+    max-width: 717px;
+  }
+  .hero--content h1{
+    color:var(--text-w);
+    margin-bottom:40px;
+  }
+  .hero--list{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+    color:var(--text-w-h);
+  }
+
+  .hero--list p{
+    width:220px;
+    text-align:center;
+    margin: 12px 0px;
+    text-decoration:underline;
+    text-underline-offset: 4px;
+  }
+
+   .service-wrapper{
+    width:100vw;
+    display:flex;
+    justify-content:center;
+
+  }  
+
    .service-card {
     padding: 52px 100px;
-    width:100%;
+    width:1440px;
   } 
-  .service-card:nth-child(odd) {
+  .service-wrapper:nth-child(odd) {
     background-color: var(--sec-bg); 
   }
 
@@ -55,6 +94,20 @@
   
   
   @media screen and (max-width: 640px) {
+
+    .service--hero{
+      height:300px;
+      max-height:50vh;
+    }
+    .hero-content{
+      margin:30px 10px;
+    }
+    .hero--content h1{
+      margin-bottom:16px;
+    }
+    .hero--list p{
+      margin:5px 0px;
+    }
 
     .service-card{
       padding:32px 16px;
