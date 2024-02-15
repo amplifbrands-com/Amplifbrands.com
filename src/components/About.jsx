@@ -13,28 +13,32 @@ const About = () => {
     <>
       <section className="about-hero">
         <div className="about-hero-inner">
-          <div className="about-hero-content">
+          <div className="about-hero-heading">
             <h4 className="about-hero-h4">
               About Amplif
             </h4>
-            <p className="about-hero-para">
-              At Amplif, we're passionate about empowering businesses to thrive in the digital age. Founded with a vision to support startups and digital-first businesses, we've dedicated ourselves to providing tailored marketing solutions that drive exponential growth and unlock untapped potential.
-            </p>
-            <p className="about-hero-para">
-              Our journey began with a simple yet powerful mission: to empower startup entrepreneurs with the tools and expertise they need to succeed. Recognizing the challenges faced by digital-first businesses, we set out to become their trusted partner in navigating the complexities of the online landscape.
-            </p>
-            <p className="about-hero-para">
-              What sets us apart is our commitment to understanding the unique needs and aspirations of each of our partners. We believe in the power of collaboration and work closely with businesses to craft personalized strategies that address their specific pain points and goals.
-            </p>
-            <p className="about-hero-para">
-              With a team of seasoned experts in digital marketing, design, and technology, we offer a comprehensive suite of services to support our partners at every stage of their journey. From branding and website development to SEO, PPC management, and beyond, we're here to help businesses thrive and grow.s.
-            </p>
-            <p className="about-hero-para">
-              At Amplif, we're not just another marketing agency—we're a dedicated ally on your path to success. Join us as we transform startups into success stories and small businesses into industry leaders. Together, let's amplify your potential and achieve greatness in the digital world.
-            </p>
           </div>
-          <div className="about-hero-image">
-            <img src="" alt="" title='' width={494} height={494} />
+          <div className="about-hero-main">
+            <div className="about-hero-content">
+              <p className="about-hero-para">
+                At Amplif, we're passionate about empowering businesses to thrive in the digital age. Founded with a vision to support startups and digital-first businesses, we've dedicated ourselves to providing tailored marketing solutions that drive exponential growth and unlock untapped potential.
+              </p>
+              <p className="about-hero-para">
+                Our journey began with a simple yet powerful mission: to empower startup entrepreneurs with the tools and expertise they need to succeed. Recognizing the challenges faced by digital-first businesses, we set out to become their trusted partner in navigating the complexities of the online landscape.
+              </p>
+              <p className="about-hero-para">
+                What sets us apart is our commitment to understanding the unique needs and aspirations of each of our partners. We believe in the power of collaboration and work closely with businesses to craft personalized strategies that address their specific pain points and goals.
+              </p>
+              <p className="about-hero-para">
+                With a team of seasoned experts in digital marketing, design, and technology, we offer a comprehensive suite of services to support our partners at every stage of their journey. From branding and website development to SEO, PPC management, and beyond, we're here to help businesses thrive and grow.s.
+              </p>
+              <p className="about-hero-para">
+                At Amplif, we're not just another marketing agency—we're a dedicated ally on your path to success. Join us as we transform startups into success stories and small businesses into industry leaders. Together, let's amplify your potential and achieve greatness in the digital world.
+              </p>
+            </div>
+            <div className="about-hero-image">
+              <img src="" alt="" title='' width={494} height={494} className='about-hero-pic' />
+            </div>
           </div>
         </div>
       </section>
