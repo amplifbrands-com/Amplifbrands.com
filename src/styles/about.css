@@ -1,0 +1,189 @@
+.about-hero-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-hero-content{
+    width: 600px;
+}
+
+.about-hero-h4, .about-value-h4,
+.about-meet-h4{
+    width: fit-content;
+    border-bottom-right-radius: 5px;
+    border: none;
+    border-bottom: 5px solid var(--sec-l-color);
+}
+
+.about-hero-para{
+    margin-top: 20px;
+}
+
+.about-value{
+    background-color: var(--sec-bg);
+}
+
+.about-value-card-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-value-card-outer{
+    width: 470px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.about-value-card-content{
+    margin-top: 40px;
+}
+
+.about-value-content-outer{
+    width: 60%;
+}
+
+.about-value-span{
+    font-size: 24px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.6)
+}
+
+.about-form-h6{
+    margin-top: 20px !important;
+}
+
+.about-meet-card-outer{
+    margin-top: 40px;
+}
+
+.about-meet-ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.about-meet-card-para{
+    margin-top: 80px;
+    text-align: center;
+}
+
+/***************************** About Our Expert Card ******************************/
+
+.about-expert-card{
+    width: 260px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 24px 12px;
+    background-color: #F7F7F7;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-expert-card-image{
+    border-radius: 25%;
+}
+
+
+
+
+/***************************** About Our Expert Card ******************************/
+
+
+.about-form-section{
+    background-color: #F7F7F7;
+}
+
+
+
+/***************************** Responsive **********************************/
+
+@media screen and (max-width:1660px) {
+
+    .about-hero-content{
+        width: 50%;
+    }
+
+    .about-value-card-outer{
+        width: 50%;
+    }
+
+    .about-value-content-outer{
+        width: 50%;
+    }
+
+}
+
+
+
+@media screen and (max-width:1180px){
+
+    .about-hero-main{
+        margin-top: 40px;
+        flex-direction: column-reverse;
+    }
+
+    .about-hero-content{
+        width: 100%;
+    }
+
+    .about-hero-image{
+        width: 80%;
+        height: 80%;
+    }
+
+    .about-hero-pic{
+        width: 100%;
+        height: 100%;
+    }
+
+    .about-value-card-outer{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-value-card-content{
+        flex-direction: column;
+    }
+
+    .about-value-content-outer{
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    .about-meet-ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+
+}
+
+@media screen and (max-width:490px){
+    
+    .about-value-icon{
+        width: 100%;
+        height: 100%;
+    }
+
+    .about-value-card-inner{
+        width: 80%;
+        height: 80%;
+    }
+}
+
+
+
+/***************************** Responsive **********************************/
