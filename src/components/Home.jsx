@@ -74,7 +74,7 @@ const Home = () => {
         }
       </div>
     </section>
-    <section className=" row mx-auto">
+    <section className=" row mx-auto form-sec">
       <div className="section-title text-center col-12 row mx-auto">
         <h3 className="main-header col-12">
           Hello!

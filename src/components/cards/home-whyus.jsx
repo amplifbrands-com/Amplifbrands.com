@@ -15,9 +15,9 @@ function WhyUs({icon, title, subtitle, content}){
                 </span>
             </div>
             <div>
-                <small className="body-text">
+                <p className="body-text">
                     {content}
-                </small>
+                </p>
             </div>
 
         </div>
