@@ -2,7 +2,7 @@ import React from 'react'
 import "../styles/Services.css"
 import {services} from "../assets/service-page-data.js"
 
- const ServiceHero = () => {
+const ServiceHero = () => {
 
     const serviceTitles = [
       "Digital Marketing Consulting",
@@ -103,7 +103,6 @@ const Services = () => {
                     )
       )}      
     </div>
-    
   )
 }
 
