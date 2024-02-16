@@ -148,6 +148,7 @@ h6{
 }
 p, button, input, li, a, textarea, textarea::placeholder, option, select , select:focus{
     font-size: 1.8rem !important;
+    text-decoration: none;
 }
 small{
     font-size: 1.5rem !important;
