@@ -1,5 +1,20 @@
 @import './base.css';
 
+:root{
+    --icon-light: rgba(255,255,255,1);
+    --icon-dark: rgba(235,235,235,1);
+
+    --icon:var(--icon-light);
+}
+
+@media(prefers-color-scheme:dark){
+    
+    :root{
+        --icon:var(--icon-dark);
+    }
+}
+
+
 *, ::after, ::before{
     margin: 0;
     padding: 0;
@@ -34,12 +49,17 @@
     align-items: center;
 }
 
+
+
 .icon-wrapper{
     display: flex;
     width: 48px;
     height: 48px;
     justify-content: center;
     align-items: center;
+    border-radius: 4px;
+    background-color: var(--icon);
+    box-shadow: 0 2px 4px 0 rgba(0,0, 0, 0.1);
 }
 
 .icon-wrapper svg{

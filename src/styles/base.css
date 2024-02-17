@@ -131,12 +131,16 @@ select, select:focus, option{
 h1{
     font-size:4.778rem !important;
 }
+.nav-logo{
+    max-height: 3.981rem;
+}
 h2{
     font-size: 3.981rem !important;
 }
 h3{
     font-size: 3.318rem !important;
 }
+
 h4{
     font-size: 2.765rem !important;
 }
@@ -157,6 +161,9 @@ small{
 section, header{
     padding: 52px 12vw;
 }
+.navigation-container{
+    padding: 0 12vw;
+}
 
 /*use for section title wrapper*/
 .section-title{
@@ -167,6 +174,9 @@ section, header{
     
     h1{
         font-size: 3.244rem !important;
+    }
+    .nav-logo{
+        max-height: 2.883rem;
     }
     h2{
         font-size: 2.883rem !important;
@@ -192,6 +202,9 @@ section, header{
     section, header{
         padding: 52px 10vw;
     }
+    .navigation-container{
+        padding: 0 10vw;
+    }
 
     /*use for section headers*/
     .section-title{
@@ -204,6 +217,9 @@ section, header{
     
     h1{
         font-size: 2.361rem !important;
+    }
+    .nav-logo{
+        max-height: 2.213rem;
     }
     h2{
         font-size: 2.213rem !important;
@@ -228,6 +244,10 @@ section, header{
     }
     section, header{
         padding: 32px 5vw;
+    }
+
+    .navigation-container{
+        padding: 0 5vw;
     }
 
     .section-title{

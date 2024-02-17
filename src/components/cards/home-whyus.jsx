@@ -1,14 +1,25 @@
 // this is the code for why choose us section of the home page
 
 import '../../styles/base.css';
-import '../../styles/home-whyus.css'
+import '../../styles/home-whyus.css';
+import { useState, useEffect } from 'react';
 function WhyUs({icon, title, subtitle, content}){
+    
+    function getColorTheme (){
+        const colorTheme = window.matchMedia('prefers-color-scheme:dark');
+        return  colorTheme === 'dark' ? 'dark' : 'light';
+    };
+    
+
+    const [theme, changeTheme] = useState(getColorTheme);
     
     return(
         <div className='card-main-wrapper'>
             <div className='card-title'>
                 <div className='icon-wrapper'>
-                    <img src={icon} alt={`${title} icon`} />
+                    {
+                        theme === 'dark' ? (<img src={icon.dark} alt={`${title} icon`} />) : (<img src={icon.light} alt={`${title} icon`} />)
+                    }
                 </div>
                 <span>
                     <h6 className='main-header'>{title}</h6>

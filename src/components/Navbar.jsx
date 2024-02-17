@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "../styles/Navbar.css"
+import "../styles/base.css"
 
 import Mobile from "./mobileNav/mobilenav"
 import Logo from "../assets/logo.svg"

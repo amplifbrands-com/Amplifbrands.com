@@ -4,6 +4,11 @@
     display: none;
 }
 
+.hero-sec{
+    background-color:#000;;
+    height: 100vh;
+}
+
 .section-title{
     margin-bottom: 52px;
 }

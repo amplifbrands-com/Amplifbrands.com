@@ -11,31 +11,46 @@ import hands from '../assets/why-us-icons/hands-icon.svg'
 import handsDark from '../assets/why-us-icons/hands-dark-icon.svg'
 export const whyUsData = [
     {
-        icon:straIcon,
+        icon:{
+            light:straIcon,
+            dark:straIconDark
+        },
         title:'Strategic Expertise',
         subtitle:'Strategic Minds at Work',
         content:"Amplif's seasoned experts navigate the digital landscape with a deep understanding of industry trends, ensuring your brand stays ahead of the curve"
     },
     {
-        icon:tailIcon,
+        icon:{
+            light:tailIcon,
+            dark:tailIconDark
+        },
         title:'Tailored Solutions',
         subtitle:'Innovate to Elevate',
         content:"Amplif doesn't believe in one-size-fits-all. We tailor our solutions to your unique needs, ensuring a customized approach for optimal results"
     },
     {
-        icon:lightBulb,
+        icon:{
+            light:lightBulb,
+            dark:lightBulbDark,
+        },
         title:'Innovation at Heart',
         subtitle:'Your Business, Your Way',
         content:"Amplif thrives on innovation. Our strategies are not just about keeping up; they're about leading the way in the fast-paced world of digital evolution"
     },
     {
-        icon:arrow,
+        icon:{
+            light:arrow,
+            dark:arrowDark
+        },
         title:'Continuous Adaptation',
         subtitle:'Adapt, Evolve, Succeed',
         content:"In the dynamic realm of digital marketing, Amplif thrives on continuous learning and adaptation, ensuring your brand is always at the forefront of industry trends."
     },
     {
-        icon:hands,
+        icon:{
+            light:hands,
+            dark:handsDark
+        },
         title:'Client-Centric Approach',
         subtitle:'Your Success is Our Priority',
         content:"Amplif's client-centric approach ensures that your business objectives and growth aspirations take center stage in every strategy we devise."

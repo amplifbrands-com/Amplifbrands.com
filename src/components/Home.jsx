@@ -12,12 +12,8 @@ import Testimonials from './cards/testimonials';
 const Home = () => {
   return (
   <div>
-    <header className="container mx-auto">
-
-    </header>
-    <section className=" row mx-auto">
+    <section className="hero-sec row mx-auto">
         <div className="section-title row text-center col-12"></div>
-
         <div class="row">
           <div class="col-lg-8 col-md-8 ">
             <h1>Ready to Amplif Your Brand?</h1>
