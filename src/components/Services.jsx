@@ -2,6 +2,28 @@ import React from 'react'
 import "../styles/Services.css"
 import {services} from "../assets/service-page-data.js"
 
+const ServiceHero = () => {
+
+    const serviceTitles = [
+      "Digital Marketing Consulting",
+      "Website Development",
+      "Website Maintenance",
+      "PPC Management",
+      "SEO Services",
+      "E-commerce"
+    ]
+
+    return (
+     <div className="service--hero">
+      <div className="hero--content">
+        <h1 className="text-center" >Explore Our Expert Solutions</h1>
+        <div className="hero--list">
+         { serviceTitles.map((title) => (<p>{title}</p>)) }
+        </div>
+      </div>
+     </div>
+   )
+ }
 
 const Deliverable = ({deliverable}) => {
   return (
@@ -27,6 +49,8 @@ const KeyActivity = ({activity}) => {
 const ServiceCard = ({service, index}) => {
 
   return (
+    <div className="service-wrapper">
+
           <div key={index} className="service-card">
 
                   <div className="service--info mb-5">
@@ -64,6 +88,8 @@ const ServiceCard = ({service, index}) => {
                               <button className="cta-btn">Learn More</button>
                         </div>                  
                       </div>
+       </div>
+
         )
 }
 
@@ -71,7 +97,7 @@ const Services = () => {
   
   return (
     <div className="services-container">
-      
+       <ServiceHero />
         { services.map( (service, index) => (
           <ServiceCard key={index} service={service} index={index} />
                     )

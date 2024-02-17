@@ -7,6 +7,7 @@ import WhyUs from './cards/home-whyus';
 import ServiCard from './cards/our-services';
 import { serviceData } from '../assets/service-card-data';
 import Form from './cards/message-form';
+import Testimonials from './cards/testimonials';
 
 const Home = () => {
   return (
@@ -73,6 +74,9 @@ const Home = () => {
           ))
         }
       </div>
+    </section>
+    <section>
+      <Testimonials />
     </section>
     <section className=" row mx-auto form-sec">
       <div className="section-title text-center col-12 row mx-auto">
