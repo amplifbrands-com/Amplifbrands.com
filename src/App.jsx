@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
 import Navbar from "./components/Navbar";
+import Footer from "./components/footer";
 import Services from "./components/Services";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/signin" element={<SignIn />} />
         <Route path="/services" element={<Services/>} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

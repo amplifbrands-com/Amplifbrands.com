@@ -1,0 +1,129 @@
+.footer-main-outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--nav-foot-bg);
+}
+
+.footer-main-inner{
+    width: 1240px;
+    padding: 100px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-quick-add-outer{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo-social, .footer-quick-outer,
+.footer-add-outer{
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-social-h6, .footer-quick-h6,
+.footer-add-h6{
+    color: rgba(255,255,255,0.83);
+}
+
+.footer-social-icons{
+    margin-top: 20px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-quick-li{
+    list-style: none;
+}
+
+.footer-quick-links, .footer-add-links{
+    color: rgba(255,255,255,0.83);
+    text-decoration: none;
+}
+
+.footer-add-content{
+    margin-top: 10px;
+    width: 280px;
+}
+
+.footer-add-links{
+    display: block;
+}
+
+.footer-add-icons{
+    margin-right: 10px;
+}
+
+.mobile-social{
+    display: none;
+}
+
+/************************** Responsive ******************************/
+
+
+@media screen and (max-width: 1400px) {
+    
+    .footer-main-inner{
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 780px){
+
+    .footer-main-inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-quick-add-outer{
+        width: 90%;
+    }
+
+    .footer-add-content{
+        width: 100%;
+    }
+    
+    .footer-logo-social{
+        width: 90%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
+
+@media screen and (max-width:580px){
+
+    .destop-social{
+        display: none;
+    }
+
+    .mobile-social{
+        display: block;
+    }
+
+    .footer-logo-social{
+        height: 100%;
+    }
+
+    .footer-quick-add-outer{
+        margin-top: 60px;
+        height: 550px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+
+/************************** Responsive End ******************************/
