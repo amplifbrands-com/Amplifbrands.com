@@ -361,3 +361,6 @@ textarea:focus::placeholder{
     color:var(--text-m);
 }
 
+svg{
+    fill: var(--sec-color) !important;
+}
