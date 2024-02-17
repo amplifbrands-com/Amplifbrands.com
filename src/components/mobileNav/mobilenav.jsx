@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 import Logo from "../../assets/logo.svg"
 import "../../styles/Navbar.css"
+import '../../styles/base.css'
 
 
 

@@ -3,6 +3,7 @@
 import '../../styles/base.css';
 import '../../styles/home-whyus.css'
 function WhyUs({icon, title, subtitle, content}){
+    
     return(
         <div className='card-main-wrapper'>
             <div className='card-title'>

@@ -42,6 +42,10 @@
     align-items: center;
 }
 
+.icon-wrapper svg{
+    fill: var(--sec-color);
+}
+
 .card-title span{
     display: flex;
     flex-direction: column;

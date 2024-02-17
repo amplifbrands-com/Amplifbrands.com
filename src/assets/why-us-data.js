@@ -1,9 +1,14 @@
 ///these are data used for cards used in the why choose use section on the home page
 import straIcon from '../assets/why-us-icons/strat-exp-icon.svg'
+import straIconDark from '../assets/why-us-icons/strat-exp-dark-icon.svg'
 import tailIcon from '../assets/why-us-icons/tail-icon.svg'
+import tailIconDark from '../assets/why-us-icons/tail-dark-icon.svg'
 import lightBulb from '../assets/why-us-icons/clarity_lightbulb-line.svg'
+import lightBulbDark from '../assets/why-us-icons/clarity_lightbulb-line-dark.svg'
 import arrow from '../assets/why-us-icons/arrow-icon.svg'
+import arrowDark from '../assets/why-us-icons/arrow-dark-icon.svg'
 import hands from '../assets/why-us-icons/hands-icon.svg'
+import handsDark from '../assets/why-us-icons/hands-dark-icon.svg'
 export const whyUsData = [
     {
         icon:straIcon,
