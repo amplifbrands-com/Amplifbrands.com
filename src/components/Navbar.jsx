@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import "../styles/Navbar.css"
+import "../styles/base.css"
 
 import Mobile from "./mobileNav/mobilenav"
 import Logo from "../assets/logo.svg"
 
+import { ThemeContext } from '../context/themeContext';
+
 
 const Navbar = () => {
+
+  const {theme, handleOnClick} = useContext(ThemeContext);
+
   return (
    <div className="navigation-container">
       <nav className="navbar">
@@ -24,7 +30,9 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="nav-btn-outer">
-          <button className='nav-btn cta-btn'>Book A Meeting</button>
+          <button className={`btn ${theme === "dark" ? "cta-btn" : "cat-btn" }`} onClick={handleOnClick}>
+            {theme ===  'light' ? 'Dark Mode' : 'Light Mode'}
+          </button>
         </div>
         <div className="mobile-bar">
           <Mobile />

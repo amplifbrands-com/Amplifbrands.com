@@ -1,6 +1,6 @@
 import React from 'react'
 import "../styles/Services.css"
-import {services} from "../assets/service-page-data.js"
+import {services} from "../assets/service-page-data"
 
 const ServiceHero = () => {
 
