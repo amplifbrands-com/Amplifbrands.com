@@ -8,6 +8,7 @@ import SignUp from "./components/SignUp";
 import Navbar from "./components/Navbar";
 import Footer from "./components/footer";
 import Services from "./components/Services";
+import Portfolio from "./components/portfolio";
 
 import { ThemeContext, themes } from "./context/themeContext";
 
@@ -52,6 +53,7 @@ useEffect( () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/signup" element={<SignUp />} />
             <Route path="/signin" element={<SignIn />} />
