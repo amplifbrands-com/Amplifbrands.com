@@ -104,7 +104,7 @@
   @media screen and (max-width: 640px) {
 
     .service--hero{
-      height:300px;
+      height:500px;
       max-height:50vh;
     }
     .hero-content{
@@ -113,7 +113,7 @@
     .hero--content h1{
       margin-bottom:16px;
     }
-    .hero--list p{
+    .hero--list a{
       margin:5px 0px;
     }
 
