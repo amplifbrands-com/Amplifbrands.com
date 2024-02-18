@@ -1,3 +1,5 @@
+@import './base.css';
+
 .navigation-container{
   display: flex;
   justify-content: center;
@@ -30,12 +32,47 @@
 .nav-li-links{
   text-decoration: none !important;
   color: #ffff;
+  position: relative;
+}
+
+.nav-li-links::before{
+  content: '';
+  position: absolute;
+  top:calc(100% + 4px);
+  left: 0;
+  width: 0%;
+  height:2px;
+  border-radius: 0 0 3px ;
+  z-index: 70;
+  background-color: var(--prim-color);
+  transition: all 0.25s;
+}
+
+.nav-li-links:hover::before{
+  width: 80%;
+  transition: all 0.25s;
 }
 
 .mobile-bar{
   display: none;
 }
 
+#active{
+  position: relative;
+  color: var(--prim-color);
+}
+
+#active::before{
+  content: '';
+  position: absolute;
+  top:calc(100% + 4px);
+  left: 0;
+  width: 80%;
+  height:2px;
+  border-radius: 0 0 3px ;
+  z-index: 70;
+  background-color: var(--prim-color);
+}
 
 /*************************** Mobile Nav ********************************/
 

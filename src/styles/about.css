@@ -1,3 +1,7 @@
+.about-hero{
+    padding-top: 20vh;
+}
+
 .about-hero-main{
     display: flex;
     justify-content: space-between;
@@ -11,9 +15,18 @@
 .about-hero-h4, .about-value-h4,
 .about-meet-h4{
     width: fit-content;
-    border-bottom-right-radius: 5px;
-    border: none;
-    border-bottom: 5px solid var(--sec-l-color);
+    position: relative;
+}
+
+.about-hero-h4::before, .about-value-h4::before,
+.about-meet-h4::before{
+    content: '';
+    height: 4px;
+    width: 80%;
+    position: absolute;
+    top: calc(100% + 5px);
+    background-color: var(--sec-color);
+    border-radius: 0 0 4px;
 }
 
 .about-hero-para{

@@ -6,12 +6,16 @@ import { useState, useEffect } from 'react';
 function WhyUs({icon, title, subtitle, content}){
     
     function getColorTheme (){
-        const colorTheme = window.matchMedia('prefers-color-scheme:dark');
-        return  colorTheme === 'dark' ? 'dark' : 'light';
+        const colorTheme = window.matchMedia('(prefers-color-scheme: dark)');
+        
+        return  colorTheme.matches ? 'dark' : 'light';
     };
     
-
     const [theme, changeTheme] = useState(getColorTheme);
+
+    window.matchMedia('(prefers-color-scheme:dark)').addEventListener('change',event => {
+        return event.matches ? changeTheme(getColorTheme) : changeTheme(getColorTheme); 
+    })
     
     return(
         <div className='card-main-wrapper'>
