@@ -1,3 +1,11 @@
+ul{
+    padding: 0 !important;
+    margin: 0;
+}
+.footer-logo{
+    max-height: 40px;
+}
+
 .footer-main-outer{
     display: flex;
     justify-content: center;
@@ -5,12 +13,16 @@
     background-color: var(--nav-foot-bg);
 }
 
+.footer-social-h6,.footer-quick-h6, .footer-add-h6, .footer-social-h6{
+    color: rgba(255,255,255,0.83);
+}
+
 .footer-main-inner{
-    width: 1240px;
-    padding: 100px 0px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #000;
 }
 
 .footer-quick-add-outer{
@@ -28,10 +40,6 @@
     justify-content: space-between;
 }
 
-.footer-social-h6, .footer-quick-h6,
-.footer-add-h6{
-    color: rgba(255,255,255,0.83);
-}
 
 .footer-social-icons{
     margin-top: 20px;
@@ -68,14 +76,6 @@
 
 /************************** Responsive ******************************/
 
-
-@media screen and (max-width: 1400px) {
-    
-    .footer-main-inner{
-        width: 90%;
-    }
-
-}
 
 @media screen and (max-width: 780px){
 

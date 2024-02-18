@@ -3,7 +3,7 @@
   
 
   .service--hero{
-    height:80vh;
+    height:100vh;
     display:flex;
     justify-content:center;
     align-items: center;
@@ -25,7 +25,8 @@
     color:var(--text-w-h);
   }
 
-  .hero--list p{
+  .hero--list a{
+    color: rgb(255, 255, 255);
     width:220px;
     text-align:center;
     margin: 12px 0px;
@@ -62,9 +63,16 @@
     font-weight:500;
   }
 
+  .deliverables-wrapper{
+    height: fit-content;
+  }
+
+  .deliverables{
+    height: fit-content;
+  }
+
   .deliverables div{
-    height:330px;
-    width:266px;
+    height: fit-content;
     padding:16px 8px;
 
   }
@@ -87,8 +95,8 @@
   }
 
   .service-key-icon{
-    height:38px;
-    width:38px;
+    height:auto;
+    width:24px;
     margin-right:24px;
   }
   

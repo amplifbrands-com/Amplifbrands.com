@@ -131,12 +131,16 @@ select, select:focus, option{
 h1{
     font-size:4.778rem !important;
 }
+.nav-logo{
+    max-height: 3.981rem;
+}
 h2{
     font-size: 3.981rem !important;
 }
 h3{
     font-size: 3.318rem !important;
 }
+
 h4{
     font-size: 2.765rem !important;
 }
@@ -157,16 +161,23 @@ small{
 section, header{
     padding: 52px 12vw;
 }
+.navigation-container{
+    padding: 0 12vw;
+}
 
 /*use for section title wrapper*/
 .section-title{
     margin-bottom: 52px;
 }
 
+
 @media screen and (max-width:1200px) {
     
     h1{
         font-size: 3.244rem !important;
+    }
+    .nav-logo{
+        max-height: 2.883rem;
     }
     h2{
         font-size: 2.883rem !important;
@@ -192,6 +203,9 @@ section, header{
     section, header{
         padding: 52px 10vw;
     }
+    .navigation-container{
+        padding: 0 10vw;
+    }
 
     /*use for section headers*/
     .section-title{
@@ -204,6 +218,9 @@ section, header{
     
     h1{
         font-size: 2.361rem !important;
+    }
+    .nav-logo{
+        max-height: 2.213rem;
     }
     h2{
         font-size: 2.213rem !important;
@@ -230,6 +247,10 @@ section, header{
         padding: 32px 5vw;
     }
 
+    .navigation-container{
+        padding: 0 5vw;
+    }
+
     .section-title{
         margin-bottom: 32px;
     }
@@ -238,12 +259,12 @@ section, header{
 
 .cta-btn{
     background-image: linear-gradient(to right, rgba(211,162,0,1), rgba(255,215,42,1));
-    font-weight: 500;
+    font-weight: 600;
     color: var(--text-b);
     border:none;
     text-transform: uppercase;
     border-radius: 0.4rem;
-    padding: 0.65rem 1.6rem;
+    padding: 0.6rem 1.6rem;
 }
 
 .cat-btn{
@@ -278,8 +299,9 @@ section, header{
     border-bottom: 0.2rem  solid var(--prim-color) ;
     background-color: unset;
     padding: 0.8rem 0.2rem;
-    padding-bottom: 0.2rem;
-    text-transform: uppercase;
+    padding-bottom: 0.1rem;
+    padding-left:0;
+    text-transform: capitalize;
 }
 
 /* input field appearance style */

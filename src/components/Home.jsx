@@ -12,19 +12,15 @@ import Testimonials from './cards/testimonials';
 const Home = () => {
   return (
   <div>
-    <header className="container mx-auto">
-
-    </header>
-    <section className=" row mx-auto">
+    <section className="hero-sec row mx-auto">
         <div className="section-title row text-center col-12"></div>
-
-        <div class="row">
-          <div class="col-lg-8 col-md-8 ">
-            <h1>Ready to Amplif Your Brand?</h1>
+        <div className="row">
+          <div className="col-lg-8 col-md-8 ">
+            <h1 className='main-header'>Ready to Amplif Your Brand?</h1>
             <h6 className="sub-header pt-2">
               Partner with Amplif - Your Accelerator in the Digital Era
             </h6>
-            <p className="sub-header pt-5">
+            <p className="body-text pt-5">
               Welcome to Amplif, where we turn brand visions into realities.
               With creativity as our compass and strategy as our guide, we're
               here to propel your brand forward. Let's embark on a journey to
@@ -33,7 +29,7 @@ const Home = () => {
             <button type="button" className="cta-btn mt-5" >Get a Free Consultation</button>
             
           </div>
-          <div class="col-lg-4 col-md-4">
+          <div className="col-lg-4 col-md-4">
             <img src="../assets1/Rectangle.png" alt="" />
           </div>
         </div>
@@ -78,7 +74,7 @@ const Home = () => {
     <section>
       <Testimonials />
     </section>
-    <section className=" row mx-auto form-sec">
+    {/* <section className=" row mx-auto form-sec">
       <div className="section-title text-center col-12 row mx-auto">
         <h3 className="main-header col-12">
           Hello!
@@ -86,7 +82,7 @@ const Home = () => {
         <h6 className="sub-header col-12 col-sm-8 mx-auto">If you have a requirement to discuss or want to learn more about how we work, feel free to reach out.</h6>
       </div>
       <Form />
-    </section>
+    </section> */}
   </div>
   )
 }

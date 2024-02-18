@@ -121,7 +121,7 @@ const About = () => {
         </div>
       </section>
       
-      <section className=" row mx-auto about-form-section">
+      {/* <section className=" row mx-auto about-form-section">
         <div className="section-title text-center col-12 row mx-auto">
           <h3 className="main-header col-12">
             Get In Touch
@@ -129,7 +129,7 @@ const About = () => {
           <h6 className="sub-header col-12 col-sm-8 mx-auto about-form-h6">Ready to elevate your digital presence and achieve your business goals? Contact us today to learn more about our services and discover how Amplif can help you succeed in the digital age.</h6>
         </div>
         <Form />
-      </section>
+      </section> */}
     </>
   )
 }

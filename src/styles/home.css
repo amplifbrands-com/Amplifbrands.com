@@ -4,12 +4,26 @@
     display: none;
 }
 
+.hero-sec{
+    background-color:#000;;
+    height: 100vh;
+}
+
+.hero-sec .main-header{
+    color:var(--text-w-h);
+}
+
+.hero-sec .sub-header, .hero-sec .body-text{
+    color:var(--text-w-m);
+}
+
 .section-title{
     margin-bottom: 52px;
 }
 .whyus-sec{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
     gap:24px;
 }
 
