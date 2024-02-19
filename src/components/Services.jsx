@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import "../styles/Services.css"
-import {services} from "../assets/service-page-data.js"
+import {services} from "../assets/service-page-data"
+import { ThemeContext } from "../context/themeContext";
 
 const ServiceHero = () => {
 
@@ -25,11 +26,12 @@ const ServiceHero = () => {
    )
  }
 
-const Deliverable = ({deliverable}) => {
+const Deliverable = ({deliverable, theme}) => {
+  
   return (
             <div className="deliverables col-12 col-md d-flex justify-content-center">
               <div className=" d-flex flex-md-column flex-row align-items-md-center justify-content-md-center " >
-                  <img src={deliverable.icon} alt="" className="deliverable-icon" />
+                  <img src={ theme==='light'? deliverable.icon.light: deliverable.icon.dark} alt="" className="deliverable-icon" />
                   <p className=" sub-header text-center">{deliverable.subtitle}</p>
               </div>
             </div>
@@ -37,16 +39,16 @@ const Deliverable = ({deliverable}) => {
 }
 
 
-const KeyActivity = ({activity}) => {
+const KeyActivity = ({activity, theme}) => {
   return (
           <div className="key-activities mb-4 d-flex align-items-center">
-                <img src={activity.icon} alt="" className="service-key-icon" />
+                <img src={ theme==="light" ? activity.icon.light: activity.icon.dark} alt="" className="service-key-icon" />
                 <p className="body-text">{activity.subtitle}</p>
           </div>
   )
 }
 
-const ServiceCard = ({service, index}) => {
+const ServiceCard = ({service, index, theme}) => {
 
   return (
     <section className="service-wrapper" id={service.title}>
@@ -71,7 +73,7 @@ const ServiceCard = ({service, index}) => {
                             <div className="row deliverables-wrapper">
                               {service.deliverables.map((deliverable, index) => (
                                   
-                                  <Deliverable key={index} deliverable={deliverable} />
+                                  <Deliverable key={index} deliverable={deliverable} theme={theme} />
                                   
                               ))}
                             </div>
@@ -80,7 +82,7 @@ const ServiceCard = ({service, index}) => {
                             <h6 className="mb-4 main-header" >Key Activities:</h6>
                               { 
                                 service.keyActivities.map( (activity, index) => (
-                                 <KeyActivity key={index} activity={activity} />
+                                 <KeyActivity key={index} activity={activity} theme={theme} />
                                 ))  
                               }
                         </div>
@@ -94,12 +96,12 @@ const ServiceCard = ({service, index}) => {
 }
 
 const Services = () => {
-  
+  const { theme } = useContext(ThemeContext);
   return (
     <div className="services-container">
        <ServiceHero />
         { services.map( (service, index) => (
-          <ServiceCard key={index} service={service} index={index} />
+          <ServiceCard key={index} service={service} index={index} theme={theme} />
                     )
       )}      
     </div>

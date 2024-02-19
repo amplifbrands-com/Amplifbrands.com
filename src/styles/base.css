@@ -267,6 +267,16 @@ section, header{
     padding: 0.6rem 1.6rem;
 }
 
+.cat-btn{
+    background-image: linear-gradient(to right, rgb(255, 196, 0), rgb(223, 210, 152));
+    font-weight: 500;
+    color: var(--text-b);
+    border:none;
+    text-transform: uppercase;
+    border-radius: 0.4rem;
+    padding: 0.65rem 1.6rem;
+}
+
 .cta-btn:disabled{
     background-image: linear-gradient(to right, rgba(211,162,0,0.3), rgba(255,215,42,0.3));
     color: var(--text-b-m);
