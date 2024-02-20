@@ -1,5 +1,6 @@
 import React, {useContext} from 'react'
 import "../styles/Services.css"
+import '../styles/base.css'
 import {services} from "../assets/service-page-data"
 import { ThemeContext } from "../context/themeContext";
 
