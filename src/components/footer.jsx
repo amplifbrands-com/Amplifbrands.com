@@ -36,8 +36,8 @@ const Footer = () => {
               </div>
               <div className="footer-social-icons">
                 <Link to="" className="footer-social-link"><img src={Twitter} alt="" title='' className='footer-social-img' /></Link>
-                <Link to="" className="footer-social-link"><img src={Instagram} alt="" title='' className='footer-social-img' /></Link>
-                <Link to="https://www.facebook.com/share/p/QXwaD8UEd9bw9jWb/?mibextid=oFDknk" className="footer-social-link"><img src={Facebook} alt="" title='' className='footer-social-img' /></Link>
+                <Link to="https://www.instagram.com/amplifbrands?igsh=M2ZrZzNsM2J0eXVt" className="footer-social-link"><img src={Instagram} alt="" title='' className='footer-social-img' /></Link>
+                <Link to="https://www.facebook.com/profile.php?id=61555981845045&mibextid=ZbWKwL" className="footer-social-link"><img src={Facebook} alt="" title='' className='footer-social-img' /></Link>
                 <Link to="" className="footer-social-link"><img src={Youtube} alt="" title='' className='footer-social-img' /></Link>
               </div>
             </div>
@@ -66,7 +66,7 @@ const Footer = () => {
               <div className="footer-add-content">
                 <Link to="" className="footer-add-links"><IoMdMail className='footer-add-icons'/>info@amplif.com</Link><br /> 
                 <Link to="" className="footer-add-links">
-                <IoLocationSharp className='footer-add-icons' />Amplif Brands Private Limited, 3rd Croos Rd, Electonics City Phase 1, Electronic City, Bengaluru,<br />
+                <IoLocationSharp className='footer-add-icons' />Amplif Brands Private Limited, 3rd Cross Rd, Electonics City Phase 1, Electronic City, Bengaluru,<br />
                 Karnataka 560100
                 </Link><br /> 
                 <Link to="" className="footer-add-links"><FaPhone className='footer-add-icons' />+91 95457 49447</Link>
@@ -80,8 +80,8 @@ const Footer = () => {
               </div>
               <div className="footer-social-icons">
                 <Link to="" className="footer-social-link"><img src={Twitter} alt="" title='' className='footer-social-img' /></Link>
-                <Link to="" className="footer-social-link"><img src={Instagram} alt="" title='' className='footer-social-img' /></Link>
-                <Link to="" className="footer-social-link"><img src={Facebook} alt="" title='' className='footer-social-img' /></Link>
+                <Link to="https://www.instagram.com/amplifbrands?igsh=M2ZrZzNsM2J0eXVt" className="footer-social-link"><img src={Instagram} alt="" title='' className='footer-social-img' /></Link>
+                <Link to="https://www.facebook.com/profile.php?id=61555981845045&mibextid=ZbWKwL" className="footer-social-link"><img src={Facebook} alt="" title='' className='footer-social-img' /></Link>
                 <Link to="" className="footer-social-link"><img src={Youtube} alt="" title='' className='footer-social-img' /></Link>
               </div>
             </div>
