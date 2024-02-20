@@ -32,7 +32,7 @@ const Deliverable = ({deliverable, theme}) => {
             <div className="deliverables col-12 col-md d-flex justify-content-center">
               <div className=" d-flex flex-md-column flex-row align-items-md-center justify-content-md-center " >
                   <img src={ theme==='light'? deliverable.icon.light: deliverable.icon.dark} alt="" className="deliverable-icon" />
-                  <p className={`${theme === 'light' ? 'sub-header text-center': 'text-light sub-header text-center'}`}>{deliverable.subtitle}</p>
+                  <p className={`${theme === 'light' ? 'body-text text-center': 'text-light body-text text-center'}`}>{deliverable.subtitle}</p>
               </div>
             </div>
   )
