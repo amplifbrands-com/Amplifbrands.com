@@ -37,7 +37,7 @@ const Footer = () => {
               <div className="footer-social-icons">
                 <Link to="" className="footer-social-link"><img src={Twitter} alt="" title='' className='footer-social-img' /></Link>
                 <Link to="" className="footer-social-link"><img src={Instagram} alt="" title='' className='footer-social-img' /></Link>
-                <Link to="" className="footer-social-link"><img src={Facebook} alt="" title='' className='footer-social-img' /></Link>
+                <Link to="https://www.facebook.com/share/p/QXwaD8UEd9bw9jWb/?mibextid=oFDknk" className="footer-social-link"><img src={Facebook} alt="" title='' className='footer-social-img' /></Link>
                 <Link to="" className="footer-social-link"><img src={Youtube} alt="" title='' className='footer-social-img' /></Link>
               </div>
             </div>
@@ -66,12 +66,10 @@ const Footer = () => {
               <div className="footer-add-content">
                 <Link to="" className="footer-add-links"><IoMdMail className='footer-add-icons'/>info@amplif.com</Link><br /> 
                 <Link to="" className="footer-add-links">
-                <IoLocationSharp className='footer-add-icons' />Riverside Building,
-                  County Hall, <br />
-                  London SE1 7PB,<br />
-                  United Kingdom
+                <IoLocationSharp className='footer-add-icons' />Amplif Brands Private Limited, 3rd Croos Rd, Electonics City Phase 1, Electronic City, Bengaluru,<br />
+                Karnataka 560100
                 </Link><br /> 
-                <Link to="" className="footer-add-links"><FaPhone className='footer-add-icons' />45148-59391</Link>
+                <Link to="" className="footer-add-links"><FaPhone className='footer-add-icons' />+91 95457 49447</Link>
               </div>
             </div>
             <div className="footer-social-outer mobile-social">
