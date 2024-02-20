@@ -32,7 +32,7 @@ const Deliverable = ({deliverable, theme}) => {
             <div className="deliverables col-12 col-md d-flex justify-content-center">
               <div className=" d-flex flex-md-column flex-row align-items-md-center justify-content-md-center " >
                   <img src={ theme==='light'? deliverable.icon.light: deliverable.icon.dark} alt="" className="deliverable-icon" />
-                  <p className=" sub-header text-center">{deliverable.subtitle}</p>
+                  <p className={`${theme === 'light' ? 'sub-header text-center': 'text-light sub-header text-center'}`}>{deliverable.subtitle}</p>
               </div>
             </div>
   )
@@ -43,7 +43,7 @@ const KeyActivity = ({activity, theme}) => {
   return (
           <div className="key-activities mb-4 d-flex align-items-center">
                 <img src={ theme==="light" ? activity.icon.light: activity.icon.dark} alt="" className="service-key-icon" />
-                <p className="body-text">{activity.subtitle}</p>
+                <p className={`${theme === 'light' ? 'body-text': 'text-light body-text text-center'}`}>{activity.subtitle}</p>
           </div>
   )
 }
@@ -51,7 +51,7 @@ const KeyActivity = ({activity, theme}) => {
 const ServiceCard = ({service, index, theme}) => {
 
   return (
-    <section className="service-wrapper" id={service.title}>
+    <section className={`${theme === 'light' ? 'service-wrapper': 'service-wrapper-dark'}`} id={service.title}>
 
           <div key={index} >
 
@@ -60,8 +60,8 @@ const ServiceCard = ({service, index, theme}) => {
                           <h4 className="important-header mb-3 d-md-none d-block">{service.title}</h4>
 
                           <div className={`col-md-6 col-lg-8 col ${index % 2 !== 0 ? 'order-md-2' : ''}`}>
-                              <h4 className="important-header mb-3 d-md-block d-none">{service.title}</h4>
-                              <p className="body-text">{service.description}</p>
+                              <h4 className={`${theme === 'light' ? 'body-text': 'text-light body-text'}`}>{service.title}</h4>
+                              <p className={`${theme === 'light' ? 'body-text': 'text-light body-text'}`}>{service.description}</p>
                           </div>
                           <div className={`col-md-6 col-lg-4 col ${index % 2 !== 0 ? 'order-md-1' : ''}`}>
                               <img src={service.image} alt={service.title} className="service-image img-fluid" />
@@ -69,7 +69,7 @@ const ServiceCard = ({service, index, theme}) => {
                         </div>
                   </div>
                         <div className="service--deliverables mb-5">
-                            <h6 className="text-center main-header mb-2">Deliverables</h6>
+                            <h6 className={`${theme === 'light' ? 'text-center main-header mb-2': 'text-light text-center main-header mb-2'}`}>Deliverables</h6>
                             <div className="row deliverables-wrapper">
                               {service.deliverables.map((deliverable, index) => (
                                   
@@ -79,7 +79,7 @@ const ServiceCard = ({service, index, theme}) => {
                             </div>
                         </div>
                         <div className="service--activities mb-5">
-                            <h6 className="mb-4 main-header" >Key Activities:</h6>
+                            <h6 className={`${theme === 'light' ? 'mb-4 main-header': 'text-light mb-4 main-header'}`}>Key Activities:</h6>
                               { 
                                 service.keyActivities.map( (activity, index) => (
                                  <KeyActivity key={index} activity={activity} theme={theme} />

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react'
 import { Link } from 'react-router-dom';
 import '../styles/base.css';
 import '../styles/home.css';
@@ -9,7 +9,12 @@ import { serviceData } from '../assets/service-card-data';
 import Form from './cards/message-form';
 import Testimonials from './cards/testimonials';
 
+
+import { ThemeContext } from "../context/themeContext";
+
+
 const Home = () => {
+  const { theme } = useContext(ThemeContext);
   return (
   <div>
     <section className="hero-sec row mx-auto">
@@ -35,17 +40,17 @@ const Home = () => {
         </div>
       </section>
     <section className="text-center row mx-auto col-12">
-      <h3 className="main-header">
-        our mission
+      <h3 className={`${theme === 'light' ? 'main-header': 'text-light'}`}>
+        Our Mission
       </h3>
-      <p className="sub-header col-12 col-sm-8 mx-auto">Our mission at Amplif is to empower startup entrepreneurs with tailored marketing solutions crafted by our experts, addressing their unique pain points, driving exponential growth, and unleashing their full potential.</p>
+      <p className={`${theme === 'light' ? 'sub-header col-12 col-sm-8 mx-auto': 'text-light sub-header col-12 col-sm-8 mx-auto'}`}>Our mission at Amplif is to empower startup entrepreneurs with tailored marketing solutions crafted by our experts, addressing their unique pain points, driving exponential growth, and unleashing their full potential.</p>
     </section>
     <section className=" row mx-auto">
       <div className="section-title text-center row col-12 mx-auto">
-        <h3 className="main-header col-12">
-          why choose us?
+        <h3 className={`${theme === 'light' ? 'main-header col-12': 'text-light'}`}>
+          Why Choose Us?
         </h3>
-        <h6 className="sub-header col-12 col-sm-8 mx-auto">Navigating the Digital Frontier</h6>
+        <h6 className={`${theme === 'light' ? 'sub-header col-12 col-sm-8 mx-auto': 'text-light sub-header col-12 col-sm-8 mx-auto'}`}>Navigating the Digital Frontier</h6>
       </div>
       <div className="whyus-sec col-12">
         {
@@ -57,10 +62,10 @@ const Home = () => {
     </section>
     <section className=" row mx-auto">
       <div className="section-title row text-center col-12 mx-auto">
-        <h3 className="main-header col-12">
+        <h3 className={`${theme === 'light' ? 'main-header col-12': 'text-light'}`}>
         Our Services
         </h3>
-        <h6 className="sub-header col-12 col-sm-8 mx-auto">Transformative Digital Solutions Tailored for Your Success</h6>
+        <h6 className= {`${theme === 'light' ? 'sub-header col-12 col-sm-8 mx-auto': 'text-light sub-header col-12 col-sm-8 mx-auto'}`}>Transformative Digital Solutions Tailored for Your Success</h6>
       </div>
 
       <div className="servi-sec col-12">
