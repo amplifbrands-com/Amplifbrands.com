@@ -1,20 +1,32 @@
-import React from 'react'
+import React, {useContext} from 'react'
 
 import Form from './cards/message-form';
 import { data } from './datafile/about-data'
 import Card from './datafile/about-card'
 
+import Hero from "../assets/about-us/about-hero.svg"
+import Over1 from "../assets/about-us/our-value-1.svg"
+import Over2 from "../assets/about-us/our-value-2.svg"
+import Over3 from "../assets/about-us/our-value-3.svg"
+import Over4 from "../assets/about-us/our-value-4.svg"
+
 import '../styles/base.css';
 import '../styles/about.css';
 
+import { ThemeContext } from "../context/themeContext";
+
+
 
 const About = () => {
+
+  const { theme } = useContext(ThemeContext);
+
   return (
     <>
       <section className="about-hero">
         <div className="about-hero-inner">
           <div className="about-hero-heading">
-            <h4 className="about-hero-h4">
+            <h4 className={`${theme === 'light' ? 'about-hero-h4': 'about-hero-h4-dark'}`}>
               About Amplif
             </h4>
           </div>
@@ -37,60 +49,60 @@ const About = () => {
               </p>
             </div>
             <div className="about-hero-image">
-              <img src="" alt="" title='' width={494} height={494} className='about-hero-pic' />
+              <img src={Hero} alt="" title='' width={494} height={494} className='about-hero-pic' />
             </div>
           </div>
         </div>
       </section>
 
-      <section className="about-value">
+      <section className={`${theme === 'light' ? 'about-value' : 'bg-dark'}`}>
         <div className="about-value-inner">
-          <h4 className="about-value-h4">
+          <h4 className={`${theme === 'light' ? 'about-value-h4': 'about-value-h4-dark'}`}>
             Our Value
           </h4>
           <div className="about-value-card-content">
             <div className="about-value-card-outer">
               <div className="about-value-card-inner">
-                <img src="" alt="" title='' className='about-value-icon' width={200} height={200} />
+                <img src={Over1} alt="" title='' className='about-value-icon' />
               </div>
               <div className="about-value-card-inner">
-                <img src="" alt="" title='' className='about-value-icon' width={200} height={200} />
+                <img src={Over2} alt="" title='' className='about-value-icon' />
               </div>
               <div className="about-value-card-inner">
-                <img src="" alt="" title='' className='about-value-icon' width={200} height={200} />
+                <img src={Over3} alt="" title='' className='about-value-icon' />
               </div>
               <div className="about-value-card-inner">
-                <img src="" alt="" title='' className='about-value-icon' width={200} height={200} />
+                <img src={Over4} alt="" title='' className='about-value-icon' />
               </div>
             </div>
             <div className="about-value-content-outer">
               <div className="about-value-content">
                 <p className="about-value-para">
-                  <span className="about-value-span">Integrity: </span>
+                  <span className={`${theme === 'light' ? 'about-value-span': 'text-light'}`}>Integrity: </span>
                   We uphold the highest standards of integrity, honesty, and transparency in all of our interactions, building trust and credibility with our partnered businesses.
                 </p>
               </div>
               <div className="about-value-content">
                 <p className="about-value-para">
-                  <span className="about-value-span">Empowerment: </span>
+                  <span className={`${theme === 'light' ? 'about-value-span': 'text-light'}`}>Empowerment: </span>
                   We empower entrepreneurs with the right tools, knowledge, and support they need to succeed in their ventures.
                 </p>
               </div>
               <div className="about-value-content">
                 <p className="about-value-para">
-                  <span className="about-value-span">Collaboration: </span>
+                  <span className={`${theme === 'light' ? 'about-value-span': 'text-light'}`}>Collaboration: </span>
                   We value collaboration and teamwork, understanding that working together leads to greater success.
                 </p>
               </div>
               <div className="about-value-content">
                 <p className="about-value-para">
-                  <span className="about-value-span">Excellence: </span>
+                  <span className={`${theme === 'light' ? 'about-value-span': 'text-light'}`}>Excellence: </span>
                   We are committed to excellence in everything we do, striving to deliver the highest quality services and results to our partnered businesses.
                 </p>
               </div>
               <div className="about-value-content">
                 <p className="about-value-para">
-                  <span className="about-value-span">Impact: </span>
+                  <span className={`${theme === 'light' ? 'about-value-span': 'text-light'}`}>Impact: </span>
                   We are driven by the desire to make a meaningful impact, helping entrepreneurs and businesses achieve their goals and help them to reach their full potential.
                 </p>
               </div>
@@ -102,7 +114,7 @@ const About = () => {
       <section className="about-meet-expert">
         <div className="about-meet-inner">
           <div className="about-meet-heading">
-            <h4 className="about-meet-h4">
+            <h4 className={`${theme === 'light' ? 'about-meet-h4': 'about-meet-h4-dark'}`}>
               Meet Our Experts
             </h4>
           </div>

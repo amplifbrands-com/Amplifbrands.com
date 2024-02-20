@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa'; 
 import { Link } from 'react-router-dom';
+import { ThemeContext } from '../../context/themeContext';
 
 
 import Logo from "../../assets/logo.svg"
@@ -10,6 +11,7 @@ import '../../styles/base.css'
 
 
 const MobileNav = () => {
+  const { theme } = useContext(ThemeContext);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
   
     const toggleMenu = () => {
@@ -31,7 +33,7 @@ const MobileNav = () => {
         </div>
         {isMenuOpen && (
           <div className="menu-overlay" onClick={closeMenu}>
-            <div className="menu-container" onClick={handleMenuClick}>
+            <div className={`${theme === 'light' ? 'menu-container': 'bg-dark menu-container'}`} onClick={handleMenuClick}>
               <div className="nav-menu">
                 <div className="mobile-nav-logo-outer">
                   <Link to="/">
@@ -41,16 +43,16 @@ const MobileNav = () => {
                 </div>
                 <ul className='mobile-nav-ul'>
                   <li className='mobile-nav-li'>
-                    <Link to="/" className='mobile-nav-link' onClick={closeMenu}>Home</Link>
+                    <Link to="/" className={`${theme === 'light' ? 'mobile-nav-link': 'text-light mobile-nav-link'}`} onClick={closeMenu}>Home</Link>
                   </li>
                   <li className='mobile-nav-li'>
-                    <Link to="/about" className='mobile-nav-link' onClick={closeMenu}>About Us</Link>
+                    <Link to="/about" className={`${theme === 'light' ? 'mobile-nav-link': 'text-light mobile-nav-link'}`} onClick={closeMenu}>About Us</Link>
                   </li>
                   <li className='mobile-nav-li'>
-                    <Link to="/services" className='mobile-nav-link' onClick={closeMenu}>Services</Link>
+                    <Link to="/services" className={`${theme === 'light' ? 'mobile-nav-link': 'text-light mobile-nav-link'}`} onClick={closeMenu}>Services</Link>
                   </li>
                   <li className='mobile-nav-li'>
-                    <Link to="/contact" className='mobile-nav-link' onClick={closeMenu}>Contact Us</Link>
+                    <Link to="/contact" className={`${theme === 'light' ? 'mobile-nav-link': 'text-light mobile-nav-link'}`} onClick={closeMenu}>Contact Us</Link>
                   </li>
                   <li className='mobile-nav-li'>
                     <button className='nav-btn cta-btn'>Book A Meeting</button>

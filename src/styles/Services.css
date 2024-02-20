@@ -45,8 +45,13 @@
     padding: 52px 100px;
     width:1440px;
   } 
+  
   .service-wrapper:nth-child(odd) {
     background-color: var(--sec-bg); 
+  }
+  
+  .service-wrapper-dark:nth-child(odd) {
+    background-color: var(--text-b); 
   }
 
   .service--info{

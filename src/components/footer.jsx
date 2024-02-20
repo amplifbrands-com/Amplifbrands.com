@@ -36,8 +36,8 @@ const Footer = () => {
               </div>
               <div className="footer-social-icons">
                 <Link to="" className="footer-social-link"><img src={Twitter} alt="" title='' className='footer-social-img' /></Link>
-                <Link to="https://www.instagram.com/amplifbrands?igsh=M2ZrZzNsM2J0eXVt" className="footer-social-link"><img src={Instagram} alt="" title='' className='footer-social-img' /></Link>
-                <Link to="https://www.facebook.com/profile.php?id=61555981845045&mibextid=ZbWKwL" className="footer-social-link"><img src={Facebook} alt="" title='' className='footer-social-img' /></Link>
+                <Link to="" className="footer-social-link"><img src={Instagram} alt="" title='' className='footer-social-img' /></Link>
+                <Link to="" className="footer-social-link"><img src={Facebook} alt="" title='' className='footer-social-img' /></Link>
                 <Link to="" className="footer-social-link"><img src={Youtube} alt="" title='' className='footer-social-img' /></Link>
               </div>
             </div>
@@ -50,11 +50,11 @@ const Footer = () => {
                 </h6>
               </div>
               <ul className="footer-quick-ul">
-                <li className="footer-quick-li"><Link to="/services" className="footer-quick-links">Service</Link></li>
-                <li className="footer-quick-li"><Link to="/portfolio" className="footer-quick-links">Portfolio</Link></li>
-                <li className="footer-quick-li"><Link to="/Pricing" className="footer-quick-links">Pricing</Link></li>
-                <li className="footer-quick-li"><Link to="/contact" className="footer-quick-links">Contact Us</Link></li>
-                <li className="footer-quick-li"><Link to="/our-team" className="footer-quick-links">Our Team</Link></li>
+                <li className="footer-quick-li"><Link to="/" className="footer-quick-links">Service</Link></li>
+                <li className="footer-quick-li"><Link to="/" className="footer-quick-links">Portfolio</Link></li>
+                <li className="footer-quick-li"><Link to="/" className="footer-quick-links">Pricing</Link></li>
+                <li className="footer-quick-li"><Link to="/" className="footer-quick-links">Contact Us</Link></li>
+                <li className="footer-quick-li"><Link to="/" className="footer-quick-links">Our Team</Link></li>
               </ul>
             </div>
             <div className="footer-add-outer">
@@ -66,10 +66,12 @@ const Footer = () => {
               <div className="footer-add-content">
                 <Link to="" className="footer-add-links"><IoMdMail className='footer-add-icons'/>info@amplif.com</Link><br /> 
                 <Link to="" className="footer-add-links">
-                <IoLocationSharp className='footer-add-icons' />Amplif Brands Private Limited, 3rd Cross Rd, Electonics City Phase 1, Electronic City, Bengaluru,<br />
-                Karnataka 560100
+                <IoLocationSharp className='footer-add-icons' />Riverside Building,
+                  County Hall, <br />
+                  London SE1 7PB,<br />
+                  United Kingdom
                 </Link><br /> 
-                <Link to="" className="footer-add-links"><FaPhone className='footer-add-icons' />+91 95457 49447</Link>
+                <Link to="" className="footer-add-links"><FaPhone className='footer-add-icons' />45148-59391</Link>
               </div>
             </div>
             <div className="footer-social-outer mobile-social">
@@ -80,8 +82,8 @@ const Footer = () => {
               </div>
               <div className="footer-social-icons">
                 <Link to="" className="footer-social-link"><img src={Twitter} alt="" title='' className='footer-social-img' /></Link>
-                <Link to="https://www.instagram.com/amplifbrands?igsh=M2ZrZzNsM2J0eXVt" className="footer-social-link"><img src={Instagram} alt="" title='' className='footer-social-img' /></Link>
-                <Link to="https://www.facebook.com/profile.php?id=61555981845045&mibextid=ZbWKwL" className="footer-social-link"><img src={Facebook} alt="" title='' className='footer-social-img' /></Link>
+                <Link to="" className="footer-social-link"><img src={Instagram} alt="" title='' className='footer-social-img' /></Link>
+                <Link to="" className="footer-social-link"><img src={Facebook} alt="" title='' className='footer-social-img' /></Link>
                 <Link to="" className="footer-social-link"><img src={Youtube} alt="" title='' className='footer-social-img' /></Link>
               </div>
             </div>

@@ -1,60 +1,61 @@
 
-import hands from '../../assets/why-us-icons/hands-icon.svg'
+
+import Expert from "../../assets/about-us/about-expert.svg"
 
 
 export const data = [
     {   
         id: 1,
-        image:hands,
+        image:Expert,
         name:'Vimal',
         position:"Don't Know Yet",
         about:"Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
     {   
         id: 2,
-        image:hands,
+        image:Expert,
         name:'Vimal',
         position:"Don't Know Yet",
         about:"Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
     {   
         id: 3,
-        image:hands,
+        image:Expert,
         name:'Vimal',
         position:"Don't Know Yet",
         about:"Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
     {   
         id: 4,
-        image:hands,
+        image:Expert,
         name:'Vimal',
         position:"Don't Know Yet",
         about:"Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
     {   
         id: 5,
-        image:hands,
+        image:Expert,
         name:'Vimal',
         position:"Don't Know Yet",
         about:"Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
     {   
         id: 6,
-        image:hands,
+        image:Expert,
         name:'Vimal',
         position:"Don't Know Yet",
         about:"Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
     {   
         id: 7,
-        image:hands,
+        image:Expert,
         name:'Vimal',
         position:"Don't Know Yet",
         about:"Lorem ipsum dolor sit amet consectetur adipisicing elit."
     },
     {   
         id: 8,
-        image:hands,
+        image:Expert,
         name:'Vimal',
         position:"Don't Know Yet",
         about:"Lorem ipsum dolor sit amet consectetur adipisicing elit."
