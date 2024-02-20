@@ -49,7 +49,7 @@ const Testimonials = ()  => {
                 modules={[EffectCoverflow, Pagination]}
                 className="mySwiper"
             >
-                    { testimonialData.map((item, index) => ( <SwiperSlide><TestimonialCard data={item} key={index} /></SwiperSlide> ))}
+                    { testimonialData.map((item, index) => ( <SwiperSlide key={index} ><TestimonialCard data={item} key={index} /></SwiperSlide> ))}
 
             </Swiper>
 
