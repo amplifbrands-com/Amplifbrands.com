@@ -3,20 +3,20 @@ import '../../styles/base.css'
 import '../../styles/servi-card.css'
 import React, {useContext} from 'react'
 
-function ServiCard({icon, title, content}){
-    const { theme } = useContext(ThemeContext);
+function ServiCard({icon, title, content, theme}){
+    // const { theme } = useContext(ThemeContext);
     return(
 
-        <div className={`${theme === 'light' ? 'card-wrapper': 'bg-dark card-wrapper'}`}>
+        <div className= 'card-wrapper'>
             <div>
-                <h6 className={`${theme === 'light' ? 'main-header': 'text-light main-header'}`}>
+                <h6 className='main-header'>
                     {title}
                 </h6>
-                <p className={`${theme === 'light' ? 'body-text': 'text-light body-text'}`}>{content}</p>
+                <p className='body-text'>{content}</p>
             </div>
             <button type="button" className="text-btn">read more...</button>
-            <div className={`${theme === 'light' ? 'icon': 'bg-light icon'}`}>
-                <img src={ theme==="light" ? icon.light: icon.dark} alt={`${title} icon`} />
+            <div className='icon'>
+                <img src={ theme==="light" ? icon.light : icon.dark} alt={`${title} icon`} />
             </div>
         </div>
     )

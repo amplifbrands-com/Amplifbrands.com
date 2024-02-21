@@ -13,8 +13,9 @@ import Testimonials from './cards/testimonials';
 import { ThemeContext } from "../context/themeContext";
 
 
-const Home = () => {
-  const { theme } = useContext(ThemeContext);
+const Home = ({theme}) => {
+  // const { theme } = useContext(ThemeContext);
+  console.log(theme);
   return (
   <div>
     <section className="hero-sec row mx-auto">
@@ -40,38 +41,39 @@ const Home = () => {
         </div>
       </section>
     <section className="text-center row mx-auto col-12">
-      <h3 className={`${theme === 'light' ? 'main-header': 'text-light'}`}>
+      <h3 className='main-header'>
         Our Mission
       </h3>
-      <p className={`${theme === 'light' ? 'sub-header col-12 col-sm-8 mx-auto': 'text-light sub-header col-12 col-sm-8 mx-auto'}`}>Our mission at Amplif is to empower startup entrepreneurs with tailored marketing solutions crafted by our experts, addressing their unique pain points, driving exponential growth, and unleashing their full potential.</p>
+      <p className='sub-header col-12 col-sm-8 mx-auto'>Our mission at Amplif is to empower startup entrepreneurs with tailored marketing solutions crafted by our experts, addressing their unique pain points, driving exponential growth, and unleashing their full potential.</p>
     </section>
+    {/* {`${theme === 'light' ? 'sub-header col-12 col-sm-8 mx-auto': 'text-light sub-header col-12 col-sm-8 mx-auto'}`} */}
     <section className=" row mx-auto">
       <div className="section-title text-center row col-12 mx-auto">
-        <h3 className={`${theme === 'light' ? 'main-header col-12': 'text-light'}`}>
+        <h3 className='main-header col-12'>
           Why Choose Us?
         </h3>
-        <h6 className={`${theme === 'light' ? 'sub-header col-12 col-sm-8 mx-auto': 'text-light sub-header col-12 col-sm-8 mx-auto'}`}>Navigating the Digital Frontier</h6>
+        <h6 className='sub-header col-12 col-sm-8 mx-auto'>Navigating the Digital Frontier</h6>
       </div>
       <div className="whyus-sec col-12">
         {
           whyUsData.map(cont =>(
-            <WhyUs key={cont.title} icon={cont.icon} title={cont.title} subtitle={cont.subtitle} content={cont.content}  />
+            <WhyUs key={cont.title} icon={cont.icon} title={cont.title} subtitle={cont.subtitle} content={cont.content} theme={theme} />
           ))
         }
       </div>
     </section>
     <section className=" row mx-auto">
       <div className="section-title row text-center col-12 mx-auto">
-        <h3 className={`${theme === 'light' ? 'main-header col-12': 'text-light'}`}>
+        <h3 className='main-header col-12'>
         Our Services
         </h3>
-        <h6 className= {`${theme === 'light' ? 'sub-header col-12 col-sm-8 mx-auto': 'text-light sub-header col-12 col-sm-8 mx-auto'}`}>Transformative Digital Solutions Tailored for Your Success</h6>
+        <h6 className='sub-header col-12 col-sm-8 mx-auto' >Transformative Digital Solutions Tailored for Your Success</h6>
       </div>
 
       <div className="servi-sec col-12">
         {
           serviceData.map(cont =>(
-            <ServiCard key={cont.title} icon={cont.icon} title={cont.title}  content={cont.content}  />
+            <ServiCard key={cont.title} icon={cont.icon} title={cont.title}  content={cont.content}  theme={theme} />
           ))
         }
       </div>
