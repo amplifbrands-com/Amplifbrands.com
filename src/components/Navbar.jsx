@@ -41,9 +41,9 @@ const Navbar = () => {
             Book A Meeting
           </button>
         </div>
-        <div className="dark-mode-toggle" onClick={handleOnClick}>
+        {/* <div className="dark-mode-toggle" onClick={handleOnClick}>
           {theme === 'light' ? <FaMoon className="mode-icon-moon" /> : <FaSun className="mode-icon-sun" />}
-        </div>
+        </div> */}
         <div className="mobile-bar">
           <Mobile />
         </div>
