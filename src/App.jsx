@@ -90,7 +90,7 @@ function App() {
           </Routes>
         <Footer />
       {/* </ThemeContext.Provider> */}
-    </Router>
+     </Router>
   );
 }
 
