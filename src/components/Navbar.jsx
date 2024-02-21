@@ -12,13 +12,13 @@ import { FaSun, FaMoon } from 'react-icons/fa';
 import { ThemeContext } from '../context/themeContext';
 
 
-const Navbar = () => {
+const Navbar = ({theme}) => {
 
   const location = useLocation();
   const path = location.pathname;
 
 
-  const {theme, handleOnClick} = useContext(ThemeContext);
+  // const {theme, handleOnClick} = useContext(ThemeContext);
 
   return (
    <div className="navigation-container">
@@ -41,11 +41,11 @@ const Navbar = () => {
             Book A Meeting
           </button>
         </div>
-        <div className="dark-mode-toggle" onClick={handleOnClick}>
+        {/* <div className="dark-mode-toggle" onClick={handleOnClick}>
           {theme === 'light' ? <FaMoon className="mode-icon-moon" /> : <FaSun className="mode-icon-sun" />}
-        </div>
+        </div> */}
         <div className="mobile-bar">
-          <Mobile />
+          <Mobile theme={theme} />
         </div>
       </nav>
    </div>
