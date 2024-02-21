@@ -13,7 +13,7 @@ import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 
 const TestimonialCard = ({data}) =>{
-    const { theme } = useContext(ThemeContext);
+    // const { theme } = useContext(ThemeContext);
     return (
         <div className='testimonial--card'>
             <img src={data.image} alt="" className="testimonial--image" />
@@ -28,7 +28,7 @@ const TestimonialCard = ({data}) =>{
 
 
 const Testimonials = ()  => {
-    const { theme } = useContext(ThemeContext);
+    // const { theme } = useContext(ThemeContext);
     return (
         <div className='testimonial'>
             {/* <h2 className={`${theme === 'light' ? 'text-center main-header': 'text-light text-center main-header'}`}>Testimonial</h2> */}

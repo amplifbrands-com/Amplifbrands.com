@@ -79,7 +79,7 @@ function App() {
   return (
     <Router>
       {/* <ThemeContext.Provider value={{ theme, handleOnClick }}> */}
-        <Navbar />
+        <Navbar theme={theme} />
           <Routes>
             <Route path="/" element={<Home theme={theme} />} />
             <Route path="/about" element={<About />} />
