@@ -64,7 +64,7 @@ const Footer = () => {
                 </h6>
               </div>
               <div className="footer-add-content">
-                <Link to="" className="footer-add-links"><IoMdMail className='footer-add-icons'/>info@amplif.com</Link><br /> 
+                <Link to="" className="footer-add-links"><IoMdMail className='footer-add-icons'/>contact@amplifbrands.com</Link><br /> 
                 <Link to="" className="footer-add-links">
                 <IoLocationSharp className='footer-add-icons' />Amplif Brands Private Limited, 3rd Cross Rd, Electronics City Phase 1, Electronic City, Bengaluru<br />
                   Karnataka 560100.
