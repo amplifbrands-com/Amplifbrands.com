@@ -123,7 +123,7 @@
     height: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
     padding: 24px 12px;
@@ -133,15 +133,22 @@
 }
 
 .about-expert-card-image{
-    border-radius: 25%;
+    border-radius: 50%;
+    margin-bottom:28px;
 }
 
 .about-expert-card-h4{
     color: var(--text-b);
 }
 
+.about-expert-card-span{
+    text-transform: uppercase;
+}
+
+
 .about-expert-card-p, .about-expert-card-span{
     color: var(--text-b-m);
+    
 };
 
 
