@@ -9,7 +9,6 @@ import Logo from "../assets/logo.svg"
 import { useLocation } from 'react-router-dom';
 import { FaSun, FaMoon } from 'react-icons/fa';
 
-import { ThemeContext } from '../context/themeContext';
 
 
 const Navbar = ({theme}) => {
@@ -18,7 +17,6 @@ const Navbar = ({theme}) => {
   const path = location.pathname;
 
 
-  // const {theme, handleOnClick} = useContext(ThemeContext);
 
   return (
    <div className="navigation-container">
@@ -41,9 +39,6 @@ const Navbar = ({theme}) => {
             Book A Meeting
           </button>
         </div>
-        {/* <div className="dark-mode-toggle" onClick={handleOnClick}>
-          {theme === 'light' ? <FaMoon className="mode-icon-moon" /> : <FaSun className="mode-icon-sun" />}
-        </div> */}
         <div className="mobile-bar">
           <Mobile theme={theme} />
         </div>

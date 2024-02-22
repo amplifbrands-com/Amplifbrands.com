@@ -10,11 +10,8 @@ import Form from './cards/message-form';
 import Testimonials from './cards/testimonials';
 
 
-import { ThemeContext } from "../context/themeContext";
-
 
 const Home = ({theme}) => {
-  // const { theme } = useContext(ThemeContext);
   console.log(theme);
   return (
   <div>
@@ -46,7 +43,6 @@ const Home = ({theme}) => {
       </h3>
       <p className='sub-header col-12 col-sm-8 mx-auto'>Our mission at Amplif is to empower startup entrepreneurs with tailored marketing solutions crafted by our experts, addressing their unique pain points, driving exponential growth, and unleashing their full potential.</p>
     </section>
-    {/* {`${theme === 'light' ? 'sub-header col-12 col-sm-8 mx-auto': 'text-light sub-header col-12 col-sm-8 mx-auto'}`} */}
     <section className=" row mx-auto">
       <div className="section-title text-center row col-12 mx-auto">
         <h3 className='main-header col-12'>
