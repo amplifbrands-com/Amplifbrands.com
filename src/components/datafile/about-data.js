@@ -1,7 +1,10 @@
-
+import femalePlaceholder from "/amplif-members/female-placeholder.jpg"
 
 import Expert from "../../assets/about-us/about-expert.svg"
 
+// Save image file in /public/amplif-members/your-image
+// Import image files here 
+// change data below, rearrange the data to control the order of displaying our-experts details
 
 export const data = [
     {   
@@ -20,10 +23,10 @@ export const data = [
     },
     {   
         id: 3,
-        image:Expert,
-        name:'Vimal',
-        position:"Don't Know Yet",
-        about:"Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        image:femalePlaceholder,
+        name:'Gopiga',
+        position:"Front-end developer",
+        about:""
     },
     {   
         id: 4,
