@@ -10,8 +10,10 @@ import '../../styles/base.css'
 
 
 
+
 const MobileNav = ({showContact, changeShowContact}) => {
   const { theme } = useContext(ThemeContext);
+
     const [isMenuOpen, setIsMenuOpen] = useState(false);
   
     const toggleMenu = () => {
