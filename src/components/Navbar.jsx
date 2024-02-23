@@ -1,17 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "../styles/Navbar.css"
-<<<<<<< refs/remotes/origin/emmanuel
-const Navbar = () => {
-  return (
-   <div>
-   
-=======
 import "../styles/base.css"
 import "../styles/base.css"
 
 import Mobile from "./mobileNav/mobilenav"
-import Logo from "../assets/logo.svg"
+import Logo from "../assets/"
 import { useLocation } from 'react-router-dom';
 import { FaSun, FaMoon } from 'react-icons/fa';
 
@@ -57,7 +51,6 @@ const Navbar = ({showContact, changeShowContact}) => {
           <Mobile  showContact={showContact} changeShowContact={changeShowContact} />
         </div>
       </nav>
->>>>>>> local
    </div>
   );
 };

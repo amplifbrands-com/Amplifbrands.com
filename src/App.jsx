@@ -7,15 +7,7 @@ import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
 import Navbar from "./components/Navbar";
 import Services from "./components/Services";
-<<<<<<< refs/remotes/origin/emmanuel
-
-function App() {
-=======
-import Portfolio from "./components/portfolio";
 import ContactCard from './components/cards/contact-card'
-
-import { ThemeContext, themes } from "./context/themeContext";
-
 
 
 function App() {
@@ -53,23 +45,10 @@ function App() {
   }, []);
 
 
->>>>>>> local
   
 
   return (
     <Router>
-<<<<<<< refs/remotes/origin/emmanuel
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/signin" element={<SignIn />} />
-        <Route path="/services" element={<Services/>} />
-      </Routes>
-    </Router>
-=======
       {/* <ThemeContext.Provider value={{ theme, handleOnClick }}> */}
         <Navbar showContact={showContact} changeShowContact={changeShowContact} />
           <Routes>
@@ -87,7 +66,6 @@ function App() {
         <Footer />
       {/* </ThemeContext.Provider> */}
      </Router>
->>>>>>> local
   );
 }
 

@@ -8,16 +8,12 @@ import ServiCard from './cards/our-services';
 import { serviceData } from '../assets/service-card-data';
 import Form from './cards/message-form';
 
-<<<<<<< refs/remotes/origin/emmanuel
-const Home = () => {
-=======
 
 import { ThemeContext } from "../context/themeContext";
 
 
 const Home = ({theme}) => {
   // const { theme } = useContext(ThemeContext);
->>>>>>> local
   return (
   <div>
     <header className="container mx-auto">
