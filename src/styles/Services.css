@@ -1,47 +1,161 @@
-.services-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 40px 20px;
+@import './base.css';
+
+  
+
+  .service--hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-color: rgba(0,0,0,1);
+  }
+
+  .hero--content{
+    max-width: 717px;
+  }
+  .hero--content h1{
+    color:var(--text-w);
+    margin-bottom:40px;
+  }
+  .hero--list{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+    color:var(--text-w-h);
+  }
+
+  .hero--list a{
+    color: rgb(255, 255, 255);
+    width:220px;
+    text-align:center;
+    margin: 12px 0px;
+    text-decoration:underline;
+    text-underline-offset: 4px;
+  }
+
+   .service-wrapper{
+    width:100vw;
+    display:flex;
+    justify-content:center;
+
+  }  
+
+   .service-card {
+    padding: 52px 100px;
+    max-width:1440px;
+  } 
+  
+  .service-wrapper:nth-child(odd) {
+    background-color: var(--sec-bg); 
   }
   
-  .services-heading {
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 40px;
+  .service-wrapper-dark:nth-child(odd) {
+    background-color: var(--text-b); 
   }
-  
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+
+  .service--info{
+    margin-bottom:32px;
+    min-height:360px;
   }
-  
-  .service-card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-  }
-  
   .service-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+    width: 300px;
+    height: 360px;
+    border-radius: 30px;
+  }
+
+  .service--activities h4, .service-deliverables h4{
+    font-weight:500;
+  }
+
+  .deliverables-wrapper{
+    height: fit-content;
+  }
+
+  .deliverables{
+    height: fit-content;
+  }
+
+  .deliverables div{
+    height: fit-content;
+    padding:16px 8px;
+
+  }
+
+  .deliverable-icon{
+    width:75px;
+    height:84px;
+    margin-bottom:48px;
   }
   
-  .service-content {
-    padding: 20px;
+  .deliverables p{
+    font-weight:400;
+  }
+
+  
+  .key-activities span{
+    font-weight:400;
+    font-size:21px;
+  }
+
+  .service-key-icon{
+    height:auto;
+    width:24px;
+    margin-right:24px;
   }
   
-  .service-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
+  
+  @media screen and (max-width: 640px) {
+
+    .service--hero{
+      height:500px;
+      max-height:50vh;
+    }
+    .hero-content{
+      margin:30px 10px;
+    }
+    .hero--content h1{
+      margin-bottom:16px;
+    }
+    .hero--list a{
+      margin:5px 0px;
+    }
+
+    .service-card{
+      padding:32px 16px;
+    }
+
+    .service-image {
+      height: 168px;
+      width:138px;
+      border-radius:10px;
+    } 
+
+    .deliverables{
+      height:100px;
+    }
+
+    .deliverables div{
+      width:315px;
+      height:100px;
+    }
+
+    .deliverable-icon{
+      height:48px;
+      width:43px;
+      margin-right:16px;
+    }
+
+    .service--activities h4{
+      text-align:center;
+    }
+
+    .service-key-icon{
+      height:24px;
+      width:24px;
+    }
   }
   
-  .service-description {
-    font-size: 1rem;
-    color: #555;
-  }
+  
+  
   

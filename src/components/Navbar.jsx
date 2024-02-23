@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import "../styles/Navbar.css"
 import "../styles/base.css"
 import "../styles/base.css"
 
 import Mobile from "./mobileNav/mobilenav"
-import Logo from "../assets/"
+import Logo from "../assets/logo.svg"
 import { useLocation } from 'react-router-dom';
 import { FaSun, FaMoon } from 'react-icons/fa';
 

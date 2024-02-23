@@ -129,33 +129,40 @@ select, select:focus, option{
 }
 
 h1{
-    font-size: 5.375rem !important;
+    font-size:4.778rem !important;
+}
+.nav-logo{
+    max-height: 3.981rem;
 }
 h2{
-    font-size: 4.479rem !important;
+    font-size: 3.981rem !important;
 }
 h3{
-    font-size: 3.732rem !important;
+    font-size: 3.318rem !important;
 }
+
 h4{
-    font-size: 3.11rem !important;
+    font-size: 2.765rem !important;
 }
 h5{
-    font-size: 2.592rem !important;
+    font-size: 2.304rem !important;
 }
 h6{
-    font-size: 2.16rem !important;
+    font-size: 1.92rem !important;
 }
 p, button, input, li, a, textarea, textarea::placeholder, option, select , select:focus{
     font-size: 1.8rem !important;
 }
 small{
-    font-size: 1.5rem !important;
+    font-size: 1.422rem !important;
 }
 
 /* please use sections for sectioning */
 section, header{
     padding: 52px 12vw;
+}
+.navigation-container{
+    padding: 0 12vw;
 }
 
 /*use for section title wrapper*/
@@ -163,47 +170,14 @@ section, header{
     margin-bottom: 52px;
 }
 
-@media screen and (max-width:1334px) {
-    
-    h1{
-        font-size: 4.778rem !important;
-    }
-    h2{
-        font-size: 3.981rem !important;
-    }
-    h3{
-        font-size: 3.318rem !important;
-    }
-    h4{
-        font-size: 2.765rem !important;
-    }
-    h5{
-        font-size: 2.304rem !important;
-    }
-    h6{
-        font-size: 1.92rem !important;
-    }
-    p, button, input, li, a, textarea, textarea::placeholder, option, select, select:focus{
-        font-size: 1.6rem !important;
-    }
-    small{
-        font-size: 1.333rem !important;
-    }
-    section, header{
-        padding: 52px 10vw;
-    }
 
-    /*use for section headers*/
-    .section-title{
-        margin-bottom: 52px;
-    }
-}
-
-
-@media screen and (max-width:640px) {
+@media screen and (max-width:1200px) {
     
     h1{
         font-size: 3.244rem !important;
+    }
+    .nav-logo{
+        max-height: 2.883rem;
     }
     h2{
         font-size: 2.883rem !important;
@@ -224,10 +198,57 @@ section, header{
         font-size: 1.6rem !important;
     }
     small{
+        font-size: 1.333rem !important;
+    }
+    section, header{
+        padding: 52px 10vw;
+    }
+    .navigation-container{
+        padding: 0 10vw;
+    }
+
+    /*use for section headers*/
+    .section-title{
+        margin-bottom: 52px;
+    }
+}
+
+
+@media screen and (max-width:640px) {
+    
+    h1{
+        font-size: 2.361rem !important;
+    }
+    .nav-logo{
+        max-height: 2.213rem;
+    }
+    h2{
+        font-size: 2.213rem !important;
+    }
+    h3{
+        font-size: 2.073rem !important;
+    }
+    h4{
+        font-size: 1.944rem !important;
+    }
+    h5{
+        font-size: 1.822rem !important;
+    }
+    h6{
+        font-size: 1.707rem !important;
+    }
+    p, button, input, li, a, textarea, textarea::placeholder, option, select, select:focus{
+        font-size: 1.6rem !important;
+    }
+    small{
         font-size: 1.264rem !important;
     }
     section, header{
         padding: 32px 5vw;
+    }
+
+    .navigation-container{
+        padding: 0 5vw;
     }
 
     .section-title{
@@ -238,6 +259,16 @@ section, header{
 
 .cta-btn{
     background-image: linear-gradient(to right, rgba(211,162,0,1), rgba(255,215,42,1));
+    font-weight: 600;
+    color: var(--text-b);
+    border:none;
+    text-transform: uppercase;
+    border-radius: 0.4rem;
+    padding: 0.6rem 1.6rem;
+}
+
+.cat-btn{
+    background-image: linear-gradient(to right, rgb(255, 196, 0), rgb(223, 210, 152));
     font-weight: 500;
     color: var(--text-b);
     border:none;
@@ -268,8 +299,9 @@ section, header{
     border-bottom: 0.2rem  solid var(--prim-color) ;
     background-color: unset;
     padding: 0.8rem 0.2rem;
-    padding-bottom: 0.2rem;
-    text-transform: uppercase;
+    padding-bottom: 0.1rem;
+    padding-left:0;
+    text-transform: capitalize;
 }
 
 /* input field appearance style */
@@ -361,3 +393,6 @@ textarea:focus::placeholder{
     color:var(--text-m);
 }
 
+svg{
+    fill: var(--sec-color) !important;
+}

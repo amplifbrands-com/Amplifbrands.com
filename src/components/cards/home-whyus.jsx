@@ -1,13 +1,16 @@
 // this is the code for why choose us section of the home page
-
+import React, {useContext} from 'react'
 import '../../styles/base.css';
-import '../../styles/home-whyus.css'
-function WhyUs({icon, title, subtitle, content}){
+import '../../styles/home-whyus.css';
+import { ThemeContext } from "../../context/themeContext";
+function WhyUs({icon, title, subtitle, content, theme}){
+    // const { theme } = useContext(ThemeContext);
+
     return(
         <div className='card-main-wrapper'>
             <div className='card-title'>
                 <div className='icon-wrapper'>
-                    <img src={icon} alt={`${title} icon`} />
+                    <img src={ theme==="light" ? icon.light : icon.dark} alt={`${title} icon`} />
                 </div>
                 <span>
                     <h6 className='main-header'>{title}</h6>
@@ -15,9 +18,9 @@ function WhyUs({icon, title, subtitle, content}){
                 </span>
             </div>
             <div>
-                <small className="body-text">
+                <p className='body-text'>
                     {content}
-                </small>
+                </p>
             </div>
 
         </div>
