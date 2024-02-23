@@ -9,7 +9,11 @@
 }
 .whyus-sec{
     display: grid;
+<<<<<<< refs/remotes/origin/emmanuel
     grid-template-columns: 1fr 1fr 1fr;
+=======
+    grid-template-columns: repeat(3, 1fr);
+>>>>>>> local
     gap:24px;
 }
 
@@ -52,5 +56,17 @@
 @media screen and (max-width:819px) {
     .whyus-sec, .servi-sec{
         grid-template-columns: 1fr ;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .whyus-sec{
+        grid-template-columns: repeat(5 , 90%) ;
+        overflow-x: auto;
+        
+    }
+    .servi-sec{
+        grid-template-columns: repeat(6 , 90%) ;
+        overflow-x: auto;
     }
 }
