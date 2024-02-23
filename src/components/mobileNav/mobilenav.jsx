@@ -10,8 +10,10 @@ import '../../styles/base.css'
 
 
 
+
 const MobileNav = ({showContact, changeShowContact}) => {
   const { theme } = useContext(ThemeContext);
+
     const [isMenuOpen, setIsMenuOpen] = useState(false);
   
     const toggleMenu = () => {
@@ -60,6 +62,7 @@ const MobileNav = ({showContact, changeShowContact}) => {
                     <Link to="/contact" className={`${theme === 'light' ? 'mobile-nav-link': 'text-light mobile-nav-link'}`} onClick={closeMenu}>Contact Us</Link>
                   </li>
                   <li className='mobile-nav-li'>
+
                     <button className='nav-btn cta-btn' onClick={seeContacts}>Book A Meeting</button>
                   </li>
                 </ul>
