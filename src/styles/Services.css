@@ -43,7 +43,7 @@
 
    .service-card {
     padding: 52px 100px;
-    width:1440px;
+    max-width:1440px;
   } 
   
   .service-wrapper:nth-child(odd) {
@@ -129,7 +129,7 @@
       height: 168px;
       width:138px;
       border-radius:10px;
-    }
+    } 
 
     .deliverables{
       height:100px;
