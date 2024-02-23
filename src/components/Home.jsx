@@ -21,8 +21,11 @@ const Home = ({theme}) => {
     <section className="hero-sec row mx-auto">
         <div className="section-title row text-center col-12"></div>
         <div className="row">
-          <div className="col-lg-8 col-md-8 ">
-            <h1 className='main-header'>Ready to Amplif Your Brand?</h1>
+        <h1 className='main-header d-block d-md-none'>Ready to Amplif Your Brand?</h1>
+
+          <div className="col-lg-8 col-md-8 order-2 order-md-1">
+          <h1 className='main-header d-none d-md-block'>Ready to Amplif Your Brand?</h1>
+
             <h6 className="sub-header pt-2">
               Partner with Amplif - Your Accelerator in the Digital Era
             </h6>
@@ -35,8 +38,8 @@ const Home = ({theme}) => {
             <button type="button" className="cta-btn mt-5" >Get a Free Consultation</button>
             
           </div>
-          <div className="col-lg-4 col-md-4">
-            <img src="../assets1/Rectangle.png" alt="" />
+          <div className="col-lg-4 col-md-4 mt-3 p-3 order-1 order-md-2">
+            <img src="/hero-image.png" alt="heroImage" className="img-fluid" />
           </div>
         </div>
       </section>
