@@ -1,0 +1,140 @@
+.contact-us-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(231, 240, 241);
+  }
+  
+  .contact-details {
+    flex: 1;
+    padding: 20px;
+    margin-left: 12rem;
+  }
+  
+  .contact-details h1 {
+    margin-bottom: 30px;
+    margin-top: 17rem;
+    color: rgb(42, 133, 166);
+    font-weight: 600;
+  }
+  
+  .contact-info {
+    margin-top: 8rem;
+    
+  }
+  
+  .info-item {
+    margin-bottom: 10px;
+    margin-top: 4.5rem;
+    font-size: 2.9rem;
+  }
+  
+  .contact-image {
+    flex: 1;
+  }
+  
+  .contact-image img {
+    margin-top: 10rem;
+    margin-right: 10px;
+    width: 85%;
+    height: auto;
+  }
+  .special-info-item{
+    margin-left: 3px;
+  }
+  .address-item{
+    margin-left: 34px;
+    margin-top: -60px;
+  }
+
+/* ContactUs.css */
+
+.get-in-touch-container {
+  text-align: center;
+  background-color: white;
+  padding-bottom: 50px;
+}
+
+.git-heading {
+  font-size: 24px;
+  padding-top: 10rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.git-text {
+  margin-top: 10px;
+  color: #666;
+}
+
+.git-contact-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.git-contact-card {
+  background-color: #f9f9f9;
+  padding: 40px; 
+  margin:  5rem  10rem;
+  border-radius: 15px;
+  border-top: 8px solid rgb(50, 118, 145);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 400px; 
+  text-align: left; 
+  margin-right: rem;
+}
+
+.git-contact-icon {
+  font-size: 48px;
+}
+
+.git-contact-card h3 {
+  font-size: 10px; /* Increase heading size */
+  color: #333;
+}
+
+.git-contact-card p {
+  margin-top: 20px; /* Increase margin top for spacing */
+  color: #666;
+}
+
+.git-contact-action-button {
+  margin-top: 20px;
+  background: linear-gradient(to bottom, #ffdb28, #b58b1e); /* Dark gold gradient */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.git-contact-action-button:hover {
+  background: linear-gradient(to bottom, #ffdb28, #b58b1e); 
+}
+
+@media screen and (max-width: 900px){
+  .contact-us-page-container {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100vh;
+    background-color: var(--sec-bg);
+  }
+  .contact-details {
+    padding: 10px;
+    margin-left:0px;
+  }
+  .contact-details h1 {
+    margin-bottom: 3%;
+    margin-top: 15%;
+    font-weight: 600;
+  }
+  .contact-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
