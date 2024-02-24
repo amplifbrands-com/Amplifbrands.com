@@ -1,5 +1,5 @@
 .about-hero{
-    padding-top: 20vh;
+    padding-top: 20vh;   
 }
 
 .about-hero-main{
@@ -103,10 +103,10 @@
 
 .about-expert-card{
     width: 260px;
-    height: 300px;
+    height: 260px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
     padding: 24px 12px;
@@ -116,15 +116,24 @@
 }
 
 .about-expert-card-image{
-    border-radius: 25%;
+    border-radius: 50%;
+    margin-bottom:28px;
+    object-fit:cover;
 }
 
-.about-expert-card-h4{
+.about-expert-card-h6{
     color: var(--text-b);
 }
 
+.about-expert-card-span{
+    text-transform: uppercase;
+    font-size:1.5rem !important;
+}
+
+
 .about-expert-card-p, .about-expert-card-span{
     color: var(--text-b-m);
+    
 };
 
 

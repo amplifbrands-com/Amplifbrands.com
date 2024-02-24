@@ -7,9 +7,8 @@ import Logo from "../../assets/logo.svg"
 import "../../styles/Navbar.css"
 import '../../styles/base.css'
 
+const MobileNav = ({showContact, changeShowContact}) => {
 
-
-const MobileNav = ({theme}) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
   
     const toggleMenu = () => {
@@ -23,6 +22,11 @@ const MobileNav = ({theme}) => {
     const handleMenuClick = (e) => {
       e.stopPropagation();
     };
+
+    const seeContacts = () =>{
+      setIsMenuOpen(false);
+      changeShowContact();
+    }
   
     return (
       <div className="mobile-nav">
@@ -53,7 +57,7 @@ const MobileNav = ({theme}) => {
                     <Link to="/contact" className="mobile-nav-link" onClick={closeMenu}>Contact Us</Link>
                   </li>
                   <li className='mobile-nav-li'>
-                    <button className='nav-btn cta-btn'>Book A Meeting</button>
+                    <button className='nav-btn cta-btn' onClick={seeContacts}>Book A Meeting</button>
                   </li>
                 </ul>
               </div>

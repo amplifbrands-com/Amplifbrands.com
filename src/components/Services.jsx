@@ -1,7 +1,10 @@
-import React, {useContext} from 'react'
+import React from 'react'
 import "../styles/Services.css"
 import '../styles/base.css'
 import {services} from "../assets/service-page-data"
+
+import Whatsapp from './Whatsapp';
+import ScrollToTopButton from './ScrollToTopButton';
 
 const ServiceHero = () => {
 
@@ -16,6 +19,9 @@ const ServiceHero = () => {
 
     return (
      <div className="service--hero">
+     {/** from aniket adding whatsapp integration starts  */}
+  <Whatsapp/>
+  {/** from aniket  whatsapp integration ends here   */}
       <div className="hero--content">
         <h1 className=" main-header text-center" >Explore Our Expert Solutions</h1>
         <div className="hero--list">
@@ -51,22 +57,23 @@ const KeyActivity = ({activity, theme}) => {
 const ServiceCard = ({service, index, theme}) => {
 
   return (
-    <section  id={service.title}>
 
-          <div key={index} >
+    <section  id={service.title} className="">
+          <div key={index} className="">
 
                   <div className="service--info mb-5">
-                      <div className="row justify-content-between align-items-md-center g-5">
-                          <h4 className="important-header mb-3 d-md-none d-block">{service.title}</h4>
+                    <div className="row justify-content-between align-items-md-center g-5">
+                        <h4 className="important-header mb-3 d-md-none d-block">{service.title}</h4>
 
-                          <div className={`col-md-6 col-lg-8 col ${index % 2 !== 0 ? 'order-md-2' : ''}`}>
-                              <h4 className='body-text' >{service.title}</h4>
-                              <p className='body-text'>{service.description}</p>
-                          </div>
-                          <div className={`col-md-6 col-lg-4 col ${index % 2 !== 0 ? 'order-md-1' : ''}`}>
+                        <div className={`col-md-6 col-lg-4 col-12 ${index % 2 !== 0 ? 'order-md-2' : ''}`}>
                               <img src={service.image} alt={service.title} className="service-image img-fluid" />
-                          </div>
                         </div>
+
+                        <div className={`col-md-6 col-lg-8 col-12 ${index % 2 !== 0 ? 'order-md-1' : ''}`}>
+                                <h4 className='important-header mb-3 d-none d-md-block'>{service.title}</h4>
+                                <p className='body-text'>{service.description}</p>
+                        </div>
+                    </div>
                   </div>
                         <div className="service--deliverables mb-5">
                             <h6 className='text-center main-header mb-2'>Deliverables</h6>
@@ -103,7 +110,10 @@ const Services = ({theme}) => {
         { services.map( (service, index) => (
           <ServiceCard key={index} service={service} index={index} theme={theme} />
                     )
-      )}      
+      )} 
+      {/**from aniket-> ScrollTopButton compoonent added  */}
+    <ScrollToTopButton/>
+    {/**from aniket-> ScrollTopButton component ended  */}     
     </div>
   )
 }

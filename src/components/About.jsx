@@ -13,13 +13,17 @@ import Over4 from "../assets/about-us/our-value-4.svg"
 import '../styles/base.css';
 import '../styles/about.css';
 
-
+import Whatsapp from './Whatsapp';
+import ScrollToTopButton from './ScrollToTopButton';
 
 
 const About = () => {
 
   return (
     <>
+    {/** from aniket adding whatsapp integration starts  */}
+  <Whatsapp/>
+  {/** from aniket  whatsapp integration ends here   */}
       <section className="about-hero">
         <div className="about-hero-inner">
           <div className="about-hero-heading">
@@ -50,6 +54,7 @@ const About = () => {
             </div>
           </div>
         </div>
+        
       </section>
 
       <section className='about-value'>
@@ -128,6 +133,9 @@ const About = () => {
             </p>
           </div>
         </div>
+        {/**from aniket-> ScrollTopButton compoonent added  */}
+    <ScrollToTopButton/>
+    {/**from aniket-> ScrollTopButton component ended  */}
       </section>
       
       <section className=" row mx-auto about-form-section">

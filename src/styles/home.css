@@ -1,12 +1,14 @@
 @import './home-whyus.css';
+/*from aniket commented out this unncessary lines of code */
 
+/* 
 ::-webkit-scrollbar{
     display: none;
-}
+} */
 
 .hero-sec{
     background-color:#000;;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .hero-sec .main-header{
@@ -23,7 +25,6 @@
 .whyus-sec{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
     gap:24px;
 }
 
@@ -66,5 +67,17 @@
 @media screen and (max-width:819px) {
     .whyus-sec, .servi-sec{
         grid-template-columns: 1fr ;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .whyus-sec{
+        grid-template-columns: repeat(5 , 90%) ;
+        overflow-x: auto;
+        
+    }
+    .servi-sec{
+        grid-template-columns: repeat(6 , 90%) ;
+        overflow-x: auto;
     }
 }

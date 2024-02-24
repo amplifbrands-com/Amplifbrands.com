@@ -76,5 +76,6 @@
 @media screen and (max-width:640px) {
     .card-main-wrapper{
         padding: 16px;
+        margin-top: 16px;
     }
 }

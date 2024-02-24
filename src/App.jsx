@@ -9,7 +9,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/footer";
 import Services from "./components/Services";
 import Portfolio from "./components/portfolio";
-
+import ContactCard from './components/cards/contact-card'
 
 
 
@@ -21,15 +21,22 @@ function App() {
 
   const [theme, setTheme] = useState(getInitialTheme);
 
+  const [showContact, setShowContact] = useState(false);
+  function changeShowContact() {
+    setShowContact(
+      ()=>{
+        return !showContact;
+      }
+    )
+  }
+
   useEffect(() => {
     const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
     setTheme(prefersDarkMode ? 'dark' : 'light');
-    console.log('Initial Theme:', prefersDarkMode ? 'dark' : 'light');
 
     const handleChange = (event) => {
       setTheme(event.matches ? 'dark' : 'light');
-      console.log('Theme Changed:', event.matches ? 'dark' : 'light');
     };
 
     const colorTheme = window.matchMedia('(prefers-color-scheme: dark)');
@@ -42,7 +49,7 @@ function App() {
 
   return (
     <Router>
-        <Navbar theme={theme} />
+        <Navbar showContact={showContact} changeShowContact={changeShowContact} />
           <Routes>
             <Route path="/" element={<Home theme={theme} />} />
             <Route path="/about" element={<About />} />
@@ -51,6 +58,10 @@ function App() {
             <Route path="/signin" element={<SignIn />} />
             <Route path="/services" element={<Services theme={theme} />} />
           </Routes>
+          {
+            showContact &&
+            <ContactCard  theme={theme} showContact={showContact} changeShowContact={changeShowContact}  />
+          }
         <Footer />
      </Router>
   );
