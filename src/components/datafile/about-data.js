@@ -10,7 +10,10 @@ import SenthilKumar from "/amplif-members/Senthil-Kumar.jpg"
 import Victoria from "/amplif-members/Victoria-Oremeyi.jpeg"
 import VinithRay from "/amplif-members/Vinith-Ray.jpg"
 import AniketRay from "/amplif-members/Aniket-Ray.jpeg"
-import Expert from "../../assets/about-us/about-expert.svg"
+import RohitSalunke from "/amplif-members/Rohit-Salunke.jpg"
+import Pallavi from "/amplif-members/Pallavi-Sadavarte.jpg"
+import Sarvesha from "/amplif-members/Sarvesha-Shelar.jpg"
+// import Expert from "../../assets/about-us/about-expert.svg"
 
 // Save image file in /public/amplif-members/your-image
 // Import image files here 
@@ -19,93 +22,115 @@ import Expert from "../../assets/about-us/about-expert.svg"
 export const data = [
     {   
         id: 1,
-        image:Expert,
-        name:'Vimal',
-        position:"Don't Know Yet",
+        image:RohitSalunke,
+        name:'Rohit Salunke',
+        position:"ceo",
         about:""
     },
     {   
         id: 2,
-        image:AnselmSadiq,
-        name:'Anselm Sadiq',
-        position:"Content writer",
-        about:""
-    },
-    {   
-        id: 3,
-        image:femalePlaceholder,
-        name:'Gopiga',
-        position:"Front-end developer",
-        about:""
-    },
-    {   
-        id: 4,
-        image:DavidZakari,
-        name:'Zakari Adeiza David',
-        position:"Content writer",
-        about:""
-    },
-    {   
-        id: 5,
-        image:SenthilKumar,
-        name:'Senthil Kumar',
-        position:"Wordpress Developer",
-        about:""
-    },
-    {   
-        id: 6,
-        image:Victoria,
-        name:'Victoria',
-        position:"Administrative Assistant",
-        about:""
-    },
-    {   
-        id: 7,
         image:EmmanuelAberuagba,
         name:'Emmanuel Aberuagba',
         position:"Project manager | frontend developer",
         about:""
     },
     {   
-        id: 8,
+        id: 3,
+        image:AniketRay,
+        name:'Aniket Ray',
+        position:"Project Lead (Software Development)",
+        about:""
+    },
+    {   
+        id: 4,
         image:Naveenkumar,
         name:'Naveenkumar V',
         position:"Front end developer",
         about:""
     },
     {   
-        id: 9,
+        id: 5,
         image:HammadNazir,
         name:'Hammad Ahmad',
         position:"Front end developer",
         about:""
     },
     {   
-        id: 10,
-        image:KedarKulkarni,
-        name:'Kedar',
-        position:"UI/UX Designer",
-        about:""
-    },
-    {   
-        id: 11,
+        id: 6,
         image:VinithRay,
         name:'Vinith Ray',
         position:"Front end developer",
         about:""
     },
     {   
-        id: 12,
+        id: 7,
         image:NabanitaGhosh,
         name:'Nabanita Ghosh',
         position:"Front end developer",
         about:""
     },
     {   
-        id: 13,
-        image:AniketRay,
-        name:'Aniket Ray',
-        position:"Project Lead (Software Development)",
+        id: 8,
+        image:femalePlaceholder,
+        name:'Gopiga Ranganathan',
+        position:"Front-end developer",
         about:""
     },
+    {   
+        id: 9,
+        image:SenthilKumar,
+        name:'Senthil Kumar',
+        position:"Wordpress Developer",
+        about:""
+    },
+    {   
+        id: 10,
+        image:Pallavi,
+        name:'Pallavi Sadavarte',
+        position:"UI/UX Designer",
+        about:""
+    },
+    {   
+        id: 11,
+        image:KedarKulkarni,
+        name:'Kedar',
+        position:"UI/UX Designer",
+        about:""
+    },
+   
+   
+    {   
+        id: 12,
+        image:Sarvesha,
+        name:'Sarvesha Shelar',
+        position:"UI/UX Designer",
+        about:""
+    },
+   
+    {   
+        id: 13,
+        image:AnselmSadiq,
+        name:'Anselm Sadiq',
+        position:"Content writer",
+        about:""
+    },
+   
+    {   
+        id: 14,
+        image:DavidZakari,
+        name:'Zakari Adeiza David',
+        position:"Content writer",
+        about:""
+    },
+   
+    {   
+        id: 15,
+        image:Victoria,
+        name:'Victoria',
+        position:"Administrative Assistant",
+        about:""
+    },
+   
+   
+   
 ]

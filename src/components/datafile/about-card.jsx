@@ -7,12 +7,12 @@ function Card({image, name, position, about}){
                 <img src={image} alt={`${name} image`} width={100} height={100} className="about-expert-card-image"/>
             </div>
             <div className="about-expert-card-heading mb-4">
-                <h4 className="about-expert-card-h4">{name}</h4>
-                <span className="about-expert-card-span" >{position}</span>
+                <h6 className="about-expert-card-h6">{name}</h6>
+                <p className="about-expert-card-span" >{position}</p>
             </div>
-            <div className="about-expert-card-para">
+            {/* <div className="about-expert-card-para">
                 <p className="about-expert-card-p">{about}</p>
-            </div>
+            </div> */}
         </li>
     )
 }
