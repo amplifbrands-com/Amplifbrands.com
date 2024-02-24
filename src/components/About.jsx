@@ -14,7 +14,8 @@ import '../styles/base.css';
 import '../styles/about.css';
 
 import { ThemeContext } from "../context/themeContext";
-
+//from aniket-> adding whatsapp floating import
+import Whatsapp from './Whatsapp';
 
 
 const About = () => {
@@ -23,6 +24,9 @@ const About = () => {
 
   return (
     <>
+    {/** from aniket adding whatsapp integration starts  */}
+  <Whatsapp/>
+  {/** from aniket  whatsapp integration ends here   */}
       <section className="about-hero">
         <div className="about-hero-inner">
           <div className="about-hero-heading">

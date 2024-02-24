@@ -2,7 +2,8 @@ import React from 'react'
 import "../styles/Services.css"
 import '../styles/base.css'
 import {services} from "../assets/service-page-data"
-
+//from aniket-> adding whatsapp floating import
+import Whatsapp from './Whatsapp';
 
 const ServiceHero = () => {
 
@@ -17,6 +18,9 @@ const ServiceHero = () => {
 
     return (
      <div className="service--hero">
+     {/** from aniket adding whatsapp integration starts  */}
+  <Whatsapp/>
+  {/** from aniket  whatsapp integration ends here   */}
       <div className="hero--content">
         <h1 className=" main-header text-center" >Explore Our Expert Solutions</h1>
         <div className="hero--list">

@@ -11,12 +11,17 @@ import Testimonials from './cards/testimonials';
 
 
 import { ThemeContext } from "../context/themeContext";
+//from aniket-> adding whatsapp floating import
+import Whatsapp from './Whatsapp';
 
 
 const Home = ({theme}) => {
   // const { theme } = useContext(ThemeContext);
   return (
   <div>
+  {/** from aniket adding whatsapp integration starts  */}
+  <Whatsapp/>
+  {/** from aniket  whatsapp integration ends here   */}
     <section className="hero-sec row mx-auto">
         <div className="section-title row text-center col-12"></div>
         <div className="row">
