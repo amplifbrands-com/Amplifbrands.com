@@ -16,6 +16,7 @@ import '../styles/about.css';
 import { ThemeContext } from "../context/themeContext";
 //from aniket-> adding whatsapp floating import
 import Whatsapp from './Whatsapp';
+import ScrollToTopButton from './ScrollToTopButton';
 
 
 const About = () => {
@@ -57,6 +58,7 @@ const About = () => {
             </div>
           </div>
         </div>
+        
       </section>
 
       <section className='about-value'>
@@ -135,6 +137,9 @@ const About = () => {
             </p>
           </div>
         </div>
+        {/**from aniket-> ScrollTopButton compoonent added  */}
+    <ScrollToTopButton/>
+    {/**from aniket-> ScrollTopButton component ended  */}
       </section>
       
       {/* <section className=" row mx-auto about-form-section">

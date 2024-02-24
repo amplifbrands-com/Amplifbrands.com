@@ -1,0 +1,26 @@
+/** from vinith-->scroll css is added for scroll to up button */
+
+.scroll-to-top-button {
+    position: fixed; /* Fixed position to stay at the same place regardless of scrolling */
+    bottom: 20px; /* Adjust the distance from the bottom */
+    left: 20px; /* Adjust the distance from the left */
+    background-color: rgba(234,180,0,1); /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Button border radius */
+    padding: 20px 30px; /* Button padding */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity change */
+    display: flex; /* Use flexbox for positioning */
+    align-items: center; /* Center align items vertically */
+    z-index: 99;
+}
+
+.scroll-to-top-button.visible {
+    opacity: 1; /* Show button when visible */
+}
+
+.scroll-to-top-button svg {
+    margin-right: 8px; /* Adjust margin to separate the icon from text */
+}
