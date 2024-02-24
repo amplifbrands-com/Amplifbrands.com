@@ -49,7 +49,7 @@ const Footer = () => {
                 </h6>
               </div>
               <ul className="footer-quick-ul">
-                <li className="footer-quick-li"><Link to="/service" className="footer-quick-links">Service</Link></li>
+                <li className="footer-quick-li"><Link to="/services" className="footer-quick-links">Service</Link></li>
                 <li className="footer-quick-li"><Link to="/" className="footer-quick-links">Portfolio</Link></li>
                 <li className="footer-quick-li"><Link to="/" className="footer-quick-links">Pricing</Link></li>
                 <li className="footer-quick-li"><Link to="/contact" className="footer-quick-links">Contact Us</Link></li>
