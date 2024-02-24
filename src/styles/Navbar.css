@@ -188,27 +188,3 @@ svg {
 
 
 /************************** Responsiveness End *****************************/
-
-.mode-icon-moon, .mode-icon-sun{
- font-size: 25px; 
-}
-
-.dark-mode-toggle {
-  position: fixed;
-  bottom: 20px; /* Adjust bottom spacing */
-  right: 20px; /* Adjust right spacing */
-  width: 40px;
-  height: 40px;
-  background-color: #ddd; /* Background color of toggle button */
-  border-radius: 20px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-}
-
-
-.dark-mode-toggle:hover {
-  background-color: #ccc; /* Adjust hover background color */
-}

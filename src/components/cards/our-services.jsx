@@ -1,10 +1,9 @@
-import { ThemeContext } from "../../context/themeContext";
+
 import '../../styles/base.css'
 import '../../styles/servi-card.css'
-import React, {useContext} from 'react'
+import React from 'react'
 
 function ServiCard({icon, title, content, theme}){
-    // const { theme } = useContext(ThemeContext);
     return(
 
         <div className= 'card-wrapper'>

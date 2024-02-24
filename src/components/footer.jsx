@@ -19,7 +19,6 @@ import "../styles/base.css"
 const Footer = () => {
   return (
     <>
-      {/* Don't change it again. I use div cause section margins need to be corrected and for nav tag it is for seo so don't remove it.  */}
       <div className="footer-main-outer">
         <nav className="footer-main-inner">
           <div className="footer-logo-social">

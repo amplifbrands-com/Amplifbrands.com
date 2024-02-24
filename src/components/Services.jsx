@@ -2,7 +2,7 @@ import React from 'react'
 import "../styles/Services.css"
 import '../styles/base.css'
 import {services} from "../assets/service-page-data"
-//from aniket-> adding whatsapp floating import
+
 import Whatsapp from './Whatsapp';
 import ScrollToTopButton from './ScrollToTopButton';
 
@@ -57,8 +57,8 @@ const KeyActivity = ({activity, theme}) => {
 const ServiceCard = ({service, index, theme}) => {
 
   return (
-    <section  id={service.title} className="">
 
+    <section  id={service.title} className="">
           <div key={index} className="">
 
                   <div className="service--info mb-5">
