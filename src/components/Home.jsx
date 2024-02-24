@@ -15,7 +15,6 @@ import { ThemeContext } from "../context/themeContext";
 
 const Home = ({theme}) => {
   // const { theme } = useContext(ThemeContext);
-  console.log(theme);
   return (
   <div>
     <section className="hero-sec row mx-auto">

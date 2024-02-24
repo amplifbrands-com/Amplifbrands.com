@@ -12,13 +12,17 @@ import { FaSun, FaMoon } from 'react-icons/fa';
 import { ThemeContext } from '../context/themeContext';
 
 
-const Navbar = ({theme}) => {
+const Navbar = ({showContact, changeShowContact}) => {
 
   const location = useLocation();
   const path = location.pathname;
 
 
-  // const {theme, handleOnClick} = useContext(ThemeContext);
+  const {theme, handleOnClick} = useContext(ThemeContext);
+
+  const seeContacts = () =>{
+    changeShowContact()
+  }
 
   return (
    <div className="navigation-container">
@@ -32,20 +36,19 @@ const Navbar = ({theme}) => {
           <ul className="nav-links-ul mb-0">
             <li className="nav-links-li"><Link to="/" className='nav-li-links' id={ path === '/' ? 'active' : 'inactive'} >Home</Link></li>
             <li className="nav-links-li"><Link to="/services" className='nav-li-links' id={ path === '/services' ? 'active' : 'inactive'} >Services</Link></li>
-            <li className="nav-links-li"><Link to="/" className='nav-li-links' id={ path === '/portfolio' ? 'active' : 'inactive'} >Portfolios</Link></li>
             <li className="nav-links-li"><Link to="/about" className='nav-li-links' id={ path === '/about' ? 'active' : 'inactive'} >About Us</Link></li>
           </ul>
         </div>
         <div className="nav-btn-outer">
-          <button className="cta-btn">
+          <button className="cta-btn" onClick={seeContacts}>
             Book A Meeting
           </button>
         </div>
-        {/* <div className="dark-mode-toggle" onClick={handleOnClick}>
+        <div className="dark-mode-toggle" onClick={handleOnClick}>
           {theme === 'light' ? <FaMoon className="mode-icon-moon" /> : <FaSun className="mode-icon-sun" />}
-        </div> */}
+        </div>
         <div className="mobile-bar">
-          <Mobile theme={theme} />
+          <Mobile  showContact={showContact} changeShowContact={changeShowContact} />
         </div>
       </nav>
    </div>

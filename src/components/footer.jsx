@@ -51,10 +51,8 @@ const Footer = () => {
               </div>
               <ul className="footer-quick-ul">
                 <li className="footer-quick-li"><Link to="/" className="footer-quick-links">Service</Link></li>
-                <li className="footer-quick-li"><Link to="/" className="footer-quick-links">Portfolio</Link></li>
-                <li className="footer-quick-li"><Link to="/" className="footer-quick-links">Pricing</Link></li>
-                <li className="footer-quick-li"><Link to="/" className="footer-quick-links">Contact Us</Link></li>
-                <li className="footer-quick-li"><Link to="/" className="footer-quick-links">Our Team</Link></li>
+                <li className="footer-quick-li"><Link to="/contact" className="footer-quick-links">Contact Us</Link></li>
+                <li className="footer-quick-li"><Link to="/about" className="footer-quick-links">Our Team</Link></li>
               </ul>
             </div>
             <div className="footer-add-outer">
