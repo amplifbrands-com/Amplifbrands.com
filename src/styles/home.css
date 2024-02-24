@@ -1,8 +1,10 @@
 @import './home-whyus.css';
+/*from aniket commented out this unncessary lines of code */
 
+/* 
 ::-webkit-scrollbar{
     display: none;
-}
+} */
 
 .hero-sec{
     background-color:#000;;

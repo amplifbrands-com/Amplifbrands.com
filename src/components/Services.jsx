@@ -4,6 +4,7 @@ import '../styles/base.css'
 import {services} from "../assets/service-page-data"
 //from aniket-> adding whatsapp floating import
 import Whatsapp from './Whatsapp';
+import ScrollToTopButton from './ScrollToTopButton';
 
 const ServiceHero = () => {
 
@@ -109,7 +110,10 @@ const Services = ({theme}) => {
         { services.map( (service, index) => (
           <ServiceCard key={index} service={service} index={index} theme={theme} />
                     )
-      )}      
+      )} 
+      {/**from aniket-> ScrollTopButton compoonent added  */}
+    <ScrollToTopButton/>
+    {/**from aniket-> ScrollTopButton component ended  */}     
     </div>
   )
 }

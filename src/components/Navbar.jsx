@@ -44,9 +44,11 @@ const Navbar = ({showContact, changeShowContact}) => {
             Book A Meeting
           </button>
         </div>
+{/** from aniket commente out unncessary part 
         <div className="dark-mode-toggle" onClick={handleOnClick}>
           {theme === 'light' ? <FaMoon className="mode-icon-moon" /> : <FaSun className="mode-icon-sun" />}
         </div>
+*/}
         <div className="mobile-bar">
           <Mobile  showContact={showContact} changeShowContact={changeShowContact} />
         </div>

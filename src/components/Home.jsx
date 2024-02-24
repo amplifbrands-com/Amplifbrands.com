@@ -13,6 +13,7 @@ import Testimonials from './cards/testimonials';
 import { ThemeContext } from "../context/themeContext";
 //from aniket-> adding whatsapp floating import
 import Whatsapp from './Whatsapp';
+import ScrollToTopButton from './ScrollToTopButton';
 
 
 const Home = ({theme}) => {
@@ -97,6 +98,11 @@ const Home = ({theme}) => {
       </div>
       <Form />
     </section> */}
+
+{/**from aniket-> ScrollTopButton compoonent added  */}
+    <ScrollToTopButton/>
+{/**from aniket-> ScrollTopButton component ended  */}
+
   </div>
   )
 }
