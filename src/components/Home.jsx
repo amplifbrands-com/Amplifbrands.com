@@ -16,9 +16,7 @@ import ScrollToTopButton from './ScrollToTopButton';
 const Home = ({theme}) => {
   return (
   <div>
-  {/** from aniket adding whatsapp integration starts  */}
   <Whatsapp/>
-  {/** from aniket  whatsapp integration ends here   */}
     <section className="hero-sec row mx-auto">
         <div className="section-title row text-center col-12"></div>
         <div className="row">
@@ -57,13 +55,20 @@ const Home = ({theme}) => {
         </h3>
         <h6 className='sub-header col-12 col-sm-8 mx-auto'>Navigating the Digital Frontier</h6>
       </div>
-      <div className="whyus-sec col-12">
+
+
+     <div class="slider-home-outer">
+      <div class="whyus-sec col-12">
         {
           whyUsData.map(cont =>(
-            <WhyUs key={cont.title} icon={cont.icon} title={cont.title} subtitle={cont.subtitle} content={cont.content} theme={theme} />
+            <div class="whyus-item" key={cont.title}>
+              <WhyUs icon={cont.icon} title={cont.title} subtitle={cont.subtitle} content={cont.content} theme={theme} />
+            </div>
           ))
         }
       </div>
+    </div>
+
     </section>
     <section className=" row mx-auto">
       <div className="section-title row text-center col-12 mx-auto">
@@ -94,9 +99,7 @@ const Home = ({theme}) => {
       <Form />
     </section> */}
 
-{/**from aniket-> ScrollTopButton compoonent added  */}
     <ScrollToTopButton/>
-{/**from aniket-> ScrollTopButton component ended  */}
 
   </div>
   )

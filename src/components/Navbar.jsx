@@ -7,7 +7,6 @@ import "../styles/base.css"
 import Mobile from "./mobileNav/mobilenav"
 import Logo from "../assets/logo.svg"
 import { useLocation } from 'react-router-dom';
-import { FaSun, FaMoon } from 'react-icons/fa';
 
 
 

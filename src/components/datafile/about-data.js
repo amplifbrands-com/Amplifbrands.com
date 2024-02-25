@@ -13,11 +13,7 @@ import AniketRay from "/amplif-members/Aniket-Ray.jpeg"
 import RohitSalunke from "/amplif-members/Rohit-Salunke.jpg"
 import Pallavi from "/amplif-members/Pallavi-Sadavarte.jpg"
 import Sarvesha from "/amplif-members/Sarvesha-Shelar.jpg"
-// import Expert from "../../assets/about-us/about-expert.svg"
 
-// Save image file in /public/amplif-members/your-image
-// Import image files here 
-// change data below, rearrange the data to control the order of displaying our-experts details
 
 export const data = [
     {   
