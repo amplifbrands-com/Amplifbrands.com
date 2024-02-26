@@ -58,6 +58,26 @@
     height: 10px; 
   }
 
+@media screen and (max-width:640px) {
+    
+    
+    .whyus-sec{
+        display: flex;
+        gap:24px;
+        padding-bottom: 50px;
+    }
+    .slider-home-outer::-webkit-scrollbar-track {
+        background-color: #f1f1f1 !important; 
+      }
+      
+    
+      .slider-home-outer::-webkit-scrollbar-thumb {
+        background-color: var( --prim-color) !important; 
+        border-radius: 5px !important; 
+      }
+      
+}
+
 
 .servi-sec{
     display: grid;
