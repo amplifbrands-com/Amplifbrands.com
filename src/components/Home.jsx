@@ -57,11 +57,11 @@ const Home = ({theme}) => {
       </div>
 
 
-     <div class="slider-home-outer">
-      <div class="whyus-sec col-12">
+     <div className="slider-home-outer">
+      <div className="whyus-sec col-12">
         {
           whyUsData.map(cont =>(
-            <div class="whyus-item" key={cont.title}>
+            <div className="whyus-item" key={cont.title}>
               <WhyUs icon={cont.icon} title={cont.title} subtitle={cont.subtitle} content={cont.content} theme={theme} />
             </div>
           ))
