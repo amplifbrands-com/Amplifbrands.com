@@ -54,6 +54,7 @@ const MobileNav = ({showContact, changeShowContact}) => {
                   <li className='mobile-nav-li'>
                     <Link to="/services" className="mobile-nav-link" onClick={closeMenu}>Services</Link>
                   </li>
+                  <li className="mobile-nav-li"><Link to="/portfolio" className='mobile-nav-link' onClick={closeMenu}>Portfolio</Link></li>
                   <li className='mobile-nav-li'>
                     <Link to="/contact" className="mobile-nav-link" onClick={closeMenu}>Contact Us</Link>
                   </li>
