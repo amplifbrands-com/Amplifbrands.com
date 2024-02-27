@@ -11,6 +11,8 @@ import Testimonials from './cards/testimonials';
 
 import Whatsapp from './Whatsapp';
 import ScrollToTopButton from './ScrollToTopButton';
+import { PopupButton } from "react-calendly";
+
 
 
 const Home = ({theme}) => {
@@ -34,7 +36,27 @@ const Home = ({theme}) => {
               here to propel your brand forward. Let's embark on a journey to
               redefine success together.
             </p>
-            <button type="button" className="cta-btn mt-5" >Get a Free Consultation</button>
+            {/* <button type="button" className="cta-btn mt-5" >Get a Free Consultation</button> */}
+            <PopupButton
+              url="https://calendly.com/amplifbrands/free-consultation-meeting"
+                    /*
+                    * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
+                    * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
+                    */
+                rootElement={document.getElementById("root")}
+                className="cta-btn mt-5 d-none d-md-block"
+                text="Get a Free Consultation"
+          />
+           <PopupButton
+              url="https://calendly.com/amplifbrands/free-consultation-meeting"
+                    /*
+                    * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
+                    * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
+                    */
+                rootElement={document.getElementById("root")}
+                className="cta-btn mt-5 d-block d-md-none"
+                text="Book a meeting"
+          />
             
           </div>
           <div className="col-lg-4 col-md-4 mt-3 p-3 order-1 order-md-2">

@@ -13,6 +13,8 @@ import AniketRay from "/amplif-members/Aniket-Ray.jpeg"
 import RohitSalunke from "/amplif-members/Rohit-Salunke.jpg"
 import Pallavi from "/amplif-members/Pallavi-Sadavarte.jpg"
 import Sarvesha from "/amplif-members/Sarvesha-Shelar.jpg"
+import Seeni from "/amplif-members/CR-seeni.jpg"
+import Nandhakumar from "/amplif-members/Nandhakumar-Anandhan.jpg"
 
 
 export const data = [
@@ -102,9 +104,23 @@ export const data = [
         position:"UI/UX Designer",
         about:""
     },
-   
     {   
         id: 13,
+        image:Seeni,
+        name:'Seeni vasan',
+        position:"UI/UX Designer",
+        about:""
+    },
+    {   
+        id: 14,
+        image:Nandhakumar,
+        name:'Nandhakumar Anandhan',
+        position:"UI/UX Designer",
+        about:""
+    },
+   
+    {   
+        id: 15,
         image:AnselmSadiq,
         name:'Anselm Sadiq',
         position:"Content writer",
@@ -112,7 +128,7 @@ export const data = [
     },
    
     {   
-        id: 14,
+        id: 16,
         image:DavidZakari,
         name:'Zakari Adeiza David',
         position:"Content writer",
@@ -120,7 +136,7 @@ export const data = [
     },
    
     {   
-        id: 15,
+        id: 17,
         image:Victoria,
         name:'Victoria',
         position:"Administrative Assistant",

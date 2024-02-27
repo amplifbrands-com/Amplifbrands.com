@@ -386,3 +386,7 @@ textarea:focus::placeholder{
 svg{
     fill: var(--sec-color) !important;
 }
+
+.calendly-overlay{
+    backdrop-filter: blur(10px); 
+}
