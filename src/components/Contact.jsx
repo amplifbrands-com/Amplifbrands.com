@@ -19,19 +19,19 @@ const ContactUsPage = () => {
         <div className="contact-info">
           <div className="info-item">
             <IoMdMail style={{ fontSize: '26px', marginRight: '8px' }} />
-            <span>Amplif@website.com</span>
+            <span>contact@amplifbrands.com</span>
           </div>
           <div className="info-item">
             <IoLocationSharp style={{ fontSize: '26px', marginRight: '8px', marginTop: '6px' }} />
             <div className="address-item">
-              <span>Riverside Building, County Hall,</span>
+              <span>Amplif Brands Private Limited, 3rd Cross Rd, Electronics City Phase 1, Electronic City, </span>
               <br />
-              <span className="special-info-item">London SE1 7PB, United Kingdom </span>
+              <span className="special-info-item">Bengaluru, Karnataka 560100. </span>
             </div>
           </div>
           <div className="info-item">
             <FaPhoneAlt style={{ fontSize: '26px', marginRight: '8px' }} />
-            <span>451-484-5939</span>
+            <span>+91 95457 49447</span>
           </div>
         </div>
       </div>
