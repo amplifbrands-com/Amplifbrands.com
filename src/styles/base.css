@@ -265,6 +265,7 @@ section, header{
     text-transform: uppercase;
     border-radius: 0.4rem;
     padding: 0.6rem 1.6rem;
+    text-decoration:none;
 }
 
 .cta-btn:disabled{

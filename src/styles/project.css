@@ -1,0 +1,44 @@
+@import './base.css';
+
+.project--header{
+    height:260px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin-top:60px;
+}
+
+.project--header h1{
+    text-transform:uppercase;
+    color:var(--text-h);
+}
+
+.main--image{
+    display:flex;
+    justify-content:center;
+    position:relative;
+}
+.main--image .background{
+    height:360px;
+    width:100vw;
+    background-color:var(--background-d-sec);
+    position:absolute;
+}
+
+.main--image img{
+    /* width: 1222px; */
+    height: 535px;
+    margin-top:50px;
+    display:absolute;
+    z-index:1;
+}
+
+.cta-btn-2{
+    background-color:rgba(234,180,0,1);
+    font-weight: 600;
+    color: var(--text-b);
+    border:none;
+    text-transform: uppercase;
+    padding: 0.6rem 1.6rem;
+    text-decoration:none;
+}   
