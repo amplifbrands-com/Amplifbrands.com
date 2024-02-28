@@ -1,6 +1,7 @@
 import React from "react";
 //from aniket-> adding whatsapp floating import
 import { FloatingWhatsApp } from "react-floating-whatsapp";
+
 const Whatsapp = () => {
   return (
     <div >

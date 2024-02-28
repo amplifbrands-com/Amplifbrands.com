@@ -13,7 +13,7 @@ import '../styles/base.css';
 const ContactUsPage = () => {
   return (
     <>
-    <div className="contact-us-page-container">
+    <section className="contact-us-page-container">
       <div className="contact-details">
         <h1>Contact Us</h1>
         <div className="contact-info">
@@ -38,7 +38,7 @@ const ContactUsPage = () => {
       <div className="contact-image">
         <img src={Hero} alt="Contact" />
       </div>
-    </div>
+    </section>
     <GetInTouch/>
     <section className=" row mx-auto about-form-section">
         <div className="section-title text-center col-12 row mx-auto">

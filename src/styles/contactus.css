@@ -1,9 +1,11 @@
+@import './base.css';
+
 .contact-us-page-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: rgb(231, 240, 241);
+    background-color: var(--background-d-sec);
   }
   
   .contact-details {
