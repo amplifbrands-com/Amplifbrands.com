@@ -1,12 +1,35 @@
-.container{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@import './base.css';
+
+.portfolio--hero{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding: 32px 100px;
+    min-height:80vh;
+    background: linear-gradient(102.67deg, #1C1C1C 3.13%, rgba(7, 23, 29, 0.87) 34.48%, rgba(7, 40, 51, 0.85) 65.84%, rgba(23, 107, 135, 0.81) 97.19%),linear-gradient(0deg, #1C1C1C, #1C1C1C);
+
+}
+.hero--title, .hero--desc{
+    color:var(--text-w);
 }
 
-.port-h1{
-    font-size: 64px;
-    color:#3a527b;
+.hero-image{
+    width: 610.06px;
+    height: 312.63px;
+}
+
+.hero--highlight{
+    color:var(--prim-color);
+}
+
+.project-image{
+    width: 550px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 640px){
+    .portfolio--hero{
+        padding:32px 16px;
+    }
 }
