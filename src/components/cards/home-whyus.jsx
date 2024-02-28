@@ -2,9 +2,7 @@
 import React, {useContext} from 'react'
 import '../../styles/base.css';
 import '../../styles/home-whyus.css';
-import { ThemeContext } from "../../context/themeContext";
 function WhyUs({icon, title, subtitle, content, theme}){
-    // const { theme } = useContext(ThemeContext);
 
     return(
         <div className='card-main-wrapper'>

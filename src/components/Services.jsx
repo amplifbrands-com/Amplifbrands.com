@@ -3,6 +3,8 @@ import "../styles/Services.css"
 import '../styles/base.css'
 import {services} from "../assets/service-page-data"
 
+import Whatsapp from './Whatsapp';
+import ScrollToTopButton from './ScrollToTopButton';
 
 const ServiceHero = () => {
 
@@ -17,6 +19,9 @@ const ServiceHero = () => {
 
     return (
      <div className="service--hero">
+     {/** from aniket adding whatsapp integration starts  */}
+  <Whatsapp/>
+  {/** from aniket  whatsapp integration ends here   */}
       <div className="hero--content">
         <h1 className=" main-header text-center" >Explore Our Expert Solutions</h1>
         <div className="hero--list">
@@ -52,8 +57,8 @@ const KeyActivity = ({activity, theme}) => {
 const ServiceCard = ({service, index, theme}) => {
 
   return (
-    <section  id={service.title} className="">
 
+    <section  id={service.title} className="">
           <div key={index} className="">
 
                   <div className="service--info mb-5">
@@ -105,7 +110,10 @@ const Services = ({theme}) => {
         { services.map( (service, index) => (
           <ServiceCard key={index} service={service} index={index} theme={theme} />
                     )
-      )}      
+      )} 
+      {/**from aniket-> ScrollTopButton compoonent added  */}
+    <ScrollToTopButton/>
+    {/**from aniket-> ScrollTopButton component ended  */}     
     </div>
   )
 }

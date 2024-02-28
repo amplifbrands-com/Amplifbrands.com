@@ -13,20 +13,21 @@ import Over4 from "../assets/about-us/our-value-4.svg"
 import '../styles/base.css';
 import '../styles/about.css';
 
-import { ThemeContext } from "../context/themeContext";
-
+import Whatsapp from './Whatsapp';
+import ScrollToTopButton from './ScrollToTopButton';
 
 
 const About = () => {
 
-  const { theme } = useContext(ThemeContext);
-
   return (
     <>
+    {/** from aniket adding whatsapp integration starts  */}
+  <Whatsapp/>
+  {/** from aniket  whatsapp integration ends here   */}
       <section className="about-hero">
         <div className="about-hero-inner">
           <div className="about-hero-heading">
-            <h4 className={`${theme === 'light' ? 'about-hero-h4': 'about-hero-h4-dark'}`}>
+            <h4 className="about-hero-h4">
               About Amplif
             </h4>
           </div>
@@ -53,6 +54,7 @@ const About = () => {
             </div>
           </div>
         </div>
+        
       </section>
 
       <section className='about-value'>
@@ -114,7 +116,7 @@ const About = () => {
       <section className="about-meet-expert">
         <div className="about-meet-inner">
           <div className="about-meet-heading">
-            <h4 className={`${theme === 'light' ? 'about-meet-h4': 'about-meet-h4-dark'}`}>
+            <h4 className="about-meet-h4">
               Meet Our Experts
             </h4>
           </div>
@@ -131,9 +133,12 @@ const About = () => {
             </p>
           </div>
         </div>
+        {/**from aniket-> ScrollTopButton compoonent added  */}
+    <ScrollToTopButton/>
+    {/**from aniket-> ScrollTopButton component ended  */}
       </section>
       
-      {/* <section className=" row mx-auto about-form-section">
+      <section className=" row mx-auto about-form-section">
         <div className="section-title text-center col-12 row mx-auto">
           <h3 className="main-header col-12">
             Get In Touch
@@ -141,7 +146,7 @@ const About = () => {
           <h6 className="sub-header col-12 col-sm-8 mx-auto about-form-h6">Ready to elevate your digital presence and achieve your business goals? Contact us today to learn more about our services and discover how Amplif can help you succeed in the digital age.</h6>
         </div>
         <Form />
-      </section> */}
+      </section>
     </>
   )
 }

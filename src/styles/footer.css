@@ -53,6 +53,11 @@ ul{
     text-decoration: none;
 }
 
+.footer-add-content .footer-add-links{
+    color: rgba(255,255,255,1) !important;
+
+}
+
 .footer-add-content{
     margin-top: 10px;
     width: 280px;

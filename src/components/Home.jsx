@@ -9,14 +9,16 @@ import { serviceData } from '../assets/service-card-data';
 import Form from './cards/message-form';
 import Testimonials from './cards/testimonials';
 
+import Whatsapp from './Whatsapp';
+import ScrollToTopButton from './ScrollToTopButton';
+import { PopupButton } from "react-calendly";
 
-import { ThemeContext } from "../context/themeContext";
 
 
 const Home = ({theme}) => {
-  // const { theme } = useContext(ThemeContext);
   return (
   <div>
+  <Whatsapp/>
     <section className="hero-sec row mx-auto">
         <div className="section-title row text-center col-12"></div>
         <div className="row">
@@ -34,7 +36,27 @@ const Home = ({theme}) => {
               here to propel your brand forward. Let's embark on a journey to
               redefine success together.
             </p>
-            <button type="button" className="cta-btn mt-5" >Get a Free Consultation</button>
+            {/* <button type="button" className="cta-btn mt-5" >Get a Free Consultation</button> */}
+            <PopupButton
+              url="https://calendly.com/amplifbrands/free-consultation-meeting"
+                    /*
+                    * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
+                    * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
+                    */
+                rootElement={document.getElementById("root")}
+                className="cta-btn mt-5 d-none d-md-block"
+                text="Get a Free Consultation"
+          />
+           <PopupButton
+              url="https://calendly.com/amplifbrands/free-consultation-meeting"
+                    /*
+                    * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
+                    * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
+                    */
+                rootElement={document.getElementById("root")}
+                className="cta-btn mt-5 d-block d-md-none"
+                text="Book a meeting"
+          />
             
           </div>
           <div className="col-lg-4 col-md-4 mt-3 p-3 order-1 order-md-2">
@@ -48,7 +70,6 @@ const Home = ({theme}) => {
       </h3>
       <p className='sub-header col-12 col-sm-8 mx-auto'>Our mission at Amplif is to empower startup entrepreneurs with tailored marketing solutions crafted by our experts, addressing their unique pain points, driving exponential growth, and unleashing their full potential.</p>
     </section>
-    {/* {`${theme === 'light' ? 'sub-header col-12 col-sm-8 mx-auto': 'text-light sub-header col-12 col-sm-8 mx-auto'}`} */}
     <section className=" row mx-auto">
       <div className="section-title text-center row col-12 mx-auto">
         <h3 className='main-header col-12'>
@@ -56,13 +77,20 @@ const Home = ({theme}) => {
         </h3>
         <h6 className='sub-header col-12 col-sm-8 mx-auto'>Navigating the Digital Frontier</h6>
       </div>
+
+
+     <div className="slider-home-outer">
       <div className="whyus-sec col-12">
         {
           whyUsData.map(cont =>(
-            <WhyUs key={cont.title} icon={cont.icon} title={cont.title} subtitle={cont.subtitle} content={cont.content} theme={theme} />
+            <div className="whyus-item" key={cont.title}>
+              <WhyUs icon={cont.icon} title={cont.title} subtitle={cont.subtitle} content={cont.content} theme={theme} />
+            </div>
           ))
         }
       </div>
+    </div>
+
     </section>
     <section className=" row mx-auto">
       <div className="section-title row text-center col-12 mx-auto">
@@ -92,6 +120,9 @@ const Home = ({theme}) => {
       </div>
       <Form />
     </section> */}
+
+    <ScrollToTopButton/>
+
   </div>
   )
 }

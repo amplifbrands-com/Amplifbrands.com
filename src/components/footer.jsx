@@ -19,7 +19,6 @@ import "../styles/base.css"
 const Footer = () => {
   return (
     <>
-      {/* Don't change it again. I use div cause section margins need to be corrected and for nav tag it is for seo so don't remove it.  */}
       <div className="footer-main-outer">
         <nav className="footer-main-inner">
           <div className="footer-logo-social">
@@ -35,10 +34,10 @@ const Footer = () => {
                 </h6>
               </div>
               <div className="footer-social-icons">
-                <Link to="" className="footer-social-link"><img src={Twitter} alt="" title='' className='footer-social-img' /></Link>
+                <Link to="https://x.com/Amplifbrands" className="footer-social-link"><img src={Twitter} alt="" title='' className='footer-social-img' /></Link>
                 <Link to="https://www.instagram.com/amplifbrands?igsh=M2ZrZzNsM2J0eXVt" className="footer-social-link"><img src={Instagram} alt="" title='' className='footer-social-img' /></Link>
                 <Link to="https://www.facebook.com/profile.php?id=61555981845045&mibextid=ZbWKwL" className="footer-social-link"><img src={Facebook} alt="" title='' className='footer-social-img' /></Link>
-                <Link to="" className="footer-social-link"><img src={Youtube} alt="" title='' className='footer-social-img' /></Link>
+                <Link to="https://youtube.com/@Amplifbrands" className="footer-social-link"><img src={Youtube} alt="" title='' className='footer-social-img' /></Link>
               </div>
             </div>
           </div>
@@ -77,10 +76,10 @@ const Footer = () => {
                 </h6>
               </div>
               <div className="footer-social-icons">
-                <Link to="" className="footer-social-link"><img src={Twitter} alt="" title='' className='footer-social-img' /></Link>
+                <Link to="https://x.com/Amplifbrands" className="footer-social-link"><img src={Twitter} alt="" title='' className='footer-social-img' /></Link>
                 <Link to="https://www.instagram.com/amplifbrands?igsh=M2ZrZzNsM2J0eXVt" className="footer-social-link"><img src={Instagram} alt="" title='' className='footer-social-img' /></Link>
                 <Link to="https://www.facebook.com/profile.php?id=61555981845045&mibextid=ZbWKwL" className="footer-social-link"><img src={Facebook} alt="" title='' className='footer-social-img' /></Link>
-                <Link to="" className="footer-social-link"><img src={Youtube} alt="" title='' className='footer-social-img' /></Link>
+                <Link to="https://youtube.com/@Amplifbrands" className="footer-social-link"><img src={Youtube} alt="" title='' className='footer-social-img' /></Link>
               </div>
             </div>
           </div>
