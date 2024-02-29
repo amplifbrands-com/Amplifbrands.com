@@ -26,23 +26,36 @@ const Project = ({theme}) => {
 
                 </div>
                 <section >
-                    <div className="row my-5">
-                    {data.serviceCategory.map(item => (
-                        <div className="col">
+                    <div className="row my-5 project--category">
+                    {data.serviceCategory.map((item,index) => (
+                        <div className="col d-flex flex-column align-items-center"  key={index}>
                             <img src={ theme==='light'? item.icon.light: item.icon.dark} alt={item.category} />
-                            <p >{item.category}</p>
+                            <h4 className="mt-2">{item.category}</h4>
                         </div>
                     ))}
                     </div>
-                    <div>
-                        <p>{data.description}</p>
+                    <div className="project--detail">
+                        <h5>{data.description}</h5>
+                        <div className="d-flex justify-content-center mt-5 ">
                         <Link to={data.websiteLink} className="cta-btn-2">visit website</Link>
+                        </div>
+                      
                     </div>
                     <div className="image--container">
-                       <img src={data.image1} alt={data.name} />
-                       <img src={data.image2} alt={data.name} />
+                       <img src={data.image1} alt={data.name} className="img-fluid" />
+                       <img src={data.image2} alt={data.name} className="img-fluid" />
                     </div>
-                    {/* youtube part will be embedded later */}
+                  
+                    <div className="d-flex justify-content-center">
+                    <iframe
+                    className="youtube"
+                    src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                    title="YouTube Video"
+                    frameBorder="0"
+                    allowFullScreen
+                    ></iframe>
+                    </div>
+                   
                    <div className="btn--group">
 
                     <Link to={`/portfolio/${parsedProjectId - 1}`} className="cta-btn">Previous Project</Link>

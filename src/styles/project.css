@@ -33,6 +33,13 @@
     z-index:1;
 }
 
+.project--category{
+    background-color:var(--sec-bg);
+    padding:52px 176px;
+}
+.project--detail{
+    margin:50px 0px;
+}
 .cta-btn-2{
     background-color:rgba(234,180,0,1);
     font-weight: 600;
@@ -42,3 +49,22 @@
     padding: 0.6rem 1.6rem;
     text-decoration:none;
 }   
+
+.image--container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.image--container img{
+    margin:20px 0;
+}
+
+.youtube{
+    width:100%;
+    height:458px;
+}
+.btn--group{
+    display:flex;
+    justify-content:space-between;
+    margin:20px 0px;
+}
