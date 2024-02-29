@@ -59,7 +59,7 @@ function App() {
             <Route path="/signup" element={<SignUp />} />
             <Route path="/signin" element={<SignIn />} />
             <Route path="/services" element={<Services theme={theme} />} />
-            <Route path="/portfolio/:projectId" element={<Project />} />
+            <Route path="/portfolio/:projectId" element={<Project theme={theme} />} />
           </Routes>
           {
             showContact &&

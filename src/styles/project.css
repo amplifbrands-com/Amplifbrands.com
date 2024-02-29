@@ -20,7 +20,7 @@
 }
 .main--image .background{
     height:360px;
-    width:100vw;
+    width:100%;
     background-color:var(--background-d-sec);
     position:absolute;
 }
