@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { serviceData } from "../../assets/service-card-data";
 import "../../styles/mess-form.css";
 // this is the code for the message form

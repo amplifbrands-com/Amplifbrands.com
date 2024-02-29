@@ -37,7 +37,7 @@ const Deliverable = ({deliverable, theme}) => {
   return (
             <div className="deliverables col-12 col-md d-flex justify-content-center">
               <div className=" d-flex flex-md-column flex-row align-items-md-center justify-content-md-center " >
-                  <img src={ theme==='light'? deliverable.icon.light: deliverable.icon.dark} alt="" className="deliverable-icon" />
+                  <img src={ theme==='light'? deliverable.icon.light: deliverable.icon.dark} alt={deliverable.subtitle} className="deliverable-icon" />
                   <p className="body-text text-center" >{deliverable.subtitle}</p>
               </div>
             </div>
@@ -48,7 +48,7 @@ const Deliverable = ({deliverable, theme}) => {
 const KeyActivity = ({activity, theme}) => {
   return (
           <div className="key-activities mb-4 d-flex align-items-center">
-                <img src={ theme==="light" ? activity.icon.light: activity.icon.dark} alt="" className="service-key-icon" />
+                <img src={ theme==="light" ? activity.icon.light: activity.icon.dark} alt="amplif activity" className="service-key-icon" />
                 <p className='body-text'>{activity.subtitle}</p>
           </div>
   )

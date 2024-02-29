@@ -15,7 +15,7 @@ const PortfolioHero = () => {
           <p className="hero--desc">Unlock the full potential of your brand with our expert digital marketing solutions. Together, let's dominate the digital landscape and achieve your goals.</p>
         </div>
         <div className="col-12 col-md">
-          <img src="/portfolio-page/portfolio-hero.png" alt="" className="img-fluid hero-image" />
+          <img src="/portfolio-page/portfolio-hero.png" alt="portfolio" className="img-fluid hero-image" />
         </div>
       </div>
     </div>

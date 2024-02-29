@@ -22,14 +22,14 @@ const Project = ({theme}) => {
                 <div className="main--image">
                     <div className="background">
                     </div>
-                    <img src={data.mainImage} alt="" />
+                    <img src={data.mainImage} alt={data.name} />
 
                 </div>
                 <section >
                     <div className="row my-5">
                     {data.serviceCategory.map(item => (
                         <div className="col">
-                            <img src={ theme==='light'? item.icon.light: item.icon.dark} alt="" />
+                            <img src={ theme==='light'? item.icon.light: item.icon.dark} alt={item.category} />
                             <p >{item.category}</p>
                         </div>
                     ))}
@@ -39,8 +39,8 @@ const Project = ({theme}) => {
                         <Link to={data.websiteLink} className="cta-btn-2">visit website</Link>
                     </div>
                     <div className="image--container">
-                       <img src={data.image1} alt="" />
-                       <img src={data.image2} alt="" />
+                       <img src={data.image1} alt={data.name} />
+                       <img src={data.image2} alt={data.name} />
                     </div>
                     {/* youtube part will be embedded later */}
                    <div className="btn--group">

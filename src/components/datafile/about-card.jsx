@@ -1,4 +1,5 @@
 import "../../styles/about.css"
+import React from 'react';
 
 function Card({image, name, position, about}){
     return(
