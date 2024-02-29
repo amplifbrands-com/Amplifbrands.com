@@ -19,6 +19,7 @@ function App() {
     return storedTheme || 'light';
   };
 
+
   const [theme, setTheme] = useState(getInitialTheme);
 
   const [showContact, setShowContact] = useState(false);

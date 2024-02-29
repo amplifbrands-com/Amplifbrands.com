@@ -30,10 +30,10 @@ function ScrollToTopButton() {
 
     return (
         <button 
-            className={`scroll-to-top-button ${isVisible ? 'visible' : ''}`}
+            className={`scroll-to-top-button ${isVisible ? 'visible' : ''}  outlined-btn`}
             onClick={scrollToTop}
         >
-        <FaArrowUp />
+        <FaArrowUp className='m-0'/>
         </button>
     );
 }

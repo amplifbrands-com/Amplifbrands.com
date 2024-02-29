@@ -12,7 +12,7 @@ function WhyUs({icon, title, subtitle, content, theme}){
                 </div>
                 <span>
                     <h6 className='main-header'>{title}</h6>
-                    <small className='sub-header'>{subtitle}</small>
+                    <p className='sub-header'>{subtitle}</p>
                 </span>
             </div>
             <div>

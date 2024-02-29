@@ -4,6 +4,10 @@
     --swiper-theme-color:var(--prim-color) !important ;
 }
 
+.swiper-container{
+    transform: scale(0.8);
+}
+
 .testimonial--card{
     height:550px;
     width:350px;
