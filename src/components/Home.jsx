@@ -80,16 +80,16 @@ const Home = ({theme}) => {
 
 
      <div className="slider-home-outer">
-      <div className="whyus-sec col-12">
-        {
-          whyUsData.map(cont =>(
-            <div className="whyus-item" key={cont.title}>
-              <WhyUs icon={cont.icon} title={cont.title} subtitle={cont.subtitle} content={cont.content} theme={theme} />
-            </div>
-          ))
-        }
+        <div className="whyus-sec col-12">
+          {
+            whyUsData.map(cont =>(
+              <div className="whyus-item" key={cont.title}>
+                <WhyUs icon={cont.icon} title={cont.title} subtitle={cont.subtitle} content={cont.content} theme={theme} />
+              </div>
+            ))
+          }
+        </div>
       </div>
-    </div>
 
     </section>
     <section className=" row mx-auto">

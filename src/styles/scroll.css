@@ -14,6 +14,7 @@
     transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity change */
     display: flex; /* Use flexbox for positioning */
     align-items: center; /* Center align items vertically */
+    justify-content: center;
     z-index: 99;
 }
 

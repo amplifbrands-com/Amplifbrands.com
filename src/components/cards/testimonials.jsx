@@ -29,26 +29,28 @@ const Testimonials = ()  => {
     return (
         <div className='testimonial'>
             <h2 className='text-center main-header' >Testimonial</h2>
-            <h5 className='text-center sub-header mb-5'>Voices of Success</h5>
-            <Swiper
-                effect={'coverflow'}
-                grabCursor={true}
-                centeredSlides={true}
-                slidesPerView={'auto'}
-                coverflowEffect={{
-                rotate: 50,
-                stretch: 0,
-                depth: 100,
-                modifier: 1,
-                slideShadows: true,
-                }}
-                pagination={true}
-                modules={[EffectCoverflow, Pagination]}
-                className="mySwiper"
-            >
-                    { testimonialData.map((item, index) => ( <SwiperSlide key={index} ><TestimonialCard data={item} key={index} /></SwiperSlide> ))}
+            <h5 className='text-center sub-header mb-0'>Voices of Success</h5>
+            <div className='swiper-container'>
+                <Swiper
+                    effect={'coverflow'}
+                    grabCursor={true}
+                    centeredSlides={true}
+                    slidesPerView={'auto'}
+                    coverflowEffect={{
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true,
+                    }}
+                    pagination={true}
+                    modules={[EffectCoverflow, Pagination]}
+                    className="mySwiper"
+                >
+                        { testimonialData.map((item, index) => ( <SwiperSlide key={index} ><TestimonialCard data={item} key={index} /></SwiperSlide> ))}
 
-            </Swiper>
+                </Swiper>
+            </div>
 
         </div>
     )
