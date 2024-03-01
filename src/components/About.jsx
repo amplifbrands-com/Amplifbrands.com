@@ -113,7 +113,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="about-meet-expert">
+      {/* <section className="about-meet-expert">
         <div className="about-meet-inner">
           <div className="about-meet-heading">
             <h4 className="about-meet-h4">
@@ -133,11 +133,11 @@ const About = () => {
             </p>
           </div>
         </div>
-        {/**from aniket-> ScrollTopButton compoonent added  */}
+       
+      </section> */}
+       {/**from aniket-> ScrollTopButton compoonent added  */}
     <ScrollToTopButton/>
     {/**from aniket-> ScrollTopButton component ended  */}
-      </section>
-      
       <section className=" row mx-auto about-form-section">
         <div className="section-title text-center col-12 row mx-auto">
           <h3 className="main-header col-12">
