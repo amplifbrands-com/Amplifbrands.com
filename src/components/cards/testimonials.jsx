@@ -14,7 +14,7 @@ import { EffectCoverflow, Pagination } from 'swiper/modules';
 const TestimonialCard = ({data}) =>{
     return (
         <div className='testimonial--card'>
-            <img src={data.image} alt="" className="testimonial--image" />
+            <img src={data.image} alt={data.name} className="testimonial--image" />
             <div className="testimonial--content" >
                 <h5 className='text-center'>{data.name}</h5>
                 <p className='text-center'>{data.designation}</p>

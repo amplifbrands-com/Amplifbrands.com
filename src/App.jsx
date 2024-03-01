@@ -10,7 +10,7 @@ import Footer from "./components/footer";
 import Services from "./components/Services";
 import Portfolio from "./components/portfolio";
 import ContactCard from './components/cards/contact-card'
-
+import Project from './components/Project'
 
 
 function App() {
@@ -59,6 +59,7 @@ function App() {
             <Route path="/signup" element={<SignUp />} />
             <Route path="/signin" element={<SignIn />} />
             <Route path="/services" element={<Services theme={theme} />} />
+            <Route path="/portfolio/:projectId" element={<Project theme={theme} />} />
           </Routes>
           {
             showContact &&

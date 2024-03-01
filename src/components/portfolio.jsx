@@ -3,6 +3,8 @@ import "../styles/portfolio.css"
 import Whatsapp from './Whatsapp';
 import ScrollToTopButton from './ScrollToTopButton';
 import {projects} from "../assets/portfolio-page-data";
+import { Link } from 'react-router-dom';
+
 
 const PortfolioHero = () => {
   return (
@@ -13,7 +15,7 @@ const PortfolioHero = () => {
           <p className="hero--desc">Unlock the full potential of your brand with our expert digital marketing solutions. Together, let's dominate the digital landscape and achieve your goals.</p>
         </div>
         <div className="col-12 col-md">
-          <img src="/portfolio-page/portfolio-hero.png" alt="" className="img-fluid" />
+          <img src="/portfolio-page/portfolio-hero.png" alt="portfolio" className="img-fluid hero-image" />
         </div>
       </div>
     </div>
@@ -25,13 +27,13 @@ const Project = ({project, index}) =>{
     <section className="project-item">
       <div className="row align-items-center g-5">
         <div className={`col-12 col-md ${index % 2 !== 0 ? 'order-2' : ''}`}>
-            <img src={project.image} alt={project.title} className="project-image img-fluid" />
+            <img src={project.mainImage} alt={project.title} className="project-image img-fluid" />
 
         </div>
         <div className={`col-12 col-md ${index % 2 !== 0 ? 'order-1' : ''}`}>
             <h4 className="important-header my-4">{project.title}</h4>
-            <p className='body-text mb-4'>{project.description}</p>
-            <button type="button" className="text-btn">read more...</button>
+            <p className='body-text mb-4'>{project.subtitle}</p>
+            <Link to={`/portfolio/${project.id}`} className="text-btn">read more...</Link>
         </div>
       </div>
     

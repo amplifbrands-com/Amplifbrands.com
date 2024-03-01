@@ -1,4 +1,4 @@
-import React, {useContext} from 'react'
+import React from 'react'
 
 import Form from './cards/message-form';
 import { data } from './datafile/about-data'
@@ -50,7 +50,7 @@ const About = () => {
               </p>
             </div>
             <div className="about-hero-image">
-              <img src={Hero} alt="" title='' width={494} height={494} className='about-hero-pic' />
+              <img src={Hero} alt="about amplif" title='' width={494} height={494} className='about-hero-pic' />
             </div>
           </div>
         </div>
@@ -65,16 +65,16 @@ const About = () => {
           <div className="about-value-card-content">
             <div className="about-value-card-outer">
               <div className="about-value-card-inner">
-                <img src={Over1} alt="" title='' className='about-value-icon' />
+                <img src={Over1} alt="integrity" title='' className='about-value-icon' />
               </div>
               <div className="about-value-card-inner">
-                <img src={Over2} alt="" title='' className='about-value-icon' />
+                <img src={Over2} alt="empowerment" title='' className='about-value-icon' />
               </div>
               <div className="about-value-card-inner">
-                <img src={Over3} alt="" title='' className='about-value-icon' />
+                <img src={Over3} alt="collaboration" title='' className='about-value-icon' />
               </div>
               <div className="about-value-card-inner">
-                <img src={Over4} alt="" title='' className='about-value-icon' />
+                <img src={Over4} alt="impact" title='' className='about-value-icon' />
               </div>
             </div>
             <div className="about-value-content-outer">
