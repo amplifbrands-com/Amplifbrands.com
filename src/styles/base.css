@@ -375,7 +375,7 @@ textarea:focus::placeholder{
 }
 .sub-header{
     color:var(--text-m);
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     font-weight: 400;
 }
 

@@ -12,7 +12,7 @@ import Testimonials from './cards/testimonials';
 import Whatsapp from './Whatsapp';
 import ScrollToTopButton from './ScrollToTopButton';
 import { PopupButton } from "react-calendly";
-
+import { FaArrowRightLong } from "react-icons/fa6";
 
 
 const Home = ({theme}) => {
@@ -20,33 +20,31 @@ const Home = ({theme}) => {
   <div>
   <Whatsapp/>
     <section className="hero-sec row mx-auto">
+      <div className="ball-sm"></div>
+      <div className="ball-lg"></div>
         <div className="section-title row text-center col-12"></div>
         <div className="row">
-        <h1 className='main-header d-block d-md-none'>Ready to Amplif Your Brand?</h1>
+        {/* <h1 className='main-header d-block d-md-none'>We help digital brands maximize their revenue with paid advertising campaigns and stunning websites</h1> */}
 
           <div className="col-lg-8 col-md-8 order-2 order-md-1">
-          <h1 className='main-header d-none d-md-block'>Ready to Amplif Your Brand?</h1>
+            <div className="content">
+          <h1 className='main-header '>We help digital-first businesses  maximize their revenue with paid advertising campaigns and stunning websites</h1>
 
-            <h6 className="sub-header pt-2">
-              Partner with Amplif - Your Accelerator in the Digital Era
-            </h6>
-            <p className="body-text pt-5">
-              Welcome to Amplif, where we turn brand visions into realities.
-              With creativity as our compass and strategy as our guide, we're
-              here to propel your brand forward. Let's embark on a journey to
-              redefine success together.
-            </p>
+            <h5 className="sub-header pt-2">
+            Stop wasting your money and time on ineffective ad campaigns and low-quality websites.
+            </h5>
+            <h5 className="body-text pt-5">
+            Partner with <span className="highligh">Amplif </span>
+             Today and skyrocket your sales 🚀 
+            </h5>
+            </div>
             {/* <button type="button" className="cta-btn mt-5" >Get a Free Consultation</button> */}
             <PopupButton
               url="https://calendly.com/amplifbrands/free-consultation-meeting"
-                    /*
-                    * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
-                    * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
-                    */
-                rootElement={document.getElementById("root")}
-                className="cta-btn mt-5 d-none d-md-block"
-                text="Get a Free Consultation"
-          />
+              rootElement={document.getElementById("root")}
+              className="cta-btn mt-5 ms-5 d-none d-md-block"
+              text={<h5> Schedule FREE Audit Call Now <FaArrowRightLong className="arrow" /></h5>}
+              />
            <PopupButton
               url="https://calendly.com/amplifbrands/free-consultation-meeting"
                     /*
@@ -54,28 +52,28 @@ const Home = ({theme}) => {
                     * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
                     */
                 rootElement={document.getElementById("root")}
-                className="cta-btn mt-5 d-block d-md-none"
+                className="cta-btn mt-5 ms-5 d-block d-md-none"
                 text="Book a meeting"
           />
             
           </div>
           <div className="col-lg-4 col-md-4 mt-3 p-3 order-1 order-md-2">
-            <img src="/hero-image.png" alt="heroImage" className="img-fluid" />
+            {/* <img src="/hero-image.png" alt="heroImage" className="img-fluid" /> */}
           </div>
         </div>
       </section>
-    <section className="text-center row mx-auto col-12">
-      <h3 className='main-header'>
+    <section className=" mission text-center mx-auto col-12">
+      <h2 className='main-header mb-3'>
         Our Mission
-      </h3>
-      <p className='sub-header col-12 col-sm-8 mx-auto'>Our mission at Amplif is to empower startup entrepreneurs with tailored marketing solutions crafted by our experts, addressing their unique pain points, driving exponential growth, and unleashing their full potential.</p>
+      </h2>
+      <p className='sub-header col-12 col-sm-8 mx-auto'>Our mission is to empower digital brands to thrive by delivering exceptional services. Client success is our top priority. We achieve this by maximizing their revenue and crafting remarkable online experiences. </p>
     </section>
-    <section className=" row mx-auto">
-      <div className="section-title text-center row col-12 mx-auto">
+    <section className=" row mx-auto why-us">
+      <div className="section-title  text-center row col-12 mx-auto">
         <h3 className='main-header col-12'>
           Why Choose Us?
         </h3>
-        <h6 className='sub-header col-12 col-sm-8 mx-auto'>Navigating the Digital Frontier</h6>
+        {/* <h6 className='sub-header col-12 col-sm-8 mx-auto'>Navigating the Digital Frontier</h6> */}
       </div>
 
 
@@ -94,18 +92,21 @@ const Home = ({theme}) => {
     </section>
     <section className=" row mx-auto">
       <div className="section-title row text-center col-12 mx-auto">
-        <h3 className='main-header col-12'>
+        <h2 className='main-header col-12 mb-5'>
         Our Services
-        </h3>
-        <h6 className='sub-header col-12 col-sm-8 mx-auto' >Transformative Digital Solutions Tailored for Your Success</h6>
-      </div>
-
-      <div className="servi-sec col-12">
-        {
-          serviceData.map(cont =>(
-            <ServiCard key={cont.title} icon={cont.icon} title={cont.title}  content={cont.content}  theme={theme} />
-          ))
+        </h2>
+        {serviceData.map( (item, index) =>(
+          <div className="col" key={index}>
+          <h5 className='sub-header col-12 col-sm-8 mb-5' >{item.name}</h5>
+          <div className="d-flex flex-column">
+            {
+            item.services.map(cont =>(
+          <ServiCard key={cont.title} icon={cont.icon} title={cont.title} />))
         }
+          </div>
+          </div>
+        ))}
+       
       </div>
     </section>
     <section>
