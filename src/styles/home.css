@@ -10,6 +10,7 @@
     background: linear-gradient(136.37deg, #1C1C1C 11%, rgba(7, 23, 29, 0.87) 38.54%, rgba(7, 40, 51, 0.85) 65.28%, rgba(23, 107, 135, 0.81) 90.82%);
     min-height: 120vh;
     position:relative;
+    overflow:hidden;
 }
 .ball-sm, .ball-lg{
     position:absolute;
@@ -103,6 +104,7 @@
     /* height: fit-content; */
     display: flex;
     justify-content: center;
+    
     /* align-items: stretch; */
     flex-wrap:wrap;
     /* overflow-x: auto; */
@@ -120,6 +122,14 @@
     gap:24px;
 
 
+}
+.service-slider{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+
+    /* align-items: stretch; */
+    gap:24px;
 }
 .whyus-sec .main-header{
     color:var(--text-h);
@@ -146,6 +156,17 @@
     height: 10px; 
   } */
 
+  .service-card{
+     /* width: 100%; */
+    /* height: fit-content; */
+    display: flex;
+    justify-content: center;
+    /* align-items: stretch; */
+    flex-wrap:wrap;
+    /* overflow-x: auto; */
+    /* white-space: nowrap; */
+  }
+
 @media screen and (max-width:640px) {
     
     .slider-home-outer{
@@ -158,24 +179,35 @@
         overflow-x: auto;
         white-space: nowrap;
     }
+
+    .service-card{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: flex-start;
+        align-items: stretch;
+        flex-wrap:nowrap;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
     
-    .whyus-sec{
+    .whyus-sec, .service-slider{
         display: flex;
         flex-wrap:nowrap;
         justify-content: flex-start;
         align-items: stretch;
-        gap:24px;
+        gap:32px;
         padding-bottom: 50px;
 
 
     }
  
-    .slider-home-outer::-webkit-scrollbar-track {
+    .slider-home-outer::-webkit-scrollbar-track, .service-card::-webkit-scrollbar-track {
         background-color: #f1f1f1 !important; 
       }
       
     
-      .slider-home-outer::-webkit-scrollbar-thumb {
+      .slider-home-outer::-webkit-scrollbar-thumb, .service-card::-webkit-scrollbar-thumb {
         background-color: var( --prim-color) !important; 
         border-radius: 5px !important; 
       }
@@ -183,11 +215,11 @@
 }
 
 
-.servi-sec{
+/* .servi-sec{
     display: grid;
     grid-template-columns: 1fr 1fr ;
     gap:24px;
-}
+} */
 
 .card-main-wrapper:nth-child(-1){
     grid-column: 2/span 2;

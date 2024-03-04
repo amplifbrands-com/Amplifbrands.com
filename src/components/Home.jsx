@@ -26,7 +26,7 @@ const Home = ({theme}) => {
         <div className="row">
         {/* <h1 className='main-header d-block d-md-none'>We help digital brands maximize their revenue with paid advertising campaigns and stunning websites</h1> */}
 
-          <div className="col-lg-8 col-md-8 order-2 order-md-1">
+          <div className="col-lg-8 col-md-8">
             <div className="content">
           <h1 className='main-header '>We help digital-first businesses  maximize their revenue with paid advertising campaigns and stunning websites</h1>
 
@@ -57,7 +57,7 @@ const Home = ({theme}) => {
           />
             
           </div>
-          <div className="col-lg-4 col-md-4 mt-3 p-3 order-1 order-md-2">
+          <div className="col-lg-4 col-md-4 mt-3 p-3 ">
             {/* <img src="/hero-image.png" alt="heroImage" className="img-fluid" /> */}
           </div>
         </div>
@@ -96,13 +96,17 @@ const Home = ({theme}) => {
         Our Services
         </h2>
         {serviceData.map( (item, index) =>(
-          <div className="col" key={index}>
-          <h5 className='sub-header col-12 col-sm-8 mb-5' >{item.name}</h5>
-          <div className="d-flex flex-column">
+          <div className="col-md-6" key={index}>
+          <h5 className='sub-header col-12 col-sm-8 mb-3' >{item.name}</h5>
+          <div className="service-card">
+            <div className="service-slider">
+              
+            
             {
             item.services.map(cont =>(
           <ServiCard key={cont.title} icon={cont.icon} title={cont.title} />))
         }
+          </div>
           </div>
           </div>
         ))}
