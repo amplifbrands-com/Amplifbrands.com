@@ -9,24 +9,29 @@ import arrow from '../assets/why-us-icons/arrow-icon.svg'
 import arrowDark from '../assets/why-us-icons/arrow-dark-icon.svg'
 import hands from '../assets/why-us-icons/hands-icon.svg'
 import handsDark from '../assets/why-us-icons/hands-dark-icon.svg'
+
+import priceCheck from '../assets/why-us-icons/price_check.svg'
+import barChart from '../assets/why-us-icons/bar-chart.svg'
+import team from '../assets/why-us-icons/team.svg'
+
 export const whyUsData = [
     {
         icon:{
-            light:straIcon,
+            light:priceCheck,
             dark:straIconDark
         },
-        title:'Strategic Expertise',
-        subtitle:'Strategic Minds at Work',
-        content:"Amplif's seasoned experts navigate the digital landscape with a deep understanding of industry trends, ensuring your brand stays ahead of the curve"
+        title:'Proven Results & ROI',
+        subtitle:"We don't just talk results, we deliver them. ",
+        content:"We track campaigns closely and provide transparent reports, showing you how your investment translates into tangible growth and revenue."
     },
     {
         icon:{
-            light:tailIcon,
+            light:barChart,
             dark:tailIconDark
         },
-        title:'Tailored Solutions',
-        subtitle:'Innovate to Elevate',
-        content:"Amplif doesn't believe in one-size-fits-all. We tailor our solutions to your unique needs, ensuring a customized approach for optimal results"
+        title:'Data-Driven Approach',
+        subtitle:'We go beyond guesswork.',
+        content:"We utilize data and analytics to understand your audience, personalize experiences, and optimize campaigns for maximum impact."
     },
     {
         icon:{
@@ -34,25 +39,25 @@ export const whyUsData = [
             dark:lightBulbDark,
         },
         title:'Innovation at Heart',
-        subtitle:'Your Business, Your Way',
+        subtitle:'Innovate to Elevate',
         content:"Amplif thrives on innovation. Our strategies are not just about keeping up; they're about leading the way in the fast-paced world of digital evolution"
     },
     {
         icon:{
-            light:arrow,
+            light:team,
             dark:arrowDark
         },
-        title:'Continuous Adaptation',
-        subtitle:'Adapt, Evolve, Succeed',
-        content:"In the dynamic realm of digital marketing, Amplif thrives on continuous learning and adaptation, ensuring your brand is always at the forefront of industry trends."
+        title:'Dedicated Experts Team',
+        subtitle:'Passionate. Experienced. Results-Driven',
+        content:"You'll have access to a team of experienced professionals, passionate about digital marketing and committed to your success."
     },
     {
         icon:{
             light:hands,
             dark:handsDark
         },
-        title:'Client-Centric Approach',
-        subtitle:'Your Success is Our Priority',
-        content:"Amplif's client-centric approach ensures that your business objectives and growth aspirations take center stage in every strategy we devise."
+        title:'Great Client Service',
+        subtitle:'Communication is key.',
+        content:"We value transparency and open communication, keeping you informed throughout the process and readily available to answer your questions."
     },
 ]
