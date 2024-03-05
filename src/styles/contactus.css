@@ -1,142 +1,230 @@
-@import './base.css';
-
-.contact-us-page-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: var(--background-d-sec);
-  }
-  
-  .contact-details {
-    flex: 1;
-    padding: 20px;
-    margin-left: 12rem;
-  }
-  
-  .contact-details h1 {
-    margin-bottom: 30px;
-    margin-top: 17rem;
-    color: rgb(42, 133, 166);
-    font-weight: 600;
-  }
-  
-  .contact-info {
-    margin-top: 8rem;
-    
-  }
-  
-  .info-item {
-    margin-bottom: 10px;
-    margin-top: 4.5rem;
-    font-size: 2.9rem;
-  }
-  
-  .contact-image {
-    flex: 1;
-  }
-  
-  .contact-image img {
-    margin-top: 10rem;
-    margin-right: 10px;
-    width: 85%;
-    height: auto;
-  }
-  .special-info-item{
-    margin-left: 3px;
-  }
-  .address-item{
-    margin-left: 34px;
-    margin-top: -60px;
-  }
-
-/* ContactUs.css */
-
-.get-in-touch-container {
-  text-align: center;
-  background-color: white;
-  padding-bottom: 50px;
-}
-
-.git-heading {
-  font-size: 24px;
-  padding-top: 10rem;
-  font-weight: bold;
-  color: #333;
-}
-
-.git-text {
-  margin-top: 10px;
-  color: #666;
-}
-
-.git-contact-cards {
+.outer-section{
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 30px;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../assets/contact-us/heroback-contact.svg);
 }
 
-.git-contact-card {
-  background-color: #f9f9f9;
-  padding: 40px; 
-  margin:  5rem  10rem;
-  border-radius: 15px;
-  border-top: 8px solid rgb(50, 118, 145);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 400px; 
-  text-align: left; 
-  margin-right: rem;
+.outer-section-get, .outer-section-partner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.git-contact-icon {
-  font-size: 48px;
+.inner-section{
+  width: 1240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.git-contact-card h3 {
-  font-size: 10px; /* Increase heading size */
-  color: #333;
+.contact-hero-outer{
+  width: 100%;
+  margin-top: 15vh;
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center;
 }
 
-.git-contact-card p {
-  margin-top: 20px; /* Increase margin top for spacing */
-  color: #666;
+.contact-hero-heading{
+  width: 400px;
+  height: 210px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.30);
 }
 
-.git-contact-action-button {
-  margin-top: 20px;
-  background: linear-gradient(to bottom, #ffdb28, #b58b1e); /* Dark gold gradient */
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
+.contact-hero-h4{
+  font-size: 45px !important;
+  color: #ffff;
+  font-weight: 700;
 }
 
-.git-contact-action-button:hover {
-  background: linear-gradient(to bottom, #ffdb28, #b58b1e); 
+.contact-hero-image{
+  width: 460px;
+  height: 480px;
 }
 
-@media screen and (max-width: 900px){
-  .contact-us-page-container {
+.contact-hero-span{
+  color: var(--prim-color);
+}
+
+.contact-get-in-touch{
+  margin-top: 10vh;
+}
+
+.contact-getin-h2{
+  text-align: center;
+  color: var(--prim-color);
+  font-weight: 700;
+}
+
+.contact-getin-span{
+  color: rgba(23, 107, 135, 0.83);
+}
+
+.contact-getin-card-outer{
+  margin-top: 10vh;
+  width: 1240px;
+  display: flex;
+  justify-content: space-between !important;
+}
+
+.getin-card{
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.getin-card-h4{
+  font-weight: 700;
+}
+
+.gitin-card-up{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.getin-icons{
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border: 1px solid green;
+}
+
+.getin-link{
+  display: block;
+  padding-top: 10px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.outer-section-partner{
+  margin-top: 10vh;
+  background-color: var(--background-l-sec);
+}
+
+.contact-us-partner{
+  width: 100%;
+  padding: 10vh 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-partner-h3{
+  font-size: 45px !important;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width:1200px){
+    
+  .inner-section{
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .contact-get-in-touch{
+    width: 100%;
+  }
+
+  .contact-getin-card-outer{
+    width: 100%;
+  }
+
+  .getin-card{
+    width: 195px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width:920px) {
+
+  .contact-hero-outer{
+    flex-direction: column;
+  }
+
+  .contact-hero-image-outer{
+    margin-top: 10vh;
+  }
+
+  .contact-us-partner{
     flex-direction: column-reverse;
-    height: 100vh;
-    background-color: var(--sec-bg);
   }
-  .contact-details {
-    padding: 10px;
-    margin-left:0px;
+
+  .contact-partner-image-outer{
+    width: 90%;
   }
-  .contact-details h1 {
-    margin-bottom: 3%;
-    margin-top: 15%;
-    font-weight: 600;
+
+  .contact-partner-image{
+    width: 100%;
+    height: 100%;
   }
-  .contact-image {
+
+  .contact-partner-content{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .contact-partner-h3{
+    text-align: center;
+  }
+
+  .contact-get-in-touch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-getin-card-outer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  .getin-card{
+    width: 195px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+}
+
+@media screen and (max-width:480px) {
+  .contact-hero-image-outer{
+    width: 90%;
+  }
+
+  .contact-hero-image{
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+@media screen and (max-width:370px) {
+  .contact-hero-heading{
+    width: 90%;
   }
 }

@@ -1,148 +1,29 @@
-import femalePlaceholder from "/amplif-members/female-placeholder.jpg"
-import AnselmSadiq from "/amplif-members/Anselm-Sadiq.jpg"
-import DavidZakari from "/amplif-members/David-Zakari.jpg"
-import EmmanuelAberuagba from "/amplif-members/Emmanuel-Aberuagba.jpg"
-import HammadNazir from "/amplif-members/Hammad-Nazir.png"
-import KedarKulkarni from "/amplif-members/Kedar-Kulkarni.png"
-import NabanitaGhosh from "/amplif-members/Nabanita-Ghosh.jpg"
-import Naveenkumar from "/amplif-members/Naveenkumar-V.jpg"
-import SenthilKumar from "/amplif-members/Senthil-Kumar.jpg"
-import Victoria from "/amplif-members/Victoria-Oremeyi.jpeg"
-import VinithRay from "/amplif-members/Vinith-Ray.jpg"
-import AniketRay from "/amplif-members/Aniket-Ray.jpeg"
-import RohitSalunke from "/amplif-members/Rohit-Salunke.jpg"
-import Pallavi from "/amplif-members/Pallavi-Sadavarte.jpg"
-import Sarvesha from "/amplif-members/Sarvesha-Shelar.jpg"
-import Seeni from "/amplif-members/CR-seeni.jpg"
-import Nandhakumar from "/amplif-members/Nandhakumar-Anandhan.jpg"
 
 
 export const data = [
     {   
         id: 1,
-        image:RohitSalunke,
-        name:'Rohit Salunke',
-        position:"ceo",
-        about:""
+        heading:"Integrity",
+        content:'We uphold the highest standards of integrity, honesty, and transparency in all of our interactions, building trust and credibility with our partnered businesses.',
     },
     {   
         id: 2,
-        image:EmmanuelAberuagba,
-        name:'Emmanuel Aberuagba',
-        position:"Project manager | frontend developer",
-        about:""
+        heading:"Empowerment",
+        content:'We empower entrepreneurs with the right tools, knowledge, and support they need to succeed in their ventures.',
     },
     {   
         id: 3,
-        image:AniketRay,
-        name:'Aniket Ray',
-        position:"Project Lead (Software Development)",
-        about:""
+        heading:"Collaboration",
+        content:' We value collaboration and teamwork, understanding that working together leads to greater success.',
     },
     {   
         id: 4,
-        image:Naveenkumar,
-        name:'Naveenkumar V',
-        position:"Front end developer",
-        about:""
+        heading:"Excellence",
+        content:'We are committed to excellence in everything we do, striving to deliver the highest quality services and results to our partnered businesses.',
     },
     {   
         id: 5,
-        image:HammadNazir,
-        name:'Hammad Ahmad',
-        position:"Front end developer",
-        about:""
+        heading:"Impact",
+        content:'We are driven by the desire to make a meaningful impact, helping entrepreneurs and businesses achieve their goals and help them to reach their full potential.',
     },
-    {   
-        id: 6,
-        image:VinithRay,
-        name:'Vinith Ray',
-        position:"Front end developer",
-        about:""
-    },
-    {   
-        id: 7,
-        image:NabanitaGhosh,
-        name:'Nabanita Ghosh',
-        position:"Front end developer",
-        about:""
-    },
-    {   
-        id: 8,
-        image:femalePlaceholder,
-        name:'Gopiga Ranganathan',
-        position:"Front-end developer",
-        about:""
-    },
-    {   
-        id: 9,
-        image:SenthilKumar,
-        name:'Senthil Kumar',
-        position:"Wordpress Developer",
-        about:""
-    },
-    {   
-        id: 10,
-        image:Pallavi,
-        name:'Pallavi Sadavarte',
-        position:"UI/UX Designer",
-        about:""
-    },
-    {   
-        id: 11,
-        image:KedarKulkarni,
-        name:'Kedar',
-        position:"UI/UX Designer",
-        about:""
-    },
-   
-   
-    {   
-        id: 12,
-        image:Sarvesha,
-        name:'Sarvesha Shelar',
-        position:"UI/UX Designer",
-        about:""
-    },
-    {   
-        id: 13,
-        image:Seeni,
-        name:'Seeni vasan',
-        position:"UI/UX Designer",
-        about:""
-    },
-    {   
-        id: 14,
-        image:Nandhakumar,
-        name:'Nandhakumar Anandhan',
-        position:"UI/UX Designer",
-        about:""
-    },
-   
-    {   
-        id: 15,
-        image:AnselmSadiq,
-        name:'Anselm Sadiq',
-        position:"Content writer",
-        about:""
-    },
-   
-    {   
-        id: 16,
-        image:DavidZakari,
-        name:'Zakari Adeiza David',
-        position:"Content writer",
-        about:""
-    },
-   
-    {   
-        id: 17,
-        image:Victoria,
-        name:'Victoria',
-        position:"Administrative Assistant",
-        about:""
-    },
-   
-   
-   
 ]

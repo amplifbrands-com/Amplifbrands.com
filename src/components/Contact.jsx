@@ -1,45 +1,95 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/ContactUs.css';
 import Form from './cards/message-form';
 import { IoMdMail } from "react-icons/io";
-import { IoLocationSharp } from "react-icons/io5";
-import { FaPhoneAlt } from "react-icons/fa";
+import { LiaGlobeSolid } from "react-icons/lia";
+import { MdLocalPhone } from "react-icons/md";
+
 
 import Hero from "../assets/contact-us/hero-contact.svg"
-import Logo from "../assets/logo.svg";
-import GetInTouch from './datafile/GetInTouch';
+import Banner from "../assets/contact-us/banner-contact.svg"
 import '../styles/base.css';
+
+
+import Whatsapp from './Whatsapp';
+import ScrollToTopButton from './ScrollToTopButton';
 
 const ContactUsPage = () => {
   return (
     <>
-    <section className="contact-us-page-container">
-      <div className="contact-details">
-        <h1>Contact Us</h1>
-        <div className="contact-info">
-          <div className="info-item">
-            <IoMdMail style={{ fontSize: '26px', marginRight: '8px' }} />
-            <span>contact@amplifbrands.com</span>
+    <Whatsapp />
+    <ScrollToTopButton />
+    <div className="outer-section">
+      <div className="inner-section">
+        <div className="contact-hero-outer">
+          <div className="contact-hero-heading">
+            <h4 className="contact-hero-h4">
+              Contact <span className="contact-hero-span">Us</span>
+            </h4>
           </div>
-          <div className="info-item">
-            <IoLocationSharp style={{ fontSize: '26px', marginRight: '8px', marginTop: '6px' }} />
-            <div className="address-item">
-              <span>Amplif Brands Private Limited, 3rd Cross Rd, Electronics City Phase 1, Electronic City, </span>
-              <br />
-              <span className="special-info-item">Bengaluru, Karnataka 560100. </span>
+          <div className="contact-hero-image-outer">
+            <img src={Hero} alt="" className="contact-hero-image" />
+          </div>
+        </div> 
+      </div>
+    </div>
+
+    <div className="outer-section-get">
+      <div className="inner-section">
+        <div className="contact-get-in-touch">
+          <div className="contact-getin-heading">
+            <h2 className="contact-getin-h2">
+              <span className="contact-getin-span">Get In</span> Touch
+            </h2>
+          </div>
+          <div className="contact-getin-card-outer">
+            <div className="getin-card">
+              <div className="gitin-card-up">
+                <IoMdMail className="getin-icons" />
+                <h4 className="getin-card-h4">Email Address</h4>
+              </div>
+              <Link to="" className="getin-link" >contact@amplifbrands.com</Link>
             </div>
-          </div>
-          <div className="info-item">
-            <FaPhoneAlt style={{ fontSize: '26px', marginRight: '8px' }} />
-            <span>+91 95457 49447</span>
+            <div className="getin-card">
+              <div className="gitin-card-up">
+                <LiaGlobeSolid className="getin-icons" />
+                <h4 className="getin-card-h4">Website</h4>
+              </div>
+              <Link to="www.amplifbrands.com" className="getin-link" >www.amplifbrands.com</Link>
+            </div>
+            <div className="getin-card">
+              <div className="gitin-card-up">
+                <MdLocalPhone className="getin-icons" />
+                <h4 className="getin-card-h4">Phone Number</h4>
+              </div>
+              <Link to="" className="getin-link" >+91 9545749447</Link>
+            </div>
           </div>
         </div>
       </div>
-      <div className="contact-image">
-        <img src={Hero} alt="Contact" />
+    </div>
+
+    
+    <div className="outer-section-partner">
+      <div className="inner-section">
+        <div className="contact-us-partner">
+          <div className="contact-partner-image-outer">
+            <img src={Banner} alt="" className="contact-partner-image" />
+          </div>
+          <div className="contact-partner-content">
+            <h3 className="contact-partner-h3">
+              Partner with us Today!<br />
+              Give Us a Call Now!
+            </h3>
+            <Link to="" className="cta-btn contact-partner-link">+91 9545749447</Link>
+          </div>
+        </div>
       </div>
-    </section>
-    <GetInTouch/>
+    </div>
+
+
+
     <section className=" row mx-auto about-form-section">
         <div className="section-title text-center col-12 row mx-auto">
           <h3 className="main-header col-12">
