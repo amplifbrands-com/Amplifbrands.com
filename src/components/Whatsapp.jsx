@@ -1,19 +1,10 @@
 import React from "react";
-//from aniket-> adding whatsapp floating import
 import { FloatingWhatsApp } from "react-floating-whatsapp";
-
 const Whatsapp = () => {
   return (
     <div >
-      {/** from aniket adding whatsapp integration starts  */}
       <FloatingWhatsApp
         chatboxHeight={450}
-        // buttonStyle={{
-        //   position: "fixed",
-        //   bottom: "20px",
-        //   left: "20px",
-        //   zIndex: "9999", // Ensure it appears above other content
-        // }}
         phoneNumber={+917499749447}
         accountName={"Amplif's Bot"}
         avatar={"../logo.svg"}
@@ -25,7 +16,6 @@ const Whatsapp = () => {
         notification={true}
         notificationSound={true}
       />
-      {/** from aniket  whatsapp integration ends here   */}
     </div>
   );
 };
