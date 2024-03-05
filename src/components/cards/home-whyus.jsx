@@ -11,7 +11,7 @@ function WhyUs({icon, title, subtitle, content, theme}){
                     <img src={ theme==="light" ? icon.light : icon.dark} alt={`${title} icon`} />
                 </div>
                 <span>
-                    <h6 className='main-header'>{title}</h6>
+                    <h5 className='main-header'>{title}</h5>
                     <p className='sub-header'>{subtitle}</p>
                 </span>
             </div>

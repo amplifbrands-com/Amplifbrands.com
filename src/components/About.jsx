@@ -1,14 +1,11 @@
-import React, {useContext} from 'react'
+import React from 'react'
 
 import Form from './cards/message-form';
 import { data } from './datafile/about-data'
 import Card from './datafile/about-card'
 
 import Hero from "../assets/about-us/about-hero.svg"
-import Over1 from "../assets/about-us/our-value-1.svg"
-import Over2 from "../assets/about-us/our-value-2.svg"
-import Over3 from "../assets/about-us/our-value-3.svg"
-import Over4 from "../assets/about-us/our-value-4.svg"
+import Hero2 from "../assets/about-us/about-hero-2.svg"
 
 import '../styles/base.css';
 import '../styles/about.css';
@@ -21,123 +18,71 @@ const About = () => {
 
   return (
     <>
-    {/** from aniket adding whatsapp integration starts  */}
-  <Whatsapp/>
-  {/** from aniket  whatsapp integration ends here   */}
-      <section className="about-hero">
-        <div className="about-hero-inner">
-          <div className="about-hero-heading">
-            <h4 className="about-hero-h4">
-              About Amplif
-            </h4>
-          </div>
-          <div className="about-hero-main">
-            <div className="about-hero-content">
-              <p className="about-hero-para">
-                At Amplif, we're passionate about empowering businesses to thrive in the digital age. Founded with a vision to support startups and digital-first businesses, we've dedicated ourselves to providing tailored marketing solutions that drive exponential growth and unlock untapped potential.
-              </p>
-              <p className="about-hero-para">
-                Our journey began with a simple yet powerful mission: to empower startup entrepreneurs with the tools and expertise they need to succeed. Recognizing the challenges faced by digital-first businesses, we set out to become their trusted partner in navigating the complexities of the online landscape.
-              </p>
-              <p className="about-hero-para">
-                What sets us apart is our commitment to understanding the unique needs and aspirations of each of our partners. We believe in the power of collaboration and work closely with businesses to craft personalized strategies that address their specific pain points and goals.
-              </p>
-              <p className="about-hero-para">
-                With a team of seasoned experts in digital marketing, design, and technology, we offer a comprehensive suite of services to support our partners at every stage of their journey. From branding and website development to SEO, PPC management, and beyond, we're here to help businesses thrive and grow.s.
-              </p>
-              <p className="about-hero-para">
-                At Amplif, we're not just another marketing agency—we're a dedicated ally on your path to success. Join us as we transform startups into success stories and small businesses into industry leaders. Together, let's amplify your potential and achieve greatness in the digital world.
-              </p>
+      <Whatsapp />
+      <ScrollToTopButton />
+      <div className="outer-section-about">
+        <div className="inner-section">
+          <div className="about-hero">
+            <div className="about-hero-heading">
+              <h2 className="about-hero-h2">
+                About Amplif
+              </h2>
             </div>
-            <div className="about-hero-image">
-              <img src={Hero} alt="" title='' width={494} height={494} className='about-hero-pic' />
+            <div className="about-hero-content-outer">
+              <div className="about-hero-content">
+                <div className="about-hero-content-p">
+                  <p className="about-hero-para">
+                    At Amplif, we're passionate about empowering businesses to thrive in the digital age. Founded with a vision to help digital-first businesses, we've dedicated ourselves to providing tailored marketing solutions that drive exponential growth and unlock untapped potential.
+                    </p><p className="about-hero-para">
+                    We equip digital-first businesses with the right tools and expertise they need to succeed. Recognizing the challenges faced by them, we set out to become their trusted partner in navigating the complexities of the online landscape.
+                 </p>
+                </div>
+                <div className="about-hero-image-outer">
+                  <img src={Hero} alt="" className="about-hero-images" />
+                </div>
+              </div>
+              <div className="about-hero-content">
+                <div className="about-hero-content-p">
+                  <p className="about-hero-para">
+                    What sets us apart is our commitment to understanding the unique needs of our partners. We believe in the power of collaboration and work closely with partnered businesses to craft personalized strategies that address their specific pain points and goals.With a team of seasoned experts in digital marketing, design, and technology, we offer a comprehensive suite of services to support our partners at every stage of their journey. From branding and website development to effective advertising campaigns and beyond, we're here to help businesses thrive and grow.</p>
+                    <p className="about-hero-para">
+                    We are not just another marketing agency—we're a dedicated ally on your path to success.</p><p className="about-hero-para">
+                    Join us to transform your journey into a success story. Together, let’s achieve greatness in the digital world.</p><p className="about-hero-para">
+                    Contact Our Team Now!
+                 </p>
+                </div>
+                <div className="about-hero-image-outer">
+                  <img src={Hero2} alt="" className="about-hero-images" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        
-      </section>
+      </div>
 
-      <section className='about-value'>
-        <div className="about-value-inner">
-          <h4 className='about-value-h4'>
-            Our Value
-          </h4>
-          <div className="about-value-card-content">
+      <div className="outer-section-our">
+        <div className="inner-section">
+          <div className="about-value">
+            <div className="about-value-heading">
+              <h2 className="about-value-h2">
+                Our Value
+              </h2>
+            </div>
             <div className="about-value-card-outer">
-              <div className="about-value-card-inner">
-                <img src={Over1} alt="" title='' className='about-value-icon' />
-              </div>
-              <div className="about-value-card-inner">
-                <img src={Over2} alt="" title='' className='about-value-icon' />
-              </div>
-              <div className="about-value-card-inner">
-                <img src={Over3} alt="" title='' className='about-value-icon' />
-              </div>
-              <div className="about-value-card-inner">
-                <img src={Over4} alt="" title='' className='about-value-icon' />
-              </div>
-            </div>
-            <div className="about-value-content-outer">
-              <div className="about-value-content">
-                <p className="about-value-para body-text">
-                  <span className='about-value-span main-header'>Integrity: </span>
-                  We uphold the highest standards of integrity, honesty, and transparency in all of our interactions, building trust and credibility with our partnered businesses.
-                </p>
-              </div>
-              <div className="about-value-content">
-                <p className="about-value-para body-text">
-                  <span className='about-value-span main-header'>Empowerment: </span>
-                  We empower entrepreneurs with the right tools, knowledge, and support they need to succeed in their ventures.
-                </p>
-              </div>
-              <div className="about-value-content">
-                <p className="about-value-para body-text">
-                  <span className='about-value-span main-header' >Collaboration: </span>
-                  We value collaboration and teamwork, understanding that working together leads to greater success.
-                </p>
-              </div>
-              <div className="about-value-content">
-                <p className="about-value-para body-text">
-                  <span className='about-value-span main-header' >Excellence: </span>
-                  We are committed to excellence in everything we do, striving to deliver the highest quality services and results to our partnered businesses.
-                </p>
-              </div>
-              <div className="about-value-content">
-                <p className="about-value-para body-text">
-                  <span className='about-value-span main-header' >Impact: </span>
-                  We are driven by the desire to make a meaningful impact, helping entrepreneurs and businesses achieve their goals and help them to reach their full potential.
-                </p>
+              <div className="about-value-card-slide">
+                <div className="about-value-card-slidein">
+                  {
+                      data.map(cont =>(
+                        <Card key={cont.id} heading={cont.heading} content={cont.content} />
+                      ))
+                    }
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section className="about-meet-expert">
-        <div className="about-meet-inner">
-          <div className="about-meet-heading">
-            <h4 className="about-meet-h4">
-              Meet Our Experts
-            </h4>
-          </div>
-          <div className="about-meet-card-outer">
-            <ul className="about-meet-ul">
-              {
-                data.map(cont =>(
-                  <Card key={cont.id} image={cont.image} name={cont.name} position={cont.position} about={cont.about}  />
-                ))
-              }
-            </ul>
-            <p className="about-meet-card-para">
-              At Amplif, our team is our greatest asset. Comprised of talented professionals with diverse backgrounds and expertise, we're united by a shared vision and a commitment to delivering results. Meet the faces behind Amplif and discover the passion and expertise that drive our success.
-            </p>
-          </div>
-        </div>
-        {/**from aniket-> ScrollTopButton compoonent added  */}
-    <ScrollToTopButton/>
-    {/**from aniket-> ScrollTopButton component ended  */}
-      </section>
-      
       <section className=" row mx-auto about-form-section">
         <div className="section-title text-center col-12 row mx-auto">
           <h3 className="main-header col-12">

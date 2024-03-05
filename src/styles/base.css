@@ -160,6 +160,7 @@ small{
 /* please use sections for sectioning */
 section, header{
     padding: 52px 12vw;
+    /* max-width:1440px; */
 }
 .navigation-container{
     padding: 0 12vw;
@@ -268,6 +269,7 @@ section, header{
     text-decoration: none;
     display: block;
     width: fit-content;
+
 }
 
 .cta-btn:disabled{
@@ -377,7 +379,7 @@ textarea:focus::placeholder{
 }
 .sub-header{
     color:var(--text-m);
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     font-weight: 400;
 }
 
