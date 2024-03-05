@@ -29,8 +29,10 @@ const ServiceHero = () => {
           <a href="" className="hero-card-link hero-card-link-active">website servies</a> 
         </div>
       </div>
+
       <img src={heroImg} alt="" className="sevice-hero-img" />
     </section>
+
   )
 
 }
