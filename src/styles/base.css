@@ -506,10 +506,17 @@ svg{
     border-radius: 4px;
     
 }
+@media screen and (max-width:576px) {
+    .hero-card-link{
+        display: block;
+        margin-right:0 !important;
+    }
+}
 
 
 .sevice-hero-img{
     position: absolute;
+    max-width: 40%;
     left:50%;
     top:65%;
     z-index: 1;
@@ -524,6 +531,11 @@ svg{
     gap:24px;
     justify-content: space-between;
 }
+
+.service-img{
+    max-width: 50%;
+}
+
 .reversed{
     flex-direction: row-reverse;
 }
@@ -531,4 +543,58 @@ svg{
 .blue-sec{
     background-color:#EAF4F9;
 }
+
+@media screen and (max-width:640px) {
+    .sevice-hero-img{
+        
+        left: 50%;
+        bottom:15vh;
+        top:unset;
+        width:calc( 70%);
+        max-width:calc( 70% );
+        transform: translate(-50%, 0);
+    } 
+    .hero-card{
+        
+        top: 15vh;
+        left: 50%;
+        width:calc( 100% - 10vw);
+        transform: translate(-50%, 0);
+        text-align: center;
+    }
+
+    .service{
+        width:100%;
+        flex-direction:column-reverse ;
+        justify-content: center ;
+        align-items: center;
+        gap:24px;
+    }
+    .service-img{
+        max-width:80%;
+    }
+
+    .service-card-details {
+        text-align: center;
+    }
+
+    .service-card-details ul{
+        text-align: left;
+    }
+
+}
+
+@media screen and (max-width:460px) {
+    .sevice-hero-img{
+        
+        left: 50%;
+        bottom:15vh;
+        top:unset;
+        width:calc( 100% - 10vw);
+        max-width:calc( 100% - 10vw);
+        transform: translate(-50%, 0);
+    } 
+}
+
+
 

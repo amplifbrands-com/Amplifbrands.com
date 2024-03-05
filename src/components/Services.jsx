@@ -25,7 +25,7 @@ const ServiceHero = () => {
         </h1>
 
         <div className="hero-card-links-wrapper">
-          <a href="" className="hero-card-link me-5">PPC advertising</a>
+          <a href="" className="hero-card-link me-sm-5 mb-5 mb-sm-0">PPC advertising</a>
           <a href="" className="hero-card-link hero-card-link-active">website servies</a> 
         </div>
       </div>
@@ -80,10 +80,10 @@ const ServiceCard = ({title, index, offerings, img}) => {
               })
             }
           </ul>
-          <a href="" className='cta-btn'>learn more</a>
+          <a href="" className='cta-btn mx-auto mx-0'>learn more</a>
         </div>
       </div>
-      <img src={img} alt={`${title} image`} />
+      <img src={img} alt={`${title} image`} className='service-img' />
     </section>
 
   )
