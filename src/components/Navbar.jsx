@@ -1,63 +1,56 @@
-import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
-import "../styles/Navbar.css"
-import "../styles/base.css"
-import "../styles/base.css"
+import { useState } from 'react';
 
-import Mobile from "./mobileNav/mobilenav"
-import Logo from "../assets/logo.svg"
-import { useLocation } from 'react-router-dom';
-import { PopupButton } from "react-calendly";
+export const Navbar = () => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-
-const Navbar = ({showContact, changeShowContact}) => {
-
-  const location = useLocation();
-  const path = location.pathname;
-
-  const seeContacts = () =>{
-    changeShowContact()
-  }
-
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
 
   return (
-   <div className="navigation-container">
-      <nav className="navbar">
-        <div className="nav-logo-outer">
-          <Link to="/">
-            <img src={Logo} alt="" title='' className='nav-logo' />
-          </Link>
+    <nav className='fixed top-2 left-10 right-10'>
+<div className="navbar mt-5 ml-10 mr-10 flex justify-between items-center bg-white/30 h-12 rounded-md border border-gray-400">
+        <div className="flex items-center ml-3">
+          <img src="./src/assets/amplif_logo.png" alt="Amplif Logo" className="h-8 mr-2" />
         </div>
-        <div className="nav-links">
-          <ul className="nav-links-ul mb-0">
-            <li className="nav-links-li"><Link to="/" className='nav-li-links' id={ path === '/' ? 'active' : 'inactive'} >Home</Link></li>
-            <li className="nav-links-li"><Link to="/services" className='nav-li-links' id={ path === '/services' ? 'active' : 'inactive'} >Services</Link></li>
-            <li className="nav-links-li"><Link to="/portfolio" className='nav-li-links' id={ path === '/portfolio' ? 'active' : 'inactive'} >Portfolio</Link></li>
-            <li className="nav-links-li"><Link to="/about" className='nav-li-links' id={ path === '/about' ? 'active' : 'inactive'} >About Us</Link></li>
-            <li className="nav-links-li"><Link to="/contact" className='nav-li-links' id={ path === '/contact' ? 'active' : 'inactive'} >Contact Us</Link></li>
-          </ul>
-        </div>
-        <div className="nav-btn-outer">
-          {/* <button className="cta-btn" onClick={seeContacts}>
-            Book A Meeting
-          </button> */}
-          <PopupButton
-              url="https://calendly.com/amplifbrands/free-consultation-meeting"
-                    /*
-                    * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
-                    * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
-                    */
-                rootElement={document.getElementById("root")}
-                className="cta-btn"
-                text="Book A Meeting"
-          />
-        </div>
-        <div className="mobile-bar">
-          <Mobile  showContact={showContact} changeShowContact={changeShowContact} />
-        </div>
-      </nav>
-   </div>
-  );
-};
 
-export default Navbar;
+        <div className="flex-auto ml-9">
+          <a href="#" className="mr-4 text-white" >
+            HOME
+          </a>
+        </div>
+
+        <div className='relative flex-auto'>
+          <button className="text-yellow-500 flex items-center" onClick={toggleDropdown}>
+            SERVICES
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+              <path fillRule="evenodd" d="M10 12.293l-4.146-4.147a.5.5 0 0 0-.708.708l5 5a.5.5 0 0 0 .708 0l5-5a.5.5 0 1 0-.708-.708L10 12.293z" clipRule="evenodd" />
+            </svg>
+          </button>
+          <div className={"absolute top-full bg-white shadow-md rounded-lg mt-1 py-2 w-48 " + (isDropdownOpen ? "" : "hidden")}>
+            <a href="#" className="block px-4 py-2 text-black">Service 1</a>
+            <a href="#" className="block px-4 py-2 text-black">Service 2</a>
+            <a href="#" className="block px-4 py-2 text-black">Service 3</a>
+          </div>
+        </div>
+
+        <div className="flex-auto">
+          <a href="#" className="mr-4 text-white" >PORTFOLIOS</a>
+        </div>
+
+        <div className="flex-auto">
+          <a href="#" className="mr-4 text-white">CONTACT US</a>
+        </div>
+
+        <div className="flex-auto mr-2 text-white">
+          <a href="#">ABOUT US</a>
+        </div>
+
+        <div className="mr-3">
+          <button className="bg-yellow-500 text-gray-900 py-2 px-4 rounded">BOOK A MEETING</button>
+        </div>
+
+      </div>
+    </nav>
+  );
+}
