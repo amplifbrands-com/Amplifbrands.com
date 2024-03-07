@@ -19,9 +19,9 @@ const Home = ({theme}) => {
   return (
   <div>
   <Whatsapp/>
-    <section className="hero-sec row mx-auto">
-      <div className="ball-sm"></div>
-      <div className="ball-lg"></div>
+    <section className="hero-sec hero-sec-reverse row mx-auto">
+      {/* <div className="ball-sm"></div>
+      <div className="ball-lg"></div> */}
         <div className="section-title row text-center col-12"></div>
         <div className="row">
         {/* <h1 className='main-header d-block d-md-none'>We help digital brands maximize their revenue with paid advertising campaigns and stunning websites</h1> */}

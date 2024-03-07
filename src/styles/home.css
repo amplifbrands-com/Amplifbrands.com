@@ -12,7 +12,7 @@
     position:relative;
     overflow:hidden;
 }
-.ball-sm, .ball-lg{
+/* .ball-sm, .ball-lg{
     position:absolute;
     background: linear-gradient(136.37deg, #1C1C1C 11%, rgba(7, 23, 29, 0.87) 38.54%, rgba(7, 40, 51, 0.85) 65.28%, rgba(23, 107, 135, 0.81) 90.82%);
 }
@@ -36,7 +36,7 @@
     Top:52%;
     Left:52%;
 
-}
+} */
 
 .hero-sec .content{
     background: linear-gradient(242.93deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.04) 97.08%);
