@@ -58,6 +58,12 @@ const MobileNav = ({showContact, changeShowContact}) => {
                   <li className='mobile-nav-li'>
                     <Link to="/contact" className="mobile-nav-link" onClick={closeMenu}>Contact Us</Link>
                   </li>
+                  {/** from aniket call button integration  starts */}
+                  <li className='mobile-nav-li'>
+                  <a href="tel:+919007579469" className="mobile-nav-link" onClick={closeMenu}>Call Us</a>
+                </li>
+          
+           {/** call button integration  ends */}
                    <li className='mobile-nav-li'>
                      {/* <button className='nav-btn cta-btn' onClick={seeContacts}>Book A Meeting</button>  */}
                       {/* <PopupButton

@@ -35,12 +35,20 @@ const Navbar = ({showContact, changeShowContact}) => {
             <li className="nav-links-li"><Link to="/portfolio" className='nav-li-links' id={ path === '/portfolio' ? 'active' : 'inactive'} >Portfolio</Link></li>
             <li className="nav-links-li"><Link to="/about" className='nav-li-links' id={ path === '/about' ? 'active' : 'inactive'} >About Us</Link></li>
             <li className="nav-links-li"><Link to="/contact" className='nav-li-links' id={ path === '/contact' ? 'active' : 'inactive'} >Contact Us</Link></li>
+           
+
           </ul>
         </div>
         <div className="nav-btn-outer">
           {/* <button className="cta-btn" onClick={seeContacts}>
             Book A Meeting
           </button> */}
+
+          {/** added call functionality plz rectify the css  */}
+          <div class="">
+          <a href="tel:+919007579469" className="cta-btn">Call Us Now</a>
+        </div>
+
           <PopupButton
               url="https://calendly.com/amplifbrands/free-consultation-meeting"
                     /*

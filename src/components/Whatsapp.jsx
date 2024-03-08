@@ -1,22 +1,15 @@
 import React from "react";
-import { FloatingWhatsApp } from "react-floating-whatsapp";
+import "../styles/Whatsapp.css";
+import { BsWhatsapp } from "react-icons/bs";
 const Whatsapp = () => {
   return (
-    <div >
-      <FloatingWhatsApp
-        chatboxHeight={450}
-        phoneNumber={+917499749447}
-        accountName={"Amplif's Bot"}
-        avatar={"../logo.svg"}
-        statusMessage={"we will reach you soon"}
-        chatMessage={
-          "Hello there!🤝\nHow can we help?\nDigital Marketing Consulting\nWebsite Development\nWebsite Maintenance\nPPC Management\nSEO\nServices E-commerce\n"
-        }
-        darkMode={true}
-        notification={true}
-        notificationSound={true}
-      />
-    </div>
+    <div class="container">
+    <a href="whatsapp://send?phone=+919007579469&text=Hello%20there%20how may i help you !"
+     class="cta-button">
+     <BsWhatsapp />
+    
+     </a>
+  </div>
   );
 };
 
