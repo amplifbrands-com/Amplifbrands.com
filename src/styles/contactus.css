@@ -8,13 +8,14 @@
   background-image: url(../assets/contact-us/heroback-contact.svg);
 }
 
-.outer-section-get, .outer-section-partner{
+.outer-section-get, .outer-section-partner,
+.inner-section-partner{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.inner-section{
+.inner-section, .inner-section-get{
   width: 1240px;
   display: flex;
   justify-content: center;
@@ -112,6 +113,11 @@
   background-color: var(--background-l-sec);
 }
 
+.inner-section-partner{
+  width: 1240px;
+  justify-content: space-between;
+}
+
 .contact-us-partner{
   width: 100%;
   padding: 10vh 0px;
@@ -124,6 +130,7 @@
   font-size: 45px !important;
   font-weight: 700;
   margin-bottom: 50px;
+  color: var(--sec-l-color);
 }
 
 @media screen and (max-width:1200px){

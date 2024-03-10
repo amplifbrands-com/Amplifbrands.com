@@ -12,6 +12,10 @@ import Portfolio from "./components/portfolio";
 import ContactCard from './components/cards/contact-card'
 import Project from './components/Project'
 
+import GoogleAds from "./components/single-service-pages/google-ads";
+import YoutubeAds from "./components/single-service-pages/youtube-ads";
+
+
 
 function App() {
   const getInitialTheme = () => {
@@ -59,6 +63,8 @@ function App() {
             <Route path="/signup" element={<SignUp />} />
             <Route path="/signin" element={<SignIn />} />
             <Route path="/services" element={<Services theme={theme} />} />
+            <Route path="/google-ads" element={<GoogleAds theme={theme} />} />
+            <Route path="/youtube-ads" element={<YoutubeAds theme={theme} />} />
             <Route path="/portfolio/:projectId" element={<Project theme={theme} />} />
           </Routes>
           {
