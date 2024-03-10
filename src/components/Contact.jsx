@@ -36,7 +36,7 @@ const ContactUsPage = () => {
     </div>
 
     <div className="outer-section-get">
-      <div className="inner-section">
+      <div className="inner-section-get">
         <div className="contact-get-in-touch">
           <div className="contact-getin-heading">
             <h2 className="contact-getin-h2">
@@ -72,7 +72,7 @@ const ContactUsPage = () => {
 
     
     <div className="outer-section-partner">
-      <div className="inner-section">
+      <div className="inner-section-partner">
         <div className="contact-us-partner">
           <div className="contact-partner-image-outer">
             <img src={Banner} alt="" className="contact-partner-image" />

@@ -21,7 +21,7 @@ const About = () => {
       <Whatsapp />
       <ScrollToTopButton />
       <div className="outer-section-about">
-        <div className="inner-section">
+        <div className="inner-section-about">
           <div className="about-hero">
             <div className="about-hero-heading">
               <h2 className="about-hero-h2">
@@ -61,7 +61,7 @@ const About = () => {
       </div>
 
       <div className="outer-section-our">
-        <div className="inner-section">
+        <div className="inner-section-our">
           <div className="about-value">
             <div className="about-value-heading">
               <h2 className="about-value-h2">

@@ -4,7 +4,7 @@
     align-items: center;
 }
 
-.inner-section{
+.inner-section-about, .inner-section-our{
     width: 1240px;
     display: flex;
     justify-content: center;
