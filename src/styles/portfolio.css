@@ -1,4 +1,3 @@
-
 @import './base.css';
 
 .portfolio--hero {
@@ -31,7 +30,6 @@
     height: auto; 
     border-radius: 15px;
 }
-
 @media screen and (max-width: 1024px) {
     .portfolio--hero {
         padding: 32px 50px;

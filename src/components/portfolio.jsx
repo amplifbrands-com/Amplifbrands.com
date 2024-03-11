@@ -6,8 +6,59 @@ import {projects} from "../assets/portfolio-page-data";
 import { Link } from 'react-router-dom';
 
 
+
+const ImageGallery = () => {
+  return (
+    <div style={{
+      display: 'flex',
+      flexDirection: 'row',
+      justifyContent: 'space-around',
+      alignItems: 'center',
+      background: 'linear-gradient(to right, #5D9FB5 3%, #5D9FB5 100%)',
+      marginBottom:'10px',
+      marginTop:'30px'
+      
+    }}>
+      <img 
+        className="image" 
+        src="../src/assets/portfolio/fabocast.png" 
+        alt="Image 1" 
+        style={{ width: '200px', height: '75px', margin: '0 10px' }}
+      />
+      <img 
+        className="image" 
+        src="../src/assets/portfolio/jinmart.png" 
+        alt="Image 2" 
+        style={{ width: '200px', height: '75px', margin: '0 10px' }}
+      />
+      <img 
+        className="image" 
+        src="../src/assets/portfolio/rankfast.png" 
+        alt="Image 3" 
+        style={{ width: '200px', height: '75px', margin: '0 10px' }}
+      />
+      <img 
+        className="image" 
+        src="../src/assets/portfolio/haricurus.png" 
+        alt="Image 4" 
+        style={{ width: '200px', height: '75px', margin: '0 10px' }}
+      />
+      <img 
+        className="image" 
+        src="../src/assets/portfolio/eazygrad.png" 
+        alt="Image 5" 
+        style={{ width: '200px', height: '75px', margin: '0 10px' }}
+      />
+    </div>
+  );
+};
+
+
+
 const PortfolioHero = () => {
   return (
+   
+    
     <div className="portfolio--hero">
       <div className="row align-items-center">
         <div className="col-12 col-md">
@@ -17,14 +68,19 @@ const PortfolioHero = () => {
         <div className="col-12 col-md">
           <img src="/portfolio-page/portfolio-hero.png" alt="portfolio" className="img-fluid hero-image" />
         </div>
+        
       </div>
+      
     </div>
+
+    
   )
 }
 
 const Project = ({project, index}) =>{
   return(
     <section className="project-item">
+      
       <div className="row align-items-center g-5">
         <div className={`col-12 col-md ${index % 2 !== 0 ? 'order-2' : ''}`}>
             <img src={project.mainImage} alt={project.title} className="project-image img-fluid" />
@@ -46,17 +102,31 @@ const Project = ({project, index}) =>{
 
 const Portfolio = () => {
   return (
+    <div>
+    
+   
     <div className="portfolio-container">
+    
         <Whatsapp/>
         <PortfolioHero />
+        
+        < ImageGallery/>
+        
+
         <h1 className="text-center my-5">Our Projects</h1>
+       
+        
+       
         { projects.map( (project, index) => (
             <Project key={index} project={project} index={index} />
                       )
+                      
         )} 
-    
+         
+        
       <ScrollToTopButton/>
      
+ </div>
  </div>
   );
 };
