@@ -32,6 +32,8 @@
     position: relative;
     padding: 24px;
     box-shadow: var(--card-shadow);
+     /*NABANITA GHOSH*/
+    border-top: 9px solid #176B87;
 }
 
 .card-main-wrapper::before{
