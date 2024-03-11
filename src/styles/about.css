@@ -2,6 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+    z-index: 99;
+    background: linear-gradient(136.37deg, #1C1C1C 11%, rgba(7, 23, 29, 0.87) 38.54%, rgba(23, 107, 135, 0.81) 90.82%);
 }
 
 .inner-section-about, .inner-section-our{
