@@ -1,9 +1,9 @@
-import React, { useContext } from 'react';
+import React, { useContext,useState, useEffect }  from 'react';
 import { Link } from 'react-router-dom';
 import "../styles/Navbar.css"
 import "../styles/base.css"
 import "../styles/base.css"
-
+import { IoCall } from "react-icons/io5";
 import Mobile from "./mobileNav/mobilenav"
 import Logo from "../assets/logo.svg"
 import { useLocation } from 'react-router-dom';
@@ -20,9 +20,29 @@ const Navbar = ({showContact, changeShowContact}) => {
   }
 
 
+  // added feature 
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0.3 * window.innerHeight) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
   return (
    <div className="navigation-container">
-      <nav className="navbar">
+      <nav  className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="nav-logo-outer">
           <Link to="/">
             <img src={Logo} alt="" title='' className='nav-logo' />
@@ -44,9 +64,11 @@ const Navbar = ({showContact, changeShowContact}) => {
             Book A Meeting
           </button> */}
 
-          {/** added call functionality plz rectify the css  */}
+          {/** added call functionality and added the missing css */}
+
+          
           <div class="">
-          <a href="tel:+919007579469" className="cta-btn">Call Us Now</a>
+          <a href="tel:+919007579469" className="cta-btn"><IoCall /></a>
         </div>
 
           <PopupButton
@@ -57,7 +79,7 @@ const Navbar = ({showContact, changeShowContact}) => {
                     */
                 rootElement={document.getElementById("root")}
                 className="cta-btn"
-                text="Book A Meeting"
+                text="Schedule Meeting"
           />
         </div>
         <div className="mobile-bar">
