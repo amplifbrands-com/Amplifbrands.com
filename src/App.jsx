@@ -14,6 +14,12 @@ import Project from './components/Project'
 
 import GoogleAds from "./components/single-service-pages/google-ads";
 import YoutubeAds from "./components/single-service-pages/youtube-ads";
+import FacebookAds from "./components/single-service-pages/facebook-ads";
+import LinkedinAds from "./components/single-service-pages/linkedin-ads";
+import CustomAds from "./components/single-service-pages/custom";
+import Wordpress from "./components/single-service-pages/wordpress";
+import Wix from "./components/single-service-pages/wix";
+import Shopify from "./components/single-service-pages/shopify";
 
 
 
@@ -65,6 +71,12 @@ function App() {
             <Route path="/services" element={<Services theme={theme} />} />
             <Route path="/google-ads" element={<GoogleAds theme={theme} />} />
             <Route path="/youtube-ads" element={<YoutubeAds theme={theme} />} />
+            <Route path="/facebook-ads" element={<FacebookAds theme={theme} />} />
+            <Route path="/linkedin-ads" element={<LinkedinAds theme={theme} />} />
+            <Route path="/custom" element={<CustomAds theme={theme} />} />
+            <Route path="/wordpress" element={<Wordpress theme={theme} />} />
+            <Route path="/wix" element={<Wix theme={theme} />} />
+            <Route path="/shopify" element={<Shopify theme={theme} />} />
             <Route path="/portfolio/:projectId" element={<Project theme={theme} />} />
           </Routes>
           {

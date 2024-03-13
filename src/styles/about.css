@@ -5,6 +5,7 @@
     color: white;
     z-index: 99;
     background: linear-gradient(136.37deg, #1C1C1C 11%, rgba(7, 23, 29, 0.87) 38.54%, rgba(23, 107, 135, 0.81) 90.82%);
+    padding-bottom: 10vh;
 }
 
 .inner-section-about, .inner-section-our{
@@ -51,7 +52,6 @@
 }
 
 .outer-section-our{
-    margin-top: 10vh;
     background: linear-gradient(136.37deg, #1C1C1C 11%, rgba(7, 23, 29, 0.87) 38.54%, rgba(7, 40, 51, 0.85) 65.28%, rgba(23, 107, 135, 0.81) 90.82%);
 }
 

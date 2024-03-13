@@ -20,12 +20,8 @@ const Home = ({theme}) => {
   <div>
   <Whatsapp/>
     <section className="hero-sec hero-sec-reverse row mx-auto">
-      {/* <div className="ball-sm"></div>
-      <div className="ball-lg"></div> */}
         <div className="section-title row text-center col-12"></div>
         <div className="row">
-        {/* <h1 className='main-header d-block d-md-none'>We help digital brands maximize their revenue with paid advertising campaigns and stunning websites</h1> */}
-
           <div className="col-lg-8 col-md-8">
             <div className="content">
           <h1 className='main-header '>We help digital-first businesses  maximize their revenue with paid advertising campaigns and stunning websites</h1>
@@ -38,7 +34,6 @@ const Home = ({theme}) => {
              Today and skyrocket your sales 🚀 
             </h5>
             </div>
-            {/* <button type="button" className="cta-btn mt-5" >Get a Free Consultation</button> */}
             <PopupButton
               url="https://calendly.com/amplifbrands/free-consultation-meeting"
               rootElement={document.getElementById("root")}
@@ -47,10 +42,7 @@ const Home = ({theme}) => {
               />
            <PopupButton
               url="https://calendly.com/amplifbrands/free-consultation-meeting"
-                    /*
-                    * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
-                    * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
-                    */
+                   
                 rootElement={document.getElementById("root")}
                 className="cta-btn mt-5 ms-5 d-block d-md-none"
                 text="Book a meeting"
@@ -58,7 +50,7 @@ const Home = ({theme}) => {
             
           </div>
           <div className="col-lg-4 col-md-4 mt-3 p-3 ">
-            {/* <img src="/hero-image.png" alt="heroImage" className="img-fluid" /> */}
+            
           </div>
         </div>
       </section>
@@ -113,9 +105,9 @@ const Home = ({theme}) => {
        
       </div>
     </section>
-    <section>
+    {/* <section>
       <Testimonials />
-    </section>
+    </section> */}
     {/* <section className=" row mx-auto form-sec">
       <div className="section-title text-center col-12 row mx-auto">
         <h3 className="main-header col-12">

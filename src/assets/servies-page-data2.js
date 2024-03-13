@@ -15,7 +15,8 @@ export const services = [
             'WooCommerce Integration',
             'Plugin Development',
             'WordPress Website Maintenance'
-        ]
+        ],
+        link:"https://amplifbrands.com/wordpress"
     },
     {
         title: 'shopify',
@@ -26,7 +27,8 @@ export const services = [
             'app integration',
             'shopify SEO optimization',
             'shopify store Maintenance'
-        ]
+        ],
+        link:"https://amplifbrands.com/shopify"
     },
     {
         title: 'wix',
@@ -37,7 +39,8 @@ export const services = [
             'e-commerce integration',
             'wix SEO optimization',
             'wix website maintenance'
-        ]
+        ],
+        link:"https://amplifbrands.com/wix"
     },
     {
         title: 'custom website',
@@ -48,7 +51,8 @@ export const services = [
             'back-end development',
             'integration with third-party servies',
             'scalability and performance optimization'
-        ]
+        ],
+        link:"https://amplifbrands.com/custom"
     },
     {
         title: 'other website platforms',
@@ -59,6 +63,7 @@ export const services = [
             'cross-platform compatibility',
             'accessibility compliance',
             'continous improvement'
-        ]
+        ],
+        link:"https://amplifbrands.com/"
     },
 ]

@@ -37,7 +37,6 @@ const Project = ({project, index}) =>{
         </div>
       </div>
     
-    {/* Add more details as needed */}
   </section>
   )
 }

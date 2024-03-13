@@ -1,19 +1,21 @@
 import React from 'react'
+import Single from "./styles-struc/service-sturc"
 
-import { BannerData } from "./data-files/youtube-ads/youtube-banner"
+import PastData from "./data-files/linkedin-ads/past-result"
+
+import { BannerData } from "./data-files/linkedin-ads/linkedin-banner"
 import BannerCard from "./styles-struc/banner-struc"
 
-import { ServiceData } from "./data-files/youtube-ads/service-over"
-import SingleStruc from "./data-files/youtube-ads/our-offering"
+import { ServiceData } from "./data-files/linkedin-ads/service-over"
+import SingleStruc from "./data-files/linkedin-ads/our-offering"
 
-import { MidBannerData } from "./data-files/youtube-ads/banner"
+import { MidBannerData } from "./data-files/linkedin-ads/banner"
 import ServiceStruc from "./styles-struc/service-sturc"
 
-import PastData from "./data-files/youtube-ads/past-result"
 
 import Testimonials from '../cards/testimonials'
 
-export default function YoutubeAds() {
+export default function LinkedinAds() {
   return (
     <>
       {
@@ -21,6 +23,7 @@ export default function YoutubeAds() {
         <BannerCard heading={cont.heading} content={cont.content} img={cont.img} />
         ))
       }
+      
       {
         ServiceData.map(cont =>(
         <SingleStruc heading1={cont.heading1} contentPara={cont.contentPara} heading2={cont.heading2} />
@@ -34,14 +37,12 @@ export default function YoutubeAds() {
         <ServiceStruc heading1={cont.heading1} contentPara={cont.contentPara} heading2={cont.heading2} headingSpan={cont.headingSpan} />
         ))
       }
-      
 
       {/* <div className="outer-section-testimonial">
           <div className="inner-section-testimonial">
               <Testimonials />
           </div>
       </div> */}
-      
     </>
   )
 }
