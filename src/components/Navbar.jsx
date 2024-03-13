@@ -19,8 +19,6 @@ const Navbar = ({showContact, changeShowContact}) => {
     changeShowContact()
   }
 
-
-  // added feature 
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -60,11 +58,6 @@ const Navbar = ({showContact, changeShowContact}) => {
           </ul>
         </div>
         <div className="nav-btn-outer">
-          {/* <button className="cta-btn" onClick={seeContacts}>
-            Book A Meeting
-          </button> */}
-
-          {/** added call functionality and added the missing css */}
 
           
           <div class="">

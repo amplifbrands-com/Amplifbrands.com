@@ -38,11 +38,11 @@ export default function GoogleAds() {
         ))
       }
 
-      <div className="outer-section-testimonial">
+      {/* <div className="outer-section-testimonial">
           <div className="inner-section-testimonial">
               <Testimonials />
           </div>
-      </div>
+      </div> */}
     </>
   )
 }

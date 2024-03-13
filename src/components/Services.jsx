@@ -100,9 +100,7 @@ const Services = ({theme}) => {
           <ServiceCard key={index} title={service.title} offerings={service.offerings} img={service.img} index={index} theme={theme} />
                     )
       )} 
-      {/**from aniket-> ScrollTopButton compoonent added  */}
-    <ScrollToTopButton/>
-    {/**from aniket-> ScrollTopButton component ended  */}     
+    <ScrollToTopButton/>  
     </div>
   )
 }
