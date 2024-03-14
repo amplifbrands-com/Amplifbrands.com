@@ -10,16 +10,11 @@ import Hero2 from "../assets/about-us/about-hero-2.svg"
 import '../styles/base.css';
 import '../styles/about.css';
 
-import Whatsapp from './Whatsapp';
-import ScrollToTopButton from './ScrollToTopButton';
-
 
 const About = () => {
 
   return (
     <>
-      <Whatsapp />
-      <ScrollToTopButton />
       <div className="outer-section-about">
         <div className="inner-section-about">
           <div className="about-hero">

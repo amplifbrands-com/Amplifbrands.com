@@ -61,12 +61,12 @@ const Footer = () => {
                 </h6>
               </div>
               <div className="footer-add-content">
-                <Link to="" className="footer-add-links"><IoMdMail className='footer-add-icons'/>contact@amplifbrands.com</Link><br /> 
+                <a href="mailto:contact@amplifbrands.com" className="footer-add-links"><IoMdMail className='footer-add-icons'/>contact@amplifbrands.com</a><br /> 
                 <Link to="" className="footer-add-links">
                 <IoLocationSharp className='footer-add-icons' />Amplif Brands Private Limited, 3rd Cross Rd, Electronics City Phase 1, Electronic City, Bengaluru<br />
                   Karnataka 560100.
                 </Link><br /> 
-                <Link to="" className="footer-add-links"><FaPhone className='footer-add-icons' />+91 95457 49447</Link>
+                <a href="tel:+919545749447" className="footer-add-links"><FaPhone className='footer-add-icons' />+91 95457 49447</a>
               </div>
             </div>
             <div className="footer-social-outer mobile-social">

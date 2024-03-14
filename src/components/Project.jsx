@@ -1,7 +1,5 @@
 import React from 'react';
 import "../styles/project.css"
-import Whatsapp from './Whatsapp';
-import ScrollToTopButton from './ScrollToTopButton';
 import { useParams } from 'react-router-dom';
 import {projects} from "../assets/portfolio-page-data";
 import { Link } from 'react-router-dom';
@@ -14,8 +12,6 @@ const Project = ({theme}) => {
 
     return (
             <div className="project--container" >
-        <Whatsapp/>
-       
                 <div className="project--header">
                         <h1>{data.name}</h1>
                 </div>
@@ -63,7 +59,6 @@ const Project = ({theme}) => {
                     <Link to={`/portfolio/${parsedProjectId + 1}`}  className="cta-btn">Next Project</Link>
                    </div>
                 </section>
-      <ScrollToTopButton/>
 
             </div>
         )

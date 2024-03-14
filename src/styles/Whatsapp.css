@@ -1,7 +1,7 @@
 .container {
     position: fixed;
    bottom: 10%;
-    left: 8px; /* Adjust this value to position the button according to your preference */
+    left: 8px;
     transform: translateY(-50%);
     z-index: 999;
   }
@@ -10,7 +10,7 @@
     display: inline-block;
     
     padding: 12px 24px;
-    background-color: #25d366; /* WhatsApp brand color */
+    background-color: #25d366;
     color: #fff;
     font-size: 16px;
     text-decoration: none;
@@ -21,28 +21,28 @@
   }
   
   .cta-button:hover {
-    background-color: #128c7e; /* Darker shade of WhatsApp brand color on hover */
+    background-color: #128c7e; 
   }
   
 
 
   .whatsapp-logo {
     vertical-align: middle;
-    margin-right: 8px; /* Add some space between the logo and text */
+    margin-right: 8px;
   }
   
-  /* Media query for small screens */
+
   @media only screen and (max-width: 600px) {
     .container {
-      left: 8px; /* Adjust the right position for smaller screens */
+      left: 8px;
     }
     
     .cta-button {
-      padding: 10px 20px; /* Decrease padding for smaller screens */
+      padding: 10px 20px; 
     }
     
     .whatsapp-logo {
-      width: 20px; /* Decrease logo size for smaller screens */
-      margin-right: 6px; /* Decrease margin for smaller screens */
+      width: 20px;
+      margin-right: 6px; 
     }
   }

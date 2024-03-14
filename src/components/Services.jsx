@@ -1,22 +1,15 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+
 import "../styles/Services.css"
 import '../styles/base.css'
+
 import { services } from '../assets/servies-page-data2';
 import heroImg from '../assets/service-page-icons/hero-icon.svg'
-
-import Whatsapp from './Whatsapp';
 import ScrollToTopButton from './ScrollToTopButton';
 
-const ServiceHero = () => {
 
-  // const serviceTitles = [
-  //   "Digital Marketing Consulting",
-  //   "Website Development",
-  //   "Website Maintenance",
-  //   "PPC Management",
-  //   "SEO Services",
-  //   "E-commerce"
-  // ]
+const ServiceHero = () => {
   return (
     <section className='hero-sec'>
       <div className="hero-card">
@@ -25,8 +18,8 @@ const ServiceHero = () => {
         </h1>
 
         <div className="hero-card-links-wrapper">
-          <a href="" className="hero-card-link me-sm-5 mb-5 mb-sm-0">PPC advertising</a>
-          <a href="" className="hero-card-link hero-card-link-active">website servies</a> 
+          <Link to="/google-ads" className="hero-card-link me-sm-5 mb-5 mb-sm-0">PPC advertising</Link>
+          <Link to="/custom" className="hero-card-link hero-card-link-active">website servies</Link> 
         </div>
       </div>
 
@@ -37,29 +30,7 @@ const ServiceHero = () => {
 
 }
 
-// const Deliverable = ({deliverable, theme}) => {
-  
-//   return (
-//             <div className="deliverables col-12 col-md d-flex justify-content-center">
-//               <div className=" d-flex flex-md-column flex-row align-items-md-center justify-content-md-center " >
-//                   <img src={ theme==='light'? deliverable.icon.light: deliverable.icon.dark} alt="" className="deliverable-icon" />
-//                   <p className="body-text text-center" >{deliverable.subtitle}</p>
-//               </div>
-//             </div>
-//   )
-// }
-
-
-// const KeyActivity = ({activity, theme}) => {
-//   return (
-//           <div className="key-activities mb-4 d-flex align-items-center">
-//                 <img src={ theme==="light" ? activity.icon.light: activity.icon.dark} alt="" className="service-key-icon" />
-//                 <p className='body-text'>{activity.subtitle}</p>
-//           </div>
-//   )
-// }
-
-const ServiceCard = ({title, index, offerings, img}) => {
+const ServiceCard = ({title, index, offerings, img, link}) => {
 
   return (
 
@@ -82,7 +53,7 @@ const ServiceCard = ({title, index, offerings, img}) => {
               })
             }
           </ul>
-          <a href="" className='cta-btn mx-auto mx-0'>learn more</a>
+          <Link to={link} className='cta-btn mx-auto mx-0'>learn more</Link>
         </div>
       </div>
       <img src={img} alt={`${title} image`} className='service-img' />
@@ -97,8 +68,8 @@ const Services = ({theme}) => {
     <div className="services-container">
        <ServiceHero />
         { services.map( (service, index) => (
-          <ServiceCard key={index} title={service.title} offerings={service.offerings} img={service.img} index={index} theme={theme} />
-                    )
+          <ServiceCard key={index} title={service.title} link={service.link} offerings={service.offerings} img={service.img} index={index} theme={theme} />
+          )
       )} 
     <ScrollToTopButton/>  
     </div>

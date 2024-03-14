@@ -9,8 +9,6 @@ import { serviceData } from '../assets/service-card-data';
 import Form from './cards/message-form';
 import Testimonials from './cards/testimonials';
 
-import Whatsapp from './Whatsapp';
-import ScrollToTopButton from './ScrollToTopButton';
 import { PopupButton } from "react-calendly";
 import { FaArrowRightLong } from "react-icons/fa6";
 
@@ -18,7 +16,6 @@ import { FaArrowRightLong } from "react-icons/fa6";
 const Home = ({theme}) => {
   return (
   <div>
-  <Whatsapp/>
     <section className="hero-sec hero-sec-reverse row mx-auto">
         <div className="section-title row text-center col-12"></div>
         <div className="row">
@@ -65,7 +62,6 @@ const Home = ({theme}) => {
         <h3 className='main-header col-12'>
           Why Choose Us?
         </h3>
-        {/* <h6 className='sub-header col-12 col-sm-8 mx-auto'>Navigating the Digital Frontier</h6> */}
       </div>
 
 
@@ -117,8 +113,6 @@ const Home = ({theme}) => {
       </div>
       <Form />
     </section> */}
-
-    <ScrollToTopButton/>
 
   </div>
   )
