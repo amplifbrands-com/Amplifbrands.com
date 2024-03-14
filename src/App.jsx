@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route ,Navigate } from "react-router-dom";
+
+
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Home from "./components/Home";
@@ -9,8 +11,9 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/footer";
 import Services from "./components/Services";
 import Portfolio from "./components/portfolio";
-import ContactCard from './components/cards/contact-card'
 import Project from './components/Project'
+
+
 
 import GoogleAds from "./components/single-service-pages/google-ads";
 import YoutubeAds from "./components/single-service-pages/youtube-ads";
@@ -20,6 +23,8 @@ import CustomAds from "./components/single-service-pages/custom";
 import Wordpress from "./components/single-service-pages/wordpress";
 import Wix from "./components/single-service-pages/wix";
 import Shopify from "./components/single-service-pages/shopify";
+import Whatsapp from "./components/Whatsapp";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 
 
@@ -61,6 +66,8 @@ function App() {
   return (
     <Router>
         <Navbar showContact={showContact} changeShowContact={changeShowContact} />
+        <Whatsapp />
+        <ScrollToTopButton />
           <Routes>
             <Route path="/" element={<Home theme={theme} />} />
             <Route path="/about" element={<About />} />

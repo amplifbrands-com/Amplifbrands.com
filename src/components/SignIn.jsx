@@ -1,6 +1,6 @@
 import React from 'react';
 import { SignInButton } from '@clerk/clerk-react';
-import '../styles/SignIn.css'; // Import the CSS file for styling
+import '../styles/SignIn.css';
 
 const SignIn = () => {
   return (

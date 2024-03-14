@@ -12,14 +12,9 @@ import Banner from "../assets/contact-us/banner-contact.svg"
 import '../styles/base.css';
 
 
-import Whatsapp from './Whatsapp';
-import ScrollToTopButton from './ScrollToTopButton';
-
 const ContactUsPage = () => {
   return (
     <>
-    <Whatsapp />
-    <ScrollToTopButton />
     <div className="outer-section">
       <div className="inner-section">
         <div className="contact-hero-outer">
@@ -49,21 +44,21 @@ const ContactUsPage = () => {
                 <IoMdMail className="getin-icons" />
                 <h4 className="getin-card-h4">Email Address</h4>
               </div>
-              <Link to="" className="getin-link" >contact@amplifbrands.com</Link>
+              <a href="mailto:contact@amplifbrands.com" className="getin-link" >contact@amplifbrands.com</a>
             </div>
             <div className="getin-card">
               <div className="gitin-card-up">
                 <LiaGlobeSolid className="getin-icons" />
                 <h4 className="getin-card-h4">Website</h4>
               </div>
-              <Link to="www.amplifbrands.com" className="getin-link" >www.amplifbrands.com</Link>
+              <Link to="/" className="getin-link" >www.amplifbrands.com</Link>
             </div>
             <div className="getin-card">
               <div className="gitin-card-up">
                 <MdLocalPhone className="getin-icons" />
                 <h4 className="getin-card-h4">Phone Number</h4>
               </div>
-              <Link to="" className="getin-link" >+91 9545749447</Link>
+              <a href="tel:+919545749447" className="getin-link" >+91 9545749447</a>
             </div>
           </div>
         </div>
@@ -82,7 +77,7 @@ const ContactUsPage = () => {
               Partner with us Today!<br />
               Give Us a Call Now!
             </h3>
-            <Link to="" className="cta-btn contact-partner-link">+91 9545749447</Link>
+            <a href="tel:+919545749447" className="cta-btn contact-partner-link">+91 9545749447</a>
           </div>
         </div>
       </div>

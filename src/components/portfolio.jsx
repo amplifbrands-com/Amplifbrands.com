@@ -1,7 +1,5 @@
 import React from 'react';
 import "../styles/portfolio.css"
-import Whatsapp from './Whatsapp';
-import ScrollToTopButton from './ScrollToTopButton';
 import {projects} from "../assets/portfolio-page-data";
 import { Link } from 'react-router-dom';
 
@@ -46,15 +44,12 @@ const Project = ({project, index}) =>{
 const Portfolio = () => {
   return (
     <div className="portfolio-container">
-        <Whatsapp/>
         <PortfolioHero />
         <h1 className="text-center my-5">Our Projects</h1>
         { projects.map( (project, index) => (
             <Project key={index} project={project} index={index} />
-                      )
+        )
         )} 
-    
-      <ScrollToTopButton/>
      
  </div>
   );
