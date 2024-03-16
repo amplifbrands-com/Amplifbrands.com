@@ -18,8 +18,8 @@ const ServiceHero = () => {
         </h1>
 
         <div className="hero-card-links-wrapper">
-          <Link to="/google-ads" className="hero-card-link me-sm-5 mb-5 mb-sm-0">PPC advertising</Link>
-          <Link to="/custom" className="hero-card-link hero-card-link-active">website servies</Link> 
+          <Link to="/google-ads" className="hero-card-link me-sm-5 mb-5 mb-sm-0">Paid advertising</Link>
+          <Link to="/custom" className="hero-card-link hero-card-link-active">Website services</Link> 
         </div>
       </div>
 
