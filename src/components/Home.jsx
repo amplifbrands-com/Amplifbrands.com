@@ -21,10 +21,10 @@ const Home = ({theme}) => {
         <div className="row">
           <div className="col-lg-8 col-md-8">
             <div className="content">
-          <h1 className='main-header '>We help digital first businesses to maximize their revenue with effective advertising campaigns and establishing strong online presence</h1>
+          <h1 className='main-header '>We help digital-first businesses  maximize their revenue with paid advertising campaigns and stunning websites</h1>
 
             <h5 className="sub-header pt-2">
-            Stop wasting your money and time on ineffective ad campaigns and low-quality websites
+            Stop wasting your money and time on ineffective ad campaigns and low-quality websites.
             </h5>
             <h5 className="body-text pt-5">
             Partner with <span className="highligh">Amplif </span>
@@ -32,17 +32,17 @@ const Home = ({theme}) => {
             </h5>
             </div>
             <PopupButton
-              url="https://topmate.io/rohitsalunke/858573?coupon_code=Discount100x"
+              url="https://calendly.com/amplifbrands/free-consultation-meeting"
               rootElement={document.getElementById("root")}
               className="cta-btn mt-5 ms-5 d-none d-md-block"
               text={<h5> Schedule FREE Audit Call Now <FaArrowRightLong className="arrow" /></h5>}
               />
            <PopupButton
-              url="https://wa.link/n0188s"
+              url="https://calendly.com/amplifbrands/free-consultation-meeting"
                    
                 rootElement={document.getElementById("root")}
                 className="cta-btn mt-5 ms-5 d-block d-md-none"
-                text="Connect on Whatsapp"
+                text="Book a meeting"
           />
             
           </div>
@@ -55,7 +55,7 @@ const Home = ({theme}) => {
       <h2 className='main-header mb-3'>
         Our Mission
       </h2>
-      <p className='sub-header col-12 col-sm-8 mx-auto'>"Partner with digital-first businesses, fueling their growth with marketing strategies and advanced technology" </p>
+      <p className='sub-header col-12 col-sm-8 mx-auto'>Our mission is to empower digital brands to thrive by delivering exceptional services. Client success is our top priority. We achieve this by maximizing their revenue and crafting remarkable online experiences. </p>
     </section>
     <section className=" row mx-auto why-us">
       <div className="section-title  text-center row col-12 mx-auto">
@@ -98,6 +98,7 @@ const Home = ({theme}) => {
           </div>
           </div>
         ))}
+       
       </div>
     </section>
     {/* <section>

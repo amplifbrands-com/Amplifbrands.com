@@ -58,6 +58,7 @@ const ContactUsPage = () => {
                 <MdLocalPhone className="getin-icons" />
                 <h4 className="getin-card-h4">Phone Number</h4>
               </div>
+              <a href="tel:+919545749447" className="getin-link" >+91 9545749447</a>
             </div>
           </div>
         </div>
