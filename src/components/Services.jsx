@@ -14,12 +14,12 @@ const ServiceHero = () => {
     <section className='hero-sec'>
       <div className="hero-card">
         <h1 className="hero-card-title-yellow">
-          explore our expert solutions
+          explore our services
         </h1>
 
         <div className="hero-card-links-wrapper">
-          <Link to="/google-ads" className="hero-card-link me-sm-5 mb-5 mb-sm-0">PPC advertising</Link>
-          <Link to="/custom" className="hero-card-link hero-card-link-active">website servies</Link> 
+          <Link to="/google-ads" className="hero-card-link me-sm-5 mb-5 mb-sm-0">Paid Advertising</Link>
+          <Link to="/custom" className="hero-card-link hero-card-link-active">Website Development</Link> 
         </div>
       </div>
 

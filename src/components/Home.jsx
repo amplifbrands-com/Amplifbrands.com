@@ -21,10 +21,10 @@ const Home = ({theme}) => {
         <div className="row">
           <div className="col-lg-8 col-md-8">
             <div className="content">
-          <h1 className='main-header '>We help digital-first businesses  maximize their revenue with paid advertising campaigns and stunning websites</h1>
+          <h1 className='main-header '>We help digital first businesses to maximize their revenue with paid advertising campaigns and establishing strong online presence</h1>
 
             <h5 className="sub-header pt-2">
-            Stop wasting your money and time on ineffective ad campaigns and low-quality websites.
+            Stop wasting your money and time on ineffective ad campaigns and low-quality websites
             </h5>
             <h5 className="body-text pt-5">
             Partner with <span className="highligh">Amplif </span>
@@ -55,7 +55,7 @@ const Home = ({theme}) => {
       <h2 className='main-header mb-3'>
         Our Mission
       </h2>
-      <p className='sub-header col-12 col-sm-8 mx-auto'>Our mission is to empower digital brands to thrive by delivering exceptional services. Client success is our top priority. We achieve this by maximizing their revenue and crafting remarkable online experiences. </p>
+      <p className='sub-header col-12 col-sm-8 mx-auto'>Partnering with digital-first businesses and fueling their growth with marketing strategies and advanced technology</p>
     </section>
     <section className=" row mx-auto why-us">
       <div className="section-title  text-center row col-12 mx-auto">
