@@ -41,7 +41,7 @@ const ServiceCard = ({title, index, offerings, img, link}) => {
         </h2>
 
         <div className="offerings">
-          <h5 className='text-capitalize mb-3'>what we offer:</h5>
+          <h5 className='text-capitalize mb-3'>what we offer</h5>
           <ul className='ms-5 mb-5'>
             {
               offerings.map((offer, index)=>{
@@ -53,7 +53,7 @@ const ServiceCard = ({title, index, offerings, img, link}) => {
               })
             }
           </ul>
-          <Link to={link} className='cta-btn mx-auto mx-0'>learn more</Link>
+          <Link to={link} className='cta-btn mx-auto mx-0'>Learn More</Link>
         </div>
       </div>
       <img src={img} alt={`${title} image`} className='service-img' />

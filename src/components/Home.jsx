@@ -22,24 +22,22 @@ const Home = ({theme}) => {
           <div className="col-lg-8 col-md-8">
             <div className="content">
           <h1 className='main-header '>We help digital first businesses to maximize their revenue with paid advertising campaigns and establishing strong online presence</h1>
-
             <h5 className="sub-header pt-2">
             Stop wasting your money and time on ineffective ad campaigns and low-quality websites
             </h5>
-            <h5 className="body-text pt-5">
+            <h2 className="body-text pt-5">
             Partner with <span className="highligh">Amplif </span>
-             Today and skyrocket your sales 🚀 
-            </h5>
+            today and skyrocket your sales 🚀 
+            </h2>
             </div>
             <PopupButton
-              url="https://calendly.com/amplifbrands/free-consultation-meeting"
+              url="https://topmate.io/rohitsalunke/858573"
               rootElement={document.getElementById("root")}
               className="cta-btn mt-5 ms-5 d-none d-md-block"
-              text={<h5> Schedule FREE Audit Call Now <FaArrowRightLong className="arrow" /></h5>}
+              text={<h4> Schedule a FREE Audit Call Now <FaArrowRightLong className="arrow" /></h4>}
               />
-           <PopupButton
-              url="https://calendly.com/amplifbrands/free-consultation-meeting"
-                   
+          <PopupButton
+              url="https://topmate.io/rohitsalunke/858573"  
                 rootElement={document.getElementById("root")}
                 className="cta-btn mt-5 ms-5 d-block d-md-none"
                 text="Book a meeting"
@@ -52,10 +50,7 @@ const Home = ({theme}) => {
         </div>
       </section>
     <section className=" mission text-center mx-auto col-12">
-      <h2 className='main-header mb-3'>
-        Our Mission
-      </h2>
-      <p className='sub-header col-12 col-sm-8 mx-auto'>Partnering with digital-first businesses and fueling their growth with marketing strategies and advanced technology</p>
+      <h1 className='sub-header col-12 col-sm-8 mx-auto'> Our Mission is to Partner with digital-first businesses and fueling their growth with marketing strategies and advanced technology</h1>
     </section>
     <section className=" row mx-auto why-us">
       <div className="section-title  text-center row col-12 mx-auto">
@@ -80,16 +75,15 @@ const Home = ({theme}) => {
     </section>
     <section className=" row mx-auto">
       <div className="section-title row text-center col-12 mx-auto">
-        <h2 className='main-header col-12 mb-5'>
+        <h3 className='main-header col-12 mb-5'>
         Our Services
-        </h2>
+        </h3>
         {serviceData.map( (item, index) =>(
           <div className="col-md-6" key={index}>
           <h5 className='sub-header col-12 col-sm-8 mb-3' >{item.name}</h5>
           <div className="service-card">
             <div className="service-slider">
               
-            
             {
             item.services.map(cont =>(
           <ServiCard key={cont.title} icon={cont.icon} title={cont.title} />))

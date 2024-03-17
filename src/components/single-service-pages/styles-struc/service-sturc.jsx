@@ -4,7 +4,7 @@ import Banner from "/single-service-pages/service-banner-img.svg"
 import "../styles-file/single-service.css"
 
 export default function SingleService({heading1, heading2, headingSpan, contentPara}) {
-  return (
+return (
     <>
         <div className="outer-section-call-banner">
             <div className="inner-section-call-banner">
@@ -30,5 +30,5 @@ export default function SingleService({heading1, heading2, headingSpan, contentP
         </div>
 
     </>
-  )
+)
 }

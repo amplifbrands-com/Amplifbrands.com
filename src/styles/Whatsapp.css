@@ -1,6 +1,6 @@
 .container {
     position: fixed;
-   bottom: 10%;
+    bottom: 10%;
     left: 8px;
     transform: translateY(-50%);
     z-index: 999;

@@ -2,7 +2,7 @@ import React from 'react'
 import "../styles-file/single-service.css"
 
 export default function OfferIcons({heading, content, img}) {
-  return (
+return (
     <div className="our-offering-cards">
         <div className="offering-cards-image">
             <img src={img} alt="" className='card-offering-image' />
@@ -16,5 +16,5 @@ export default function OfferIcons({heading, content, img}) {
             </p>
         </div>
     </div>
-  )
+)
 }

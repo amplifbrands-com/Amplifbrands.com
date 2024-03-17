@@ -9,8 +9,8 @@ const PortfolioHero = () => {
     <div className="portfolio--hero">
       <div className="row align-items-center">
         <div className="col-12 col-md">
-          <h1 className="hero--title mb-3">Your Digital <span className="hero--highlight">Success</span> Partner</h1>
-          <p className="hero--desc">Unlock the full potential of your brand with our expert digital marketing solutions. Together, let's dominate the digital landscape and achieve your goals.</p>
+          <h2 className="hero--title mb-3"><span className="hero--highlight">Amplif</span> is Your Digital <span className="hero--highlight">Success</span> Partner</h2>
+          <h5 className="hero--desc">Unlock the full potential of your brand with our expert digital marketing solutions. Check out some of the work we recently worked.</h5>
         </div>
         <div className="col-12 col-md">
           <img src="/portfolio-page/portfolio-hero.png" alt="portfolio" className="img-fluid hero-image" />
@@ -39,13 +39,11 @@ const Project = ({project, index}) =>{
   )
 }
 
-
-
 const Portfolio = () => {
   return (
     <div className="portfolio-container">
         <PortfolioHero />
-        <h1 className="text-center my-5">Our Projects</h1>
+        <h1 className="text-center my-5">Our Recent Work</h1>
         { projects.map( (project, index) => (
             <Project key={index} project={project} index={index} />
         )

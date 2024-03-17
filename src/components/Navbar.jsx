@@ -39,7 +39,7 @@ const Navbar = ({showContact, changeShowContact}) => {
 
 
   return (
-   <div className="navigation-container">
+  <div className="navigation-container">
       <nav  className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="nav-logo-outer">
           <Link to="/">
@@ -50,28 +50,28 @@ const Navbar = ({showContact, changeShowContact}) => {
           <ul className="nav-links-ul mb-0">
             <li className="nav-links-li"><Link to="/" className='nav-li-links' id={ path === '/' ? 'active' : 'inactive'} >Home</Link></li>
             <li className="nav-links-li"><Link to="/services" className='nav-li-links' id={ path === '/services' ? 'active' : 'inactive'} >Services</Link></li>
-            <li className="nav-links-li"><Link to="/portfolio" className='nav-li-links' id={ path === '/portfolio' ? 'active' : 'inactive'} >Portfolio</Link></li>
-            <li className="nav-links-li"><Link to="/about" className='nav-li-links' id={ path === '/about' ? 'active' : 'inactive'} >About Us</Link></li>
-            <li className="nav-links-li"><Link to="/contact" className='nav-li-links' id={ path === '/contact' ? 'active' : 'inactive'} >Contact Us</Link></li>
+            <li className="nav-links-li"><Link to="/portfolio" className='nav-li-links' id={ path === '/portfolio' ? 'active' : 'inactive'} >Work</Link></li>
+            <li className="nav-links-li"><Link to="/about" className='nav-li-links' id={ path === '/about' ? 'active' : 'inactive'} >About</Link></li>
+            <li className="nav-links-li"><Link to="/contact" className='nav-li-links' id={ path === '/contact' ? 'active' : 'inactive'} >Contact</Link></li>
           </ul>
         </div>
         <div className="nav-btn-outer"> 
-          <div class="">
-          <Link to="tel:+919545749447" className="cta-btn"><IoCall /></Link>
+          <div>
+          <Link to="https://wa.link/n0188s" className="cta-btn"><IoCall /></Link>
         </div>
 
           <PopupButton
-              url="https://calendly.com/amplifbrands/free-consultation-meeting"  
+              url="https://topmate.io/rohitsalunke/858573"  
                 rootElement={document.getElementById("root")}
                 className="cta-btn"
-                text="Schedule Meeting"
+                text="Book a Meeting"
           />
         </div>
         <div className="mobile-bar">
           <Mobile  showContact={showContact} changeShowContact={changeShowContact} />
         </div>
       </nav>
-   </div>
+  </div>
   );
 };
 

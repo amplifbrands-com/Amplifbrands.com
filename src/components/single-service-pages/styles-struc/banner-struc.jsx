@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"
 import Testimonials from '../../cards/testimonials'
 
 export default function SingleService({heading, content, img}) {
-  return (
+return (
     <>
         <div className="outer-section">
             <div className="inner-section">
@@ -27,5 +27,5 @@ export default function SingleService({heading, content, img}) {
         </div>
 
     </>
-  )
+)
 }

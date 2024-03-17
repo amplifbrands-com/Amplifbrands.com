@@ -36,7 +36,7 @@
     margin-bottom:16px;
 }
 
- .hero-sec .body-text{
+.hero-sec .body-text{
     background-clip: text;
     color:white;
     margin-bottom:16px;
@@ -98,7 +98,7 @@
     display: flex;
     justify-content: center;
     flex-wrap:wrap;
-  }
+}
 
 @media screen and (max-width:640px) {
     
@@ -134,17 +134,17 @@
 
 
     }
- 
+
     .slider-home-outer::-webkit-scrollbar-track, .service-card::-webkit-scrollbar-track {
         background-color: #f1f1f1 !important; 
-      }
-      
+    }
     
-      .slider-home-outer::-webkit-scrollbar-thumb, .service-card::-webkit-scrollbar-thumb {
+    
+    .slider-home-outer::-webkit-scrollbar-thumb, .service-card::-webkit-scrollbar-thumb {
         background-color: var( --prim-color) !important; 
         border-radius: 5px !important; 
-      }
-      
+    }
+    
 }
 
 .card-main-wrapper:nth-child(-1){

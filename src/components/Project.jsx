@@ -19,7 +19,6 @@ const Project = ({theme}) => {
                     <div className="background">
                     </div>
                     <img src={data.mainImage} alt={data.name} />
-
                 </div>
                 <section >
                     <div className="row my-5 project--category">
@@ -34,14 +33,12 @@ const Project = ({theme}) => {
                         <h5>{data.description}</h5>
                         <div className="d-flex justify-content-center mt-5 ">
                         <Link to={data.websiteLink} className="cta-btn-2">visit website</Link>
-                        </div>
-                      
+                        </div>  
                     </div>
                     <div className="image--container">
-                       <img src={data.image1} alt={data.name} className="img-fluid" />
-                       <img src={data.image2} alt={data.name} className="img-fluid" />
-                    </div>
-                  
+                    <img src={data.image1} alt={data.name} className="img-fluid" />
+                    <img src={data.image2} alt={data.name} className="img-fluid" />
+                    </div>  
                     <div className="d-flex justify-content-center">
                     <iframe
                     className="youtube"
@@ -50,14 +47,13 @@ const Project = ({theme}) => {
                     frameBorder="0"
                     allowFullScreen
                     ></iframe>
-                    </div>
-                   
-                   <div className="btn--group">
+                    </div>    
+                <div className="btn--group">
 
                     <Link to={`/portfolio/${parsedProjectId - 1}`} className="cta-btn">Previous Project</Link>
 
                     <Link to={`/portfolio/${parsedProjectId + 1}`}  className="cta-btn">Next Project</Link>
-                   </div>
+                </div>
                 </section>
 
             </div>

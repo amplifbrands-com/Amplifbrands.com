@@ -58,7 +58,7 @@ const ContactUsPage = () => {
                 <MdLocalPhone className="getin-icons" />
                 <h4 className="getin-card-h4">Phone Number</h4>
               </div>
-              <a href="tel:+919545749447" className="getin-link" >+91 9545749447</a>
+              <a href="https://wa.link/n0188s" className="getin-link">+91 9545749447</a>
             </div>
           </div>
         </div>
@@ -77,7 +77,7 @@ const ContactUsPage = () => {
               Partner with us Today!<br />
               Give Us a Call Now!
             </h3>
-            <a href="tel:+919545749447" className="cta-btn contact-partner-link">+91 9545749447</a>
+            <a href="https://wa.link/n0188s" className="cta-btn contact-partner-link">+91 9545749447</a>
           </div>
         </div>
       </div>
@@ -88,9 +88,8 @@ const ContactUsPage = () => {
     <section className=" row mx-auto about-form-section">
         <div className="section-title text-center col-12 row mx-auto">
           <h3 className="main-header col-12">
-            Get In Touch
+            Write a Message
           </h3>
-          <h6 className="sub-header col-12 col-sm-8 mx-auto about-form-h6">Ready to elevate your digital presence and achieve your business goals? Contact us today to learn more about our services and discover how Amplif can help you succeed in the digital age.</h6>
         </div>
         <Form />
       </section>
