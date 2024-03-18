@@ -404,44 +404,7 @@ svg{
     color:#176B87;
 }
 
-.hero-sec, .hero-sec-reverse{
-    position:relative;
-    background-image: linear-gradient(to bottom right, #1C1C1C, rgba(7,23,29,0.87), rgba(7,40,52,0.85), rgba(23, 107, 135, 0.81));
-}
 
-.hero-sec::after, .hero-sec-reverse::after{
-    content: '';
-    position: absolute;
-    width:20vw;
-    height: 20vw;
-    border-radius: 20vw;
-    bottom: 10vh;
-    left:-2vw;
-    background-image: linear-gradient(to top right, rgb(28,28,28), rgba(7,23,29,0.87), rgba(7,40,51,0.85), rgba(23, 107, 135, 0.81));
-    animation: hero-anim-after  10s infinite alternate;
-}
-
-.hero-sec-reverse::after{
-    Top:52%;
-    Left:52%;
-}
-
-.hero-sec::before, .hero-sec-reverse::before {
-    content: '';
-    position: absolute;
-    width:10vw;
-    height: 10vw;
-    border-radius: 20vw;
-    top: 30vh;
-    right:40vw;
-    background-image: linear-gradient(to top right, rgb(28,28,28), rgba(7,23,29,0.87), rgba(7,40,51,0.85), rgba(23, 107, 135, 0.81));
-    animation: hero-anim  20s infinite alternate;
-}
-
-.hero-sec-reverse::before{
-    Top:15%;
-    Left:8%;
-}
 
 @keyframes hero-anim {
     from{

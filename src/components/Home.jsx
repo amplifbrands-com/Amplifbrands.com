@@ -19,7 +19,7 @@ const Home = ({theme}) => {
     <section className="hero-sec hero-sec-reverse row mx-auto">
         <div className="section-title row text-center col-12"></div>
         <div className="row">
-          <div className="col-lg-8 col-md-8">
+          <div className="col-lg-8 col-md-8 heroHome">
             <div className="content">
           <h1 className='main-header '>We Help Digital First Businesses Maximize Their Revenue With Paid Advertising Campaigns And Establish a Strong Online Presence</h1>
             <h5 className="sub-header pt-2">

@@ -71,7 +71,6 @@ const Services = ({theme}) => {
           <ServiceCard key={index} title={service.title} link={service.link} offerings={service.offerings} img={service.img} index={index} theme={theme} />
           )
       )} 
-    <ScrollToTopButton/>  
     </div>
   )
 }
