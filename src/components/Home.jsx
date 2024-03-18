@@ -21,7 +21,7 @@ const Home = ({theme}) => {
         <div className="row">
           <div className="col-lg-8 col-md-8">
             <div className="content">
-          <h1 className='main-header '>We help digital first businesses to maximize their revenue with paid advertising campaigns and establishing strong online presence</h1>
+          <h1 className='main-header '>We Help Digital First Businesses Maximize Their Revenue With Paid Advertising Campaigns And Establish a Strong Online Presence</h1>
             <h5 className="sub-header pt-2">
             Stop wasting your money and time on ineffective ad campaigns and low-quality websites
             </h5>
