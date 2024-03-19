@@ -4,17 +4,19 @@
     --swiper-theme-color:var(--prim-color) !important ;
 }
 
+.swiper-container{
+    transform: scale(0.8);
+}
+
 .testimonial--card{
     height:550px;
     width:350px;
     background-color:var(--card-bg);
     box-shadow: var(--card-shadow);
     border-radius:50px;
-
     display:flex;
     flex-direction:column;
     align-items:center;
-
 }
 
 .testimonial--image{

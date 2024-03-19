@@ -1,23 +1,23 @@
-import { ThemeContext } from "../../context/themeContext";
+
 import '../../styles/base.css'
 import '../../styles/servi-card.css'
-import React, {useContext} from 'react'
+import React from 'react'
 
-function ServiCard({icon, title, content, theme}){
-    // const { theme } = useContext(ThemeContext);
+function ServiCard({icon, title}){
     return(
 
         <div className= 'card-wrapper'>
+             <div className='icon'>
+                <img src={icon} alt={`${title} icon`} />
+            </div> 
             <div>
-                <h6 className='main-header'>
+                <h4 className='main-header'>
                     {title}
-                </h6>
-                <p className='body-text'>{content}</p>
+                </h4>
+                {/* <p className='body-text'>{content}</p> */}
             </div>
-            <button type="button" className="text-btn">read more...</button>
-            <div className='icon'>
-                <img src={ theme==="light" ? icon.light : icon.dark} alt={`${title} icon`} />
-            </div>
+            {/* <button type="button" className="text-btn">read more...</button> */}
+            
         </div>
     )
 }

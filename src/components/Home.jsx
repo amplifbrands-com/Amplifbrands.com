@@ -9,78 +9,95 @@ import { serviceData } from '../assets/service-card-data';
 import Form from './cards/message-form';
 import Testimonials from './cards/testimonials';
 
-
-import { ThemeContext } from "../context/themeContext";
+import { PopupButton } from "react-calendly";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 
 const Home = ({theme}) => {
-  // const { theme } = useContext(ThemeContext);
-  console.log(theme);
   return (
   <div>
-    <section className="hero-sec row mx-auto">
+    <section className="hero-sec hero-sec-reverse row mx-auto">
         <div className="section-title row text-center col-12"></div>
         <div className="row">
-          <div className="col-lg-8 col-md-8 ">
-            <h1 className='main-header'>Ready to Amplif Your Brand?</h1>
-            <h6 className="sub-header pt-2">
-              Partner with Amplif - Your Accelerator in the Digital Era
-            </h6>
-            <p className="body-text pt-5">
-              Welcome to Amplif, where we turn brand visions into realities.
-              With creativity as our compass and strategy as our guide, we're
-              here to propel your brand forward. Let's embark on a journey to
-              redefine success together.
-            </p>
-            <button type="button" className="cta-btn mt-5" >Get a Free Consultation</button>
+          <div className="col-lg-8 col-md-8 heroHome">
+            <div className="content">
+          <h1 className='main-header '>We help digital-first businesses maximize their revenue with paid advertising campaigns and establish a robust online presence for our clients</h1>
+            <h5 className="sub-header pt-2">
+            Stop wasting your money and time on ineffective ad campaigns and low-quality websites
+            </h5>
+            <h2 className="body-text pt-5">
+            Partner with <span className="highligh">Amplif </span>
+            today and skyrocket your sales 🚀 
+            </h2>
+            </div>
+            <PopupButton
+              url="https://topmate.io/rohitsalunke/858573"
+              rootElement={document.getElementById("root")}
+              className="cta-btn mt-5 ms-5 d-none d-md-block"
+              text={<h4> Schedule a FREE Audit Call Now <FaArrowRightLong className="arrow" /></h4>}
+              />
+          <PopupButton
+              url="https://topmate.io/rohitsalunke/858573"  
+                rootElement={document.getElementById("root")}
+                className="cta-btn mt-5 ms-5 d-block d-md-none"
+                text="Book a meeting"
+          />
             
           </div>
-          <div className="col-lg-4 col-md-4">
-            <img src="../assets1/Rectangle.png" alt="" />
+          <div className="col-lg-4 col-md-4 mt-3 p-3 ">
+            
           </div>
         </div>
       </section>
-    <section className="text-center row mx-auto col-12">
-      <h3 className='main-header'>
-        Our Mission
-      </h3>
-      <p className='sub-header col-12 col-sm-8 mx-auto'>Our mission at Amplif is to empower startup entrepreneurs with tailored marketing solutions crafted by our experts, addressing their unique pain points, driving exponential growth, and unleashing their full potential.</p>
+    <section className=" mission text-center mx-auto col-12">
+      <h2 className='sub-header col-12 col-sm-8 mx-auto'> Our Mission is to Partner with digital-first businesses and fueling their growth with marketing strategies and advanced technology</h2>
     </section>
-    {/* {`${theme === 'light' ? 'sub-header col-12 col-sm-8 mx-auto': 'text-light sub-header col-12 col-sm-8 mx-auto'}`} */}
-    <section className=" row mx-auto">
-      <div className="section-title text-center row col-12 mx-auto">
+    <section className=" row mx-auto why-us">
+      <div className="section-title  text-center row col-12 mx-auto">
         <h3 className='main-header col-12'>
           Why Choose Us?
         </h3>
-        <h6 className='sub-header col-12 col-sm-8 mx-auto'>Navigating the Digital Frontier</h6>
       </div>
-      <div className="whyus-sec col-12">
-        {
-          whyUsData.map(cont =>(
-            <WhyUs key={cont.title} icon={cont.icon} title={cont.title} subtitle={cont.subtitle} content={cont.content} theme={theme} />
-          ))
-        }
+
+
+     <div className="slider-home-outer">
+        <div className="whyus-sec col-12">
+          {
+            whyUsData.map(cont =>(
+              <div className="whyus-item" key={cont.title}>
+                <WhyUs icon={cont.icon} title={cont.title} subtitle={cont.subtitle} content={cont.content} theme={theme} />
+              </div>
+            ))
+          }
+        </div>
       </div>
+
     </section>
     <section className=" row mx-auto">
       <div className="section-title row text-center col-12 mx-auto">
-        <h3 className='main-header col-12'>
+        <h3 className='main-header col-12 mb-5'>
         Our Services
         </h3>
-        <h6 className='sub-header col-12 col-sm-8 mx-auto' >Transformative Digital Solutions Tailored for Your Success</h6>
-      </div>
-
-      <div className="servi-sec col-12">
-        {
-          serviceData.map(cont =>(
-            <ServiCard key={cont.title} icon={cont.icon} title={cont.title}  content={cont.content}  theme={theme} />
-          ))
+        {serviceData.map( (item, index) =>(
+          <div className="col-md-6" key={index}>
+          <h5 className='sub-header col-12 col-sm-8 mb-3' >{item.name}</h5>
+          <div className="service-card">
+            <div className="service-slider">
+              
+            {
+            item.services.map(cont =>(
+          <ServiCard key={cont.title} icon={cont.icon} title={cont.title} />))
         }
+          </div>
+          </div>
+          </div>
+        ))}
+       
       </div>
     </section>
-    <section>
+    {/* <section>
       <Testimonials />
-    </section>
+    </section> */}
     {/* <section className=" row mx-auto form-sec">
       <div className="section-title text-center col-12 row mx-auto">
         <h3 className="main-header col-12">
@@ -90,6 +107,7 @@ const Home = ({theme}) => {
       </div>
       <Form />
     </section> */}
+
   </div>
   )
 }

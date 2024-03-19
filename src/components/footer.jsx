@@ -19,13 +19,12 @@ import "../styles/base.css"
 const Footer = () => {
   return (
     <>
-      {/* Don't change it again. I use div cause section margins need to be corrected and for nav tag it is for seo so don't remove it.  */}
       <div className="footer-main-outer">
         <nav className="footer-main-inner">
           <div className="footer-logo-social">
             <div className="footer-logo-outer">
               <Link to="/">
-                <img src={Logo} alt="" title='' className='footer-logo' />
+                <img src={Logo} alt="amplif" title='' className='footer-logo' />
               </Link>
             </div>
             <div className="footer-social-outer destop-social">
@@ -35,10 +34,10 @@ const Footer = () => {
                 </h6>
               </div>
               <div className="footer-social-icons">
-                <Link to="" className="footer-social-link"><img src={Twitter} alt="" title='' className='footer-social-img' /></Link>
+                <Link to="https://x.com/Amplifbrands?t=3MTGX8QNcfUtyuN8DzbOxg&s=08" className="footer-social-link"><img src={Twitter} alt="" title='' className='footer-social-img' /></Link>
                 <Link to="https://www.instagram.com/amplifbrands?igsh=M2ZrZzNsM2J0eXVt" className="footer-social-link"><img src={Instagram} alt="" title='' className='footer-social-img' /></Link>
                 <Link to="https://www.facebook.com/profile.php?id=61555981845045&mibextid=ZbWKwL" className="footer-social-link"><img src={Facebook} alt="" title='' className='footer-social-img' /></Link>
-                <Link to="" className="footer-social-link"><img src={Youtube} alt="" title='' className='footer-social-img' /></Link>
+                <Link to="https://youtube.com/@Amplifbrands" className="footer-social-link"><img src={Youtube} alt="" title='' className='footer-social-img' /></Link>
               </div>
             </div>
           </div>
@@ -50,26 +49,26 @@ const Footer = () => {
                 </h6>
               </div>
               <ul className="footer-quick-ul">
-                <li className="footer-quick-li"><Link to="/" className="footer-quick-links">Service</Link></li>
-                <li className="footer-quick-li"><Link to="/" className="footer-quick-links">Portfolio</Link></li>
-                <li className="footer-quick-li"><Link to="/" className="footer-quick-links">Pricing</Link></li>
-                <li className="footer-quick-li"><Link to="/" className="footer-quick-links">Contact Us</Link></li>
-                <li className="footer-quick-li"><Link to="/" className="footer-quick-links">Our Team</Link></li>
+                <li className="footer-quick-li"><Link to="" className="footer-quick-links">Blog</Link></li>
+                <li className="footer-quick-li"><Link to="" className="footer-quick-links">Home</Link></li>
+                <li className="footer-quick-li"><Link to="" className="footer-quick-links">Services</Link></li>
+                <li className="footer-quick-li"><Link to="" className="footer-quick-links">Portfolio</Link></li>
+                <li className="footer-quick-li"><Link to="" className="footer-quick-links">About Us</Link></li>
+                <li className="footer-quick-li"><Link to="" className="footer-quick-links">Contact Us</Link></li>
               </ul>
             </div>
             <div className="footer-add-outer">
               <div className="footer-add-heading">
                 <h6 className="footer-add-h6">
-                  Contact Us
+                  Email Us
                 </h6>
               </div>
               <div className="footer-add-content">
-                <Link to="" className="footer-add-links"><IoMdMail className='footer-add-icons'/>contact@amplifbrands.com</Link><br /> 
+                <a href="mailto:contact@amplifbrands.com" className="footer-add-links"><IoMdMail className='footer-add-icons'/>contact@amplifbrands.com</a><br /> 
                 <Link to="" className="footer-add-links">
-                <IoLocationSharp className='footer-add-icons' />Amplif Brands Private Limited, 3rd Cross Rd, Electronics City Phase 1, Electronic City, Bengaluru<br />
-                  Karnataka 560100.
+                <IoLocationSharp className='footer-add-icons'/>Amplif Brands Private Limited, 126, Bhakti Nagar, N-1 Cidco, Aurangabad, Maharashtra 431003
                 </Link><br /> 
-                <Link to="" className="footer-add-links"><FaPhone className='footer-add-icons' />+91 95457 49447</Link>
+                <a href="tel:+919545749447" className="footer-add-links"><FaPhone className='footer-add-icons' />+91 95457 49447</a>
               </div>
             </div>
             <div className="footer-social-outer mobile-social">
@@ -79,10 +78,10 @@ const Footer = () => {
                 </h6>
               </div>
               <div className="footer-social-icons">
-                <Link to="" className="footer-social-link"><img src={Twitter} alt="" title='' className='footer-social-img' /></Link>
+                <Link to="https://x.com/Amplifbrands?t=3MTGX8QNcfUtyuN8DzbOxg&s=08" className="footer-social-link"><img src={Twitter} alt="" title='' className='footer-social-img' /></Link>
                 <Link to="https://www.instagram.com/amplifbrands?igsh=M2ZrZzNsM2J0eXVt" className="footer-social-link"><img src={Instagram} alt="" title='' className='footer-social-img' /></Link>
                 <Link to="https://www.facebook.com/profile.php?id=61555981845045&mibextid=ZbWKwL" className="footer-social-link"><img src={Facebook} alt="" title='' className='footer-social-img' /></Link>
-                <Link to="" className="footer-social-link"><img src={Youtube} alt="" title='' className='footer-social-img' /></Link>
+                <Link to="https://youtube.com/@Amplifbrands" className="footer-social-link"><img src={Youtube} alt="" title='' className='footer-social-img' /></Link>
               </div>
             </div>
           </div>

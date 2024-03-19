@@ -1,0 +1,58 @@
+.whatsapp {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    position: fixed;
+    top: 92.5%;
+    left: 92%;
+    transform: translateY(-50%);
+    z-index: 999;
+    --bs-gutter-x: 0 !important;
+  }
+ 
+  .cta-button {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #25d366;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .whatIcon{
+    width: 50px;
+    height: 50px;
+  }
+
+  .cta-button:hover {
+    background-color: #128c7e; 
+  }
+  
+
+
+  .whatsapp-logo {
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+  
+
+  @media only screen and (max-width: 600px) {
+    .container {
+      left: 8px;
+    }
+    
+    .cta-button {
+      padding: 10px 20px; 
+    }
+    
+    .whatsapp-logo {
+      width: 20px;
+      margin-right: 6px; 
+    }
+  }

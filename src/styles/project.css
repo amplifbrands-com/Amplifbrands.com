@@ -1,0 +1,69 @@
+@import './base.css';
+
+.project--header{
+    height:260px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin-top:60px;
+}
+
+.project--header h1{
+    text-transform:uppercase;
+    color:var(--text-h);
+}
+
+.main--image{
+    display:flex;
+    justify-content:center;
+    position:relative;
+}
+.main--image .background{
+    height:360px;
+    width:100%;
+    background-color:var(--background-d-sec);
+    position:absolute;
+}
+
+.main--image img{
+    height: 535px;
+    margin-top:50px;
+    display:absolute;
+    z-index:1;
+}
+
+.project--category{
+    background-color:var(--sec-bg);
+    padding:52px 176px;
+}
+.project--detail{
+    margin:50px 0px;
+}
+.cta-btn-2{
+    background-color:rgba(234,180,0,1);
+    font-weight: 600;
+    color: var(--text-b);
+    border:none;
+    text-transform: uppercase;
+    padding: 0.6rem 1.6rem;
+    text-decoration:none;
+}   
+
+.image--container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.image--container img{
+    margin:20px 0;
+}
+
+.youtube{
+    width:100%;
+    height:458px;
+}
+.btn--group{
+    display:flex;
+    justify-content:space-between;
+    margin:20px 0px;
+}

@@ -2,9 +2,7 @@
 import React, {useContext} from 'react'
 import '../../styles/base.css';
 import '../../styles/home-whyus.css';
-import { ThemeContext } from "../../context/themeContext";
 function WhyUs({icon, title, subtitle, content, theme}){
-    // const { theme } = useContext(ThemeContext);
 
     return(
         <div className='card-main-wrapper'>
@@ -13,8 +11,8 @@ function WhyUs({icon, title, subtitle, content, theme}){
                     <img src={ theme==="light" ? icon.light : icon.dark} alt={`${title} icon`} />
                 </div>
                 <span>
-                    <h6 className='main-header'>{title}</h6>
-                    <small className='sub-header'>{subtitle}</small>
+                    <h5 className='main-header'>{title}</h5>
+                    <p className='sub-header'>{subtitle}</p>
                 </span>
             </div>
             <div>

@@ -160,6 +160,7 @@ small{
 /* please use sections for sectioning */
 section, header{
     padding: 52px 12vw;
+    /* max-width:1440px; */
 }
 .navigation-container{
     padding: 0 12vw;
@@ -265,16 +266,10 @@ section, header{
     text-transform: uppercase;
     border-radius: 0.4rem;
     padding: 0.6rem 1.6rem;
-}
+    text-decoration: none;
+    display: block;
+    width: fit-content;
 
-.cat-btn{
-    background-image: linear-gradient(to right, rgb(255, 196, 0), rgb(223, 210, 152));
-    font-weight: 500;
-    color: var(--text-b);
-    border:none;
-    text-transform: uppercase;
-    border-radius: 0.4rem;
-    padding: 0.65rem 1.6rem;
 }
 
 .cta-btn:disabled{
@@ -384,7 +379,7 @@ textarea:focus::placeholder{
 }
 .sub-header{
     color:var(--text-m);
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     font-weight: 400;
 }
 
@@ -396,3 +391,186 @@ textarea:focus::placeholder{
 svg{
     fill: var(--sec-color) !important;
 }
+
+.calendly-overlay{
+    backdrop-filter: blur(10px); 
+}
+
+
+
+/* updated css */
+
+.blue{
+    color:#176B87;
+}
+
+
+
+@keyframes hero-anim {
+    from{
+        transform: scale(0.8) rotate(360deg);
+    };
+    to{
+        transform: scale(1.5) rotate(360deg);    
+    }
+}
+
+@keyframes hero-anim-after {
+    from{
+        transform: scale(0.8);
+    };
+    to{
+        transform: scale(2);    
+    }
+}
+
+.hero-card{
+    position: absolute;
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(55px);
+    -webkit-backdrop-filter:blur(55px);
+    top: 60vh;
+    z-index:1;
+    transform: translateY(-50%);
+    border-radius: 48px;
+    padding: 64px;
+    display: inline-block;
+}
+
+.hero-card-title-yellow{
+    background-image: linear-gradient(to right, #E4C300, #FFEA42); 
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent;
+    font-weight:700;
+    text-transform: capitalize;
+}
+
+.hero-card-links-wrapper{
+    margin-top: 56px;
+}
+
+.hero-card-link{
+    display:inline-block;
+    padding:12px 32px;
+    text-transform: capitalize;
+    background-color: rgb(0,0,0);
+    color: rgb(255,255,255);
+    border-radius:4px;
+    text-decoration:none;
+}
+
+.hero-card-link-active{
+
+    background-image: linear-gradient(to right, #E4C300, #FFEA42); 
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent; 
+    position:relative;
+    font-weight: 500;
+
+}
+.hero-card-link-active::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0; 
+    background-color: rgb(0,0,0);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 4px;
+    
+}
+@media screen and (max-width:576px) {
+    .hero-card-link{
+        display: block;
+        margin-right:0 !important;
+    }
+}
+
+
+.sevice-hero-img{
+    position: absolute;
+    max-width: 40%;
+    left:50%;
+    top:65%;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.service{
+    width:100%;
+    min-height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap:24px;
+    justify-content: space-between;
+}
+
+.service-img{
+    max-width: 50%;
+}
+
+.reversed{
+    flex-direction: row-reverse;
+}
+
+.blue-sec{
+    background-color:#EAF4F9;
+}
+
+@media screen and (max-width:640px) {
+    .sevice-hero-img{
+        
+        left: 50%;
+        bottom:15vh;
+        top:unset;
+        width:calc( 70%);
+        max-width:calc( 70% );
+        transform: translate(-50%, 0);
+    } 
+    .hero-card{
+        
+        top: 15vh;
+        left: 50%;
+        width:calc( 100% - 10vw);
+        transform: translate(-50%, 0);
+        text-align: center;
+    }
+
+    .service{
+        width:100%;
+        flex-direction:column-reverse ;
+        justify-content: center ;
+        align-items: center;
+        gap:24px;
+    }
+    .service-img{
+        max-width:80%;
+    }
+
+    .service-card-details {
+        text-align: center;
+    }
+
+    .service-card-details ul{
+        text-align: left;
+    }
+
+}
+
+@media screen and (max-width:460px) {
+    .sevice-hero-img{
+        
+        left: 50%;
+        bottom:15vh;
+        top:unset;
+        width:calc( 100% - 10vw);
+        max-width:calc( 100% - 10vw);
+        transform: translate(-50%, 0);
+    } 
+}
+
+
+

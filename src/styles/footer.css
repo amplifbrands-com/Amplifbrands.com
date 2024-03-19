@@ -49,8 +49,13 @@ ul{
 }
 
 .footer-quick-links, .footer-add-links{
-    color: rgba(255,255,255,0.83);
+    color: rgba(255,255,255,1);
     text-decoration: none;
+}
+
+.footer-add-content .footer-add-links{
+    color: rgba(255,255,255,1) !important;
+
 }
 
 .footer-add-content{
@@ -64,6 +69,7 @@ ul{
 
 .footer-add-icons{
     margin-right: 10px;
+    color: rgba(255,255,255,0.6);
 }
 
 .mobile-social{
