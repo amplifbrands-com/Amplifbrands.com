@@ -21,7 +21,7 @@ const Home = ({theme}) => {
         <div className="row">
           <div className="col-lg-8 col-md-8 heroHome">
             <div className="content">
-          <h1 className='main-header '>We Help Digital First Businesses Maximize Their Revenue With Paid Advertising Campaigns And Establish a Strong Online Presence</h1>
+          <h1 className='main-header '>We help digital-first businesses maximize their revenue with paid advertising campaigns and establish a robust online presence for our clients</h1>
             <h5 className="sub-header pt-2">
             Stop wasting your money and time on ineffective ad campaigns and low-quality websites
             </h5>
@@ -50,7 +50,7 @@ const Home = ({theme}) => {
         </div>
       </section>
     <section className=" mission text-center mx-auto col-12">
-      <h1 className='sub-header col-12 col-sm-8 mx-auto'> Our Mission is to Partner with digital-first businesses and fueling their growth with marketing strategies and advanced technology</h1>
+      <h2 className='sub-header col-12 col-sm-8 mx-auto'> Our Mission is to Partner with digital-first businesses and fueling their growth with marketing strategies and advanced technology</h2>
     </section>
     <section className=" row mx-auto why-us">
       <div className="section-title  text-center row col-12 mx-auto">
